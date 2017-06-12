@@ -40,6 +40,7 @@ require SB.'admin/default/session_check.inc.php';
 require SIMBIO.'simbio_GUI/table/simbio_table.inc.php';
 require SIMBIO.'simbio_GUI/paging/simbio_paging.inc.php';
 require SIMBIO.'simbio_DB/simbio_dbop.inc.php';
+require MDLBS.'system/biblio_indexer.inc.php';
 
 // privileges checking
 $can_read = utility::havePrivilege('bibliography', 'r');
@@ -47,6 +48,12 @@ $can_write = utility::havePrivilege('bibliography', 'w');
 
 if (!$can_read) {
     die('<div class="errorBox">'.__('You are not authorized to view this section').'</div>');
+}
+
+// get servers
+$server_q = $dbs->query('SELECT name, uri FROM mst_servers WHERE server_type = 3 ORDER BY name ASC');
+while ($server = $server_q->fetch_assoc()) {
+  $sysconf['z3950_SRU_source'][] = array('uri' => $server['uri'], 'name' => $server['name']);
 }
 
 if (isset($_GET['z3950_SRU_source'])) {
@@ -157,6 +164,10 @@ if (isset($_POST['saveZ']) AND isset($_SESSION['z3950result'])) {
               }
           }
           if ($biblio_id) {
+              // create biblio_indexer class instance
+              $indexer = new biblio_indexer($dbs);
+              // update index
+              $indexer->makeIndex($biblio_id);
               // write to logs
               utility::writeLogs($dbs, 'staff', $_SESSION['uid'], 'bibliography', $_SESSION['realname'].' insert bibliographic data from P2P service (server:'.$p2pserver.') with ('.$biblio['title'].') and biblio_id ('.$biblio_id.')');
               $r++;

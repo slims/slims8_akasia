@@ -45,7 +45,7 @@ if (get_magic_quotes_gpc()) {
   $_REQUEST = array_map('stripslashes_deep', $_REQUEST);
 }
 // turn off all error messages for security reason
-@ini_set('display_errors', true);
+@ini_set('display_errors', false);
 // check if safe mode is on
 if ((bool) ini_get('safe_mode')) {
     define('SENAYAN_IN_SAFE_MODE', 1);
@@ -56,7 +56,7 @@ if ((bool) ini_get('safe_mode')) {
 @date_default_timezone_set('Asia/Jakarta');
 
 // senayan version
-define('SENAYAN_VERSION', 'SLiMS 8.3 (Akasia)');
+define('SENAYAN_VERSION', 'SLiMS 8.3.1 (Akasia)');
 
 // senayan session cookies name
 define('COOKIES_NAME', 'SenayanAdmin');
@@ -88,7 +88,13 @@ define('UPLOAD', SB.FLS.DS);
 
 // repository dir
 define('REPO', 'repository');
-define('REPOBS', SB.REPO.DS);
+$repobs['enable'] = FALSE;
+$repobs['path'] = '/your/alternative/of/repository/directory/';
+if ($repobs['enable'] == TRUE) {
+  define('REPOBS', $repobs['path']);
+} else {
+  define('REPOBS', SB.REPO.DS);
+}
 
 // file attachment dir
 define('ATC', 'att');
@@ -139,6 +145,8 @@ require SIMBIO.'simbio.inc.php';
 require SIMBIO.'simbio_UTILS'.DS.'simbio_security.inc.php';
 // we must include utility library first
 require LIB.'utility.inc.php';
+// include API
+require LIB.'api.inc.php';
 // include biblio class
 require MDLBS.'bibliography/biblio.inc.php';
 
@@ -208,7 +216,7 @@ $sysconf['backup_dir'] = UPLOAD.'backup'.DS;
 $sysconf['allow_file_download'] = false;
 
 /* WEBCAM feature */
-$sysconf['webcam'] = 'html5'; //enabled this feature by changed to 'html5' or 'flex'. Default is false
+$sysconf['webcam'] = 'flex'; //enabled this feature by changed to 'html5' or 'flex'. FALSE will be defined if none is configured here.
 
 /* SCANNER feature */
 $sysconf['scanner'] = false;
@@ -345,13 +353,15 @@ $sysconf['ucs']['auto_delete'] = false;
 // auto insert new record to UCS?
 $sysconf['ucs']['auto_insert'] = false;
 // UCS server address. NO TRAILING SLASH! for local testing on Windows machine don't use localhost, use 127.0.0.1 instead
-$sysconf['ucs']['serveraddr'] = 'http://localhost/ucs'; 
+$sysconf['ucs']['serveraddr'] = 'http://localhost/ucs';
+// UCS server version
+$sysconf['ucs']['serverversion'] = 3;
 // node ID
 $sysconf['ucs']['id'] = 'slims-node';
 // default is s0beautifulday
 $sysconf['ucs']['password'] = '2325f677e21c1613909c953eb03c57352259cc5d';
 // node name
-$sysconf['ucs']['name'] = 'SLiMS Library'; 
+$sysconf['ucs']['name'] = 'SLiMS Library';
 
 /**
  * Z39.50 copy cataloguing sources
@@ -636,3 +646,6 @@ if (defined('LIGHTWEIGHT_MODE') AND !isset($_COOKIE['FULLSITE_MODE']) AND $sysco
 // visitor limitation
 $sysconf['enable_visitor_limitation']     = false; // "true" or "false"
 $sysconf['time_visitor_limitation']       = 60; // in minute
+
+/* new log system */
+$sysconf['log']['biblio'] = TRUE;

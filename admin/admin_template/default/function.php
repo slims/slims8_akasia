@@ -51,7 +51,11 @@ function main_menu()
     'logout'         => 'fa fa-close',
     'opac'           => 'fa fa-desktop'
     );
-  
+  //fake, just for translation po... xieyh :(
+  $translations          = array(
+    'bibliography'   => __('Bibliography'),
+    'master_file'    => __('Master File'),
+  );
   $appended_first  = '<li><input type="radio" name="s-menu" id="home" role="button"><label for="home" class="menu home"><i class="nav-icon '.$icon['home'].'"></i> <span class="s-menu-title">'.__('Shortcut').'</span></label><input type="radio" name="s-menu" class="s-menu-close" id="home-close" role="button"><label for="home-close" class="menu home s-current s-menu-hide"><i class="nav-icon '.$icon['home'].'"></i> <span class="s-menu-title">'.__('Shortcut').'</span></label>';
   $_mods_q = $dbs->query('SELECT * FROM '.$module_table);
   while ($_mods_d = $_mods_q->fetch_assoc()) {
@@ -68,7 +72,8 @@ function main_menu()
       $_formated_module_name = ucwords(str_replace('_', ' ', $_module['name']));
       $_mod_dir = $_module['path'];
       if (isset($_SESSION['priv'][$_module['path']]['r']) && $_SESSION['priv'][$_module['path']]['r'] && file_exists($modules_dir.DS.$_mod_dir)) {
-        $_menu .= '<li><input type="radio" name="s-menu" id="'.$_module['name'].'" role="button"><label for="'.$_module['name'].'" class="menu '.$_module['name'].'" title="'.$_module['desc'].'"><i class="nav-icon '.$icon[$_module['name']].'"></i> <span class="s-menu-title">'.__($_formated_module_name).'</span></label><input type="radio" name="s-menu" class="s-menu-close" id="'.$_module['name'].'-close" role="button"><label for="'.$_module['name'].'-close" class="menu '.$_module['name'].' s-current s-menu-hide"><i class="nav-icon '.$icon[$_module['name']].'"></i> <span class="s-menu-title">'.__($_formated_module_name).'</span></label>';
+        $_icon = isset($icon[$_module['name']])?$icon[$_module['name']]:'fa fa-bars';
+        $_menu .= '<li><input type="radio" name="s-menu" id="'.$_module['name'].'" role="button"><label for="'.$_module['name'].'" class="menu '.$_module['name'].'" title="'.$_module['desc'].'"><i class="nav-icon '.$_icon.'"></i> <span class="s-menu-title">'.__($_formated_module_name).'</span></label><input type="radio" name="s-menu" class="s-menu-close" id="'.$_module['name'].'-close" role="button"><label for="'.$_module['name'].'-close" class="menu '.$_module['name'].' s-current s-menu-hide"><i class="nav-icon '.$_icon.'"></i> <span class="s-menu-title">'.__($_formated_module_name).'</span></label>';
         $_menu .= sub_menu($_mod_dir, $_module);
         $_menu .= '</li>';
       }
@@ -112,7 +117,7 @@ function get_shortcuts_menu()
 {
     global $dbs;
     $shortcuts = array();
-    $shortcuts_q = $dbs->query('SELECT * FROM setting WHERE setting_name LIKE \'shortcuts_'.$_SESSION['uid'].'\'');
+    $shortcuts_q = $dbs->query('SELECT * FROM setting WHERE setting_name LIKE \'shortcuts_'.$dbs->escape_string($_SESSION['uid']).'\'');
     $shortcuts_d = $shortcuts_q->fetch_assoc();
     if ($shortcuts_q->num_rows > 0) {
       $shortcuts = unserialize($shortcuts_d['setting_value']);

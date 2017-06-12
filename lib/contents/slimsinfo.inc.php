@@ -34,7 +34,7 @@ $version = "c42bab9fd2925ceb03f7dd9cfb3b6342027c877b";
 
 ?>
 <div style="padding-left: 10px;">
-<h2>SLiMS Version 8.3 codename Akasia</h2>
+<h2>SLiMS Version 8.3.1 codename Akasia</h2>
 <p>&nbsp;</p>
 <p>
 SLiMS (Senayan Library Management System)<br />
@@ -52,7 +52,7 @@ Documentation: Purwoko, Arif Syamsudin, Hendro Wicaksono, Rasyid Ridho, Sulfan Z
 <p>
 <div style="font-weight:bold;">Translator:</div>
 Germany: Tobias Zeumer<br />
-Arabic: Rasyid Ridho<br />
+Arabic: Rasyid Ridho, Bounama Kouider<br />
 Thai: Prasitichai เรารักในหลวง<br />
 Persian: Mohammad Javad Mansourzadeh<br />
 Malay: Jerry Mohd. Arif<br />
@@ -65,7 +65,8 @@ Bengali: A. K. M. Nurul Alam
 <div style="font-weight:bold;">Contribution:</div>
 Gettext support: Tobias Zeumer<br />
 Membercard modification: Jushadi<br />
-English documentation: Jim Richardson
+English documentation: Jim Richardson<br />
+OAI Support for Indonesia One Search: Ismail Fahmi
 </p>
 
 </div>

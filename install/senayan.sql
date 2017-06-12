@@ -345,21 +345,25 @@ CREATE TABLE IF NOT EXISTS `kardex` (
 --
 
 CREATE TABLE IF NOT EXISTS `loan` (
-  `loan_id` int(11) NOT NULL auto_increment,
-  `item_code` varchar(20) collate utf8_unicode_ci default NULL,
-  `member_id` varchar(20) collate utf8_unicode_ci default NULL,
+  `loan_id` int(11) NOT NULL AUTO_INCREMENT,
+  `item_code` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `member_id` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
   `loan_date` date NOT NULL,
   `due_date` date NOT NULL,
-  `renewed` int(11) NOT NULL default '0',
-  `loan_rules_id` int(11) NOT NULL default '0',
-  `actual` date default NULL,
-  `is_lent` int(11) NOT NULL default '0',
-  `is_return` int(11) NOT NULL default '0',
-  `return_date` date default NULL,
-  PRIMARY KEY  (`loan_id`),
+  `renewed` int(11) NOT NULL DEFAULT '0',
+  `loan_rules_id` int(11) NOT NULL DEFAULT '0',
+  `actual` date DEFAULT NULL,
+  `is_lent` int(11) NOT NULL DEFAULT '0',
+  `is_return` int(11) NOT NULL DEFAULT '0',
+  `return_date` date DEFAULT NULL,
+  `input_date` datetime DEFAULT NULL,
+  `last_update` datetime DEFAULT NULL,
+  `uid` int(11) DEFAULT NULL,
+  PRIMARY KEY (`loan_id`),
   KEY `item_code` (`item_code`),
-  KEY `member_id` (`member_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
+  KEY `member_id` (`member_id`),
+  KEY `input_date` (`input_date`,`last_update`,`uid`)
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1 ;
 
 --
 -- Dumping data for table `loan`
@@ -995,7 +999,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `last_login` datetime DEFAULT NULL,
   `last_login_ip` char(15) COLLATE utf8_unicode_ci DEFAULT NULL,
   `groups` varchar(200) COLLATE utf8_unicode_ci DEFAULT NULL,
-  `input_date` date DEFAULT '0000-00-00',
+  `input_date` date DEFAULT NULL,
   `last_update` date DEFAULT NULL,
   PRIMARY KEY (`user_id`),
   UNIQUE KEY `username` (`username`),
@@ -1310,6 +1314,13 @@ CREATE TABLE IF NOT EXISTS `mst_voc_ctrl` (
   PRIMARY KEY (`vocabolary_id`)
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Data setting for visitor limitation
+--
+INSERT IGNORE INTO `setting` (`setting_name`, `setting_value`) VALUES
+('enable_visitor_limitation', 's:1:"0";'),
+('time_visitor_limitation', 's:2:"60";');
+
 CREATE TABLE IF NOT EXISTS `biblio_relation` (
   `biblio_id` int(11) NOT NULL DEFAULT '0',
   `rel_biblio_id` int(11) NOT NULL DEFAULT '0',
@@ -1325,9 +1336,9 @@ CREATE TABLE IF NOT EXISTS `biblio_relation` (
 --
 ALTER TABLE `biblio_relation`
  ADD PRIMARY KEY (`biblio_id`,`rel_biblio_id`);
- 
+
 -- DELETE FROM `setting` WHERE `setting`.`setting_name` = 'barcode_encoding';
--- UPDATE `setting` SET `setting_value` = 'a:2:{s:5:"theme";s:7:"default";s:3:"css";s:26:"template/default/style.css";}' WHERE `setting_id` = 3; 
+-- UPDATE `setting` SET `setting_value` = 'a:2:{s:5:"theme";s:7:"default";s:3:"css";s:26:"template/default/style.css";}' WHERE `setting_id` = 3;
 
 --
 -- Table structure for table `mst_servers`
@@ -1336,7 +1347,37 @@ CREATE TABLE `mst_servers` (
   `server_id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `uri` text COLLATE utf8_unicode_ci NOT NULL,
+  `server_type` tinyint(1) NOT NULL DEFAULT '1' COMMENT '1 - p2p server; 2 - z3950; 3 - z3950  SRU',
   `input_date` datetime NOT NULL,
   `last_update` datetime DEFAULT NULL,
   PRIMARY KEY (`server_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Struktur dari tabel `biblio_log`
+--
+
+CREATE TABLE IF NOT EXISTS `biblio_log` (
+  `biblio_log_id` int(11) NOT NULL AUTO_INCREMENT,
+  `biblio_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `realname` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `title` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `ip` varchar(200) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `action` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `affectedrow` varchar(50) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `rawdata` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `additional_information` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `date` datetime NOT NULL,
+  PRIMARY KEY (`biblio_log_id`),
+  KEY `realname` (`realname`),
+  KEY `biblio_id` (`biblio_id`),
+  KEY `user_id` (`user_id`),
+  KEY `ip` (`ip`),
+  KEY `action` (`action`),
+  KEY `affectedrow` (`affectedrow`),
+  KEY `date` (`date`),
+  FULLTEXT KEY `title` (`title`),
+  FULLTEXT KEY `rawdata` (`rawdata`),
+  FULLTEXT KEY `additional_information` (`additional_information`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci AUTO_INCREMENT=1 ;
