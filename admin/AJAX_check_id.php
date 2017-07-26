@@ -15,6 +15,11 @@ require SB.'admin/default/session_check.inc.php';
 
 $table_name = $dbs->escape_string(trim($_POST['tableName']));
 $table_fields = $dbs->escape_string(trim($_POST['tableFields']));
+
+// clear all backticks in user input and append them later in sql query
+$table_name = str_replace('`', '', $table_name);
+$table_fields = str_replace('`', '', $table_fields);
+
 if (isset($_POST['id']) AND !empty($_POST['id'])) {
   $id = $dbs->escape_string(trim($_POST['id']));
 } else {
@@ -22,7 +27,7 @@ if (isset($_POST['id']) AND !empty($_POST['id'])) {
 }
 
 // sql string
-$sql_string = "SELECT $table_fields FROM $table_name WHERE $table_fields='$id' LIMIT 1";
+$sql_string = "SELECT `$table_fields` FROM `$table_name` WHERE `$table_fields`='$id' LIMIT 1";
 
 // send query to database
 $query = $dbs->query($sql_string);
