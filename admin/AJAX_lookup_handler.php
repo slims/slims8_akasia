@@ -38,6 +38,10 @@ $limit = 20;
 $table_name = $dbs->escape_string(trim($_POST['tableName']));
 $table_fields = trim($_POST['tableFields']);
 
+// clear all backticks in user input and append them later in sql query
+$table_name = str_replace('`', '', $table_name);
+$table_fields = str_replace('`', '', $table_fields);
+
 if (isset($_POST['keywords']) AND !empty($_POST['keywords'])) {
   $keywords = $dbs->escape_string(urldecode(ltrim($_POST['keywords'])));
 } else {
@@ -45,19 +49,19 @@ if (isset($_POST['keywords']) AND !empty($_POST['keywords'])) {
 }
 
 // explode table fields data
-$fields = str_replace(':', ', ', $table_fields);
+$fields = str_replace(':', '`, `', $table_fields);
 // set where criteria
 $criteria = '';
 foreach (explode(':', $table_fields) as $field) {
-    $criteria .= " $field LIKE '%$keywords%' OR";
+    $criteria .= " `$field` LIKE '%$keywords%' OR";
 }
 // remove the last OR
 $criteria = substr_replace($criteria, '', -2);
 
-$sql_string = "SELECT $fields ";
+$sql_string = "SELECT `$fields` ";
 
 // append table name
-$sql_string .= " FROM $table_name ";
+$sql_string .= " FROM `$table_name` ";
 if ($criteria) { $sql_string .= " WHERE $criteria LIMIT $limit"; }
 
 // send query to database
