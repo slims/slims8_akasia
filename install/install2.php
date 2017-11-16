@@ -229,8 +229,8 @@
 
         // check for write access
         $write_access = substr(sprintf('%o', fileperms($config_file_directory)), -4);
-        if($write_access != '0777') {
-            $error_mg[] = "<li>Cannot write ".$config_file_path." file. Please check ".$config_file_directory." folder permission.</li>";
+        if($write_access != '0655') {
+            $error_mg[] = "<li>Cannot write ".$config_file_path." file. Please check ".$config_file_directory." folder permission. Please set your slims directory recursively in 655 mode for security resson with www-data or apache user is owner of slims directory</li>";
         }
 
 
@@ -257,7 +257,7 @@
         $error_mg[] = "<li>Could not create file ".$config_file_name."! Please check if the sysconfig.local.inc-sample.php file is exists</li>";
 			}
       else {
-        @chmod($config_file_path,0777);
+        @chmod($config_file_path,0655);
         $f = @fopen($config_file_path, "w+");
         if (@fwrite($f, $config_file) > 0) {
           $link = @mysqli_connect($database_host, $database_username, $database_password);
