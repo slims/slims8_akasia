@@ -178,7 +178,7 @@ if (!$reportView) {
 
     $criteria = 'm.member_id IS NOT NULL ';
     if (isset($_GET['id_name']) AND !empty($_GET['id_name'])) {
-        $id_name = $dbs->escape_string($_GET['id_name']);
+        $id_name = $dbs->escape_string(trim($_GET['id_name']));
         $criteria .= ' AND (m.member_id LIKE \'%'.$id_name.'%\' OR m.member_name LIKE \'%'.$id_name.'%\')';
     }
     if (isset($_GET['title']) AND !empty($_GET['title'])) {
