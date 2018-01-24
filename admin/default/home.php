@@ -86,7 +86,7 @@ $repair             = '';
 $is_repaired        = false;
 
 if ($_SESSION['uid'] === '1') {
-  $warnings[] = __('<strong><i>You are logged in as Super User. With great power comes great responsibility.</i></strong>');
+  $warnings[] = '<strong><i>'.__('You are logged in as Super User. With great power comes great responsibility.').'</i></strong>';
   if (isset ($_POST['do_repair'])) {
     if ($_POST['do_repair'] == 1) {
       while ($row = $query_of_tables->fetch_row()) {

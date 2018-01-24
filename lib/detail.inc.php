@@ -198,7 +198,7 @@ class detail
         }
         $_output .= '</td>';
         $_output .= '<td width="30%">';
-        if ($loan_stat_q->num_rows > 0) {
+	if ($loan_stat_q->num_rows > 0) {
             $loan_stat_d = $loan_stat_q->fetch_row();
             $_output .= '<b style="background-color: #f00; color: white; padding: 3px;">'.__('Currently On Loan (Due on').date($sysconf['date_format'], strtotime($loan_stat_d[0])).')</b>'; //mfc
         } else if ($copy_d['no_loan']) {

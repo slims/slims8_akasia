@@ -7,7 +7,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-11-16 21:50+0700\n"
 "PO-Revision-Date: 2017-03-22 13:21+0700\n"
-"Last-Translator: Arif Syamsudin Budi W. <buitenzorg812@yahoo.com>\n"
+"Last-Translator: Navis Kandar, Arif Syamsudin Budi W. <buitenzorg812@yahoo.com>\n"
 "Language-Team: Arie Nugraha; Hendro Wicaksono; Wardiyono <dicarve@yahoo.com; "
 "hendrowicaksono@yahoo.com; wynerst@gmail.com>\n"
 "Language: id_ID\n"
@@ -39,6 +39,10 @@ msgstr "Beranda depan"
 #: admin/admin_template/default/index_template.inc.php:99
 msgid "Help"
 msgstr "Bantuan"
+
+#: admin/default/home.php:89
+msgid "You are logged in as Super User. With great power comes great responsibility."
+msgtr "Anda masuk sebagai pengguna super, dengan kemampuan lebih diikuti dengan tanggung jawab yang besar."
 
 #: admin/chat.php:6
 msgid "Chat With Members"
