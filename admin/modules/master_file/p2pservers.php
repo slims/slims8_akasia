@@ -166,7 +166,7 @@ if (isset($_POST['detail']) OR (isset($_GET['action']) AND $_GET['action'] == 'd
   // Server name
   $form->addTextField('text', 'serverName', __('Server Name').'*', $rec_d['name'], 'style="width: 50%;" maxlength="255"');
   // Server URI
-  $form->addTextField('text', 'serverUri', __('URI').'*', $rec_d['uri'], 'style="width: 100%;"');
+  $form->addTextField('text', 'serverUri', __('URL').'*', $rec_d['uri'], 'style="width: 100%;"');
   // Server type
   $form->addSelectList('serverType', __('Server Type'), $serverType, $rec_d['server_type']);
 
@@ -186,13 +186,13 @@ if (isset($_POST['detail']) OR (isset($_GET['action']) AND $_GET['action'] == 'd
   if ($can_read AND $can_write) {
     $datagrid->setSQLColumn('ms.server_id',
       'ms.name AS \''.__('Server Name').'\'',
-      'ms.uri AS \''.__('URI').'\'',
+      'ms.uri AS \''.__('URL').'\'',
       'ms.server_type AS \''.__('SERVER').'\'',
       'ms.last_update AS \''.__('Last Update').'\'');
   } else {
     $datagrid->setSQLColumn(
       'ms.name AS \''.__('Server Name').'\'',
-      'ms.uri AS \''.__('URI').'\'',
+      'ms.uri AS \''.__('URL').'\'',
       'ms.server_type AS \''.__('SERVER').'\'',
       'ms.last_update AS \''.__('Last Update').'\'');
   }
