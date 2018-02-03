@@ -120,8 +120,8 @@ if (isset($_POST['detail']) OR (isset($_GET['action']) AND $_GET['action'] == 'd
         }
     } else {
         // no data
-        echo 'No Patternt available. <a class="notAJAX btn btn-primary openPopUp notIframe" href="'.MWB.'bibliography/pop_pattern.php?in=master" height="420px" title="'.__('Add new pattern').'">
-            <i class="glyphicon glyphicon-plus"></i> Add New Pattern</a>';
+        echo 'No Patternt available. <a class="notAJAX btn btn-primary openPopUp notIframe" href="'.MWB.'bibliography/pop_pattern.php?in=master" height="420px" title="'.__('Add New Pattern').'">
+            <i class="glyphicon glyphicon-plus"></i> '.__('Add New Pattern').'</a>';
     }
     echo '</table>';
 }
