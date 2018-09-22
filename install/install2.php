@@ -228,10 +228,16 @@
 		}
 
         // check for write access
-        $write_access = substr(sprintf('%o', fileperms($config_file_directory)), -4);
-        if($write_access != '0777') {
-            $error_mg[] = "<li>Cannot write ".$config_file_path." file. Please check ".$config_file_directory." folder permission.</li>";
-        }
+        // $write_access = substr(sprintf('%o', fileperms($config_file_directory)), -4);
+        // if($write_access != '0777') {
+        //    $error_mg[] = "<li>Cannot write ".$config_file_path." file. Please check ".$config_file_directory." folder permission.</li>";
+        // }
+	// For Linux platform
+        if (!preg_match("/(Windows)/i", php_uname('a'))) {
+	        if(!is_writable($config_file_directory)) {
+	            $error_mg[] = "<li>Cannot write ".$config_file_path." file. Please check ".$config_file_directory." folder permission.<br>Make sure \"Config\" folder is writeable with this command in your server : <br><strong style=\"font-weight: bold !important\">For Debian/Ubuntu derivative</strong><br><code style=\"background: #e6e6e6;padding:2px;margin: 10px 0px 0px 10px;\">sudo chown www-data -R config/</code><br><strong style=\"font-weight: bold !important\">For Fedora/RedHat/CentOS derivative</strong><br><code style=\"background: #e6e6e6;padding:2px;margin: 10px 0px 0px 10px;\">sudo chown apache -R config/</code><br><br><b class=\"text-danger\" style=\"font-weight: bold !important; color:#ff818d\">NB : you won't find issue with this if you are using ms-windows</b></li>";
+	        }
+    	}
 
 
 		$sql_update = " UPDATE user set
