@@ -105,6 +105,9 @@ class simbio_file_upload extends simbio
     if (empty($str_new_filename)) {
       $this->new_filename = basename($_FILES[$file_input_name]['name']);
     } else {
+      // Remove file extention in second parameter
+      // to prevent double extention
+      $str_new_filename   = substr($str_new_filename, 0, strpos($str_new_filename, "."));
       $this->new_filename = $str_new_filename.$file_ext;
     }
 
