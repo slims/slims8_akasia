@@ -802,7 +802,7 @@ CREATE TABLE IF NOT EXISTS `mst_topic` (
   `topic` varchar(50) collate utf8_unicode_ci NOT NULL,
   `topic_type` enum('t','g','n','tm','gr','oc') collate utf8_unicode_ci NOT NULL,
   `auth_list` varchar(20) collate utf8_unicode_ci default NULL,
-  `classification` VARCHAR( 50 ) COLLATE utf8_unicode_ci NOT NULL COMMENT  'Classification Code',
+  `classification` VARCHAR( 50 ) COLLATE utf8_unicode_ci NULL COMMENT  'Classification Code',
   `input_date` date default NULL,
   `last_update` date default NULL,
   PRIMARY KEY  (`topic_id`),

@@ -111,6 +111,37 @@ if (isset($_POST['doExport'])) {
         if ($all_data_q->num_rows > 0) {
           header('Content-type: text/plain');
           header('Content-Disposition: attachment; filename="senayan_biblio_export.csv"');
+
+          /* Modified by Drajat Hasan */
+          // Get name field
+          // Main Column
+          $col = $all_data_q->fetch_fields();
+          $col_buff = null;
+          foreach ($col as $val) {
+             if ($val->name != 'biblio_id') {
+               $column = $val->name;
+               $col_buff .= stripslashes($encloser.$column.$encloser);
+               $col_buff .= $sep;
+             }
+          }
+          /* Additional Column */
+          // Author
+          $col_buff .= stripslashes($encloser.'author_name'.$encloser);
+          $col_buff .= $sep;
+          // End Author
+          // Topic
+          $col_buff .= stripslashes($encloser.'topic'.$encloser);
+          $col_buff .= $sep;
+          // End Topic
+          // Item
+          $col_buff .= stripslashes($encloser.'item_code'.$encloser);
+          $col_buff .= $sep;
+          // End Item
+          /* Printout Column */
+          echo $col_buff;
+          echo $rec_sep;
+
+          // Set out data
           while ($biblio_d = $all_data_q->fetch_row()) {
               $buffer = null;
               foreach ($biblio_d as $idx => $fld_d) {

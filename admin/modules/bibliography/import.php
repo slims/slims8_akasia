@@ -122,97 +122,100 @@ if (isset($_POST['doImport'])) {
           // get an array of field
           $field = fgetcsv($file, $max_chars, $field_sep, $field_enc);
           if ($field) {
-              // strip escape chars from all fields
-              foreach ($field as $idx => $value) {
-                  $field[$idx] = str_replace('\\', '', trim($value));
-                  $field[$idx] = $dbs->escape_string($field[$idx]);
-              }
-              // strip leading field encloser if any
-              $title = preg_replace('@^\\\s*'.$field_enc.'@i', '', $field[0]);
-              $title = '\''.$title.'\'';
-              $gmd_id = utility::getID($dbs, 'mst_gmd', 'gmd_id', 'gmd_name', $field[1], $gmd_id_cache);
-              $edition = $field[2]?'\''.$field[2].'\'':'NULL';
-              $isbn_issn = $field[3]?'\''.$field[3].'\'':'NULL';
-              $publisher_id = utility::getID($dbs, 'mst_publisher', 'publisher_id', 'publisher_name', $field[4], $publ_id_cache);
-              $publish_year = $field[5]?'\''.$field[5].'\'':'NULL';
-              $collation = $field[6]?'\''.$field[6].'\'':'NULL';
-              $series_title = $field[7]?'\''.$field[7].'\'':'NULL';
-              $call_number = $field[8]?'\''.$field[8].'\'':'NULL';
-              $language_id = utility::getID($dbs, 'mst_language', 'language_id', 'language_name', $field[9], $lang_id_cache);
-              $language_id = '\''.$language_id.'\'';
-              $publish_place_id = utility::getID($dbs, 'mst_place', 'place_id', 'place_name', $field[10], $place_id_cache);
-              $classification = $field[11]?'\''.$field[11].'\'':'NULL';;
-              $notes = $field[12]?'\''.$field[12].'\'':'NULL';;
-              $image = $field[13]?'\''.$field[13].'\'':'NULL';
-              $sor = $field[14]?'\''.$field[14].'\'':'NULL';
-              // $authors = preg_replace('@\\\s*'.$field_enc.'$@i', '', $field[15]);
-              $authors = trim($field[15]);
-              $subjects = trim($field[16]);
-              $items = trim($field[17]);
-              // sql insert string
-              $sql_str = "INSERT IGNORE INTO biblio (title, gmd_id, edition,
-                  isbn_issn, publisher_id, publish_year,
-                  collation, series_title, call_number,
-                  language_id, publish_place_id, classification,
-                  notes, image, sor, input_date, last_update)
-                      VALUES ($title, $gmd_id, $edition,
-                      $isbn_issn, $publisher_id, $publish_year,
-                      $collation, $series_title, $call_number,
-                      $language_id, $publish_place_id, $classification,
-                      $notes, $image, $sor, $curr_datetime, $curr_datetime)";
-              // send query
-              $dbs->query($sql_str);
-              $biblio_id = $dbs->insert_id;
-              if (!$dbs->error) {
-                  $inserted_row++;
-                  // set authors
-                  if (!empty($authors)) {
-                      $biblio_author_sql = 'INSERT IGNORE INTO biblio_author (biblio_id, author_id, level) VALUES ';
-                      $authors = explode('><', $authors);
-                      foreach ($authors as $author) {
-                          $author = trim(str_replace(array('>', '<'), '', $author));
-                          $author_id = utility::getID($dbs, 'mst_author', 'author_id', 'author_name', $author, $author_id_cache);
-                          $biblio_author_sql .= " ($biblio_id, $author_id, 2),";
-                      }
-                      // remove last comma
-                      $biblio_author_sql = substr_replace($biblio_author_sql, '', -1);
-                      // execute query
-                      $dbs->query($biblio_author_sql);
-                      // echo $dbs->error;
+              // Skip column name
+              if ($field[0] != 'title') {
+                  // strip escape chars from all fields
+                  foreach ($field as $idx => $value) {
+                      $field[$idx] = str_replace('\\', '', trim($value));
+                      $field[$idx] = $dbs->escape_string($field[$idx]);
                   }
-                  // set topic
-                  if (!empty($subjects)) {
-                      $biblio_subject_sql = 'INSERT IGNORE INTO biblio_topic (biblio_id, topic_id, level) VALUES ';
-                      $subjects = explode('><', $subjects);
-                      foreach ($subjects as $subject) {
-                          $subject = trim(str_replace(array('>', '<'), '', $subject));
-                          $subject_id = utility::getID($dbs, 'mst_topic', 'topic_id', 'topic', $subject, $subject_id_cache);
-                          $biblio_subject_sql .= " ($biblio_id, $subject_id, 2),";
+                  // strip leading field encloser if any
+                  $title = preg_replace('@^\\\s*'.$field_enc.'@i', '', $field[0]);
+                  $title = '\''.$title.'\'';
+                  $gmd_id = utility::getID($dbs, 'mst_gmd', 'gmd_id', 'gmd_name', $field[1], $gmd_id_cache);
+                  $edition = $field[2]?'\''.$field[2].'\'':'NULL';
+                  $isbn_issn = $field[3]?'\''.$field[3].'\'':'NULL';
+                  $publisher_id = utility::getID($dbs, 'mst_publisher', 'publisher_id', 'publisher_name', $field[4], $publ_id_cache);
+                  $publish_year = $field[5]?'\''.$field[5].'\'':'NULL';
+                  $collation = $field[6]?'\''.$field[6].'\'':'NULL';
+                  $series_title = $field[7]?'\''.$field[7].'\'':'NULL';
+                  $call_number = $field[8]?'\''.$field[8].'\'':'NULL';
+                  $language_id = utility::getID($dbs, 'mst_language', 'language_id', 'language_name', $field[9], $lang_id_cache);
+                  $language_id = '\''.$language_id.'\'';
+                  $publish_place_id = utility::getID($dbs, 'mst_place', 'place_id', 'place_name', $field[10], $place_id_cache);
+                  $classification = $field[11]?'\''.$field[11].'\'':'NULL';;
+                  $notes = $field[12]?'\''.$field[12].'\'':'NULL';;
+                  $image = $field[13]?'\''.$field[13].'\'':'NULL';
+                  $sor = $field[14]?'\''.$field[14].'\'':'NULL';
+                  // $authors = preg_replace('@\\\s*'.$field_enc.'$@i', '', $field[15]);
+                  $authors = trim($field[15]);
+                  $subjects = trim($field[16]);
+                  $items = trim($field[17]);
+                  // sql insert string
+                  $sql_str = "INSERT IGNORE INTO biblio (title, gmd_id, edition,
+                      isbn_issn, publisher_id, publish_year,
+                      collation, series_title, call_number,
+                      language_id, publish_place_id, classification,
+                      notes, image, sor, input_date, last_update)
+                          VALUES ($title, $gmd_id, $edition,
+                          $isbn_issn, $publisher_id, $publish_year,
+                          $collation, $series_title, $call_number,
+                          $language_id, $publish_place_id, $classification,
+                          $notes, $image, $sor, $curr_datetime, $curr_datetime)";
+                  // send query
+                  $dbs->query($sql_str);
+                  $biblio_id = $dbs->insert_id;
+                  if (!$dbs->error) {
+                      $inserted_row++;
+                      // set authors
+                      if (!empty($authors)) {
+                          $biblio_author_sql = 'INSERT IGNORE INTO biblio_author (biblio_id, author_id, level) VALUES ';
+                          $authors = explode('><', $authors);
+                          foreach ($authors as $author) {
+                              $author = trim(str_replace(array('>', '<'), '', $author));
+                              $author_id = utility::getID($dbs, 'mst_author', 'author_id', 'author_name', $author, $author_id_cache);
+                              $biblio_author_sql .= " ($biblio_id, $author_id, 2),";
+                          }
+                          // remove last comma
+                          $biblio_author_sql = substr_replace($biblio_author_sql, '', -1);
+                          // execute query
+                          $dbs->query($biblio_author_sql);
+                          // echo $dbs->error;
                       }
-                      // remove last comma
-                      $biblio_subject_sql = substr_replace($biblio_subject_sql, '', -1);
-                      // execute query
-                      $dbs->query($biblio_subject_sql);
-                      // echo $dbs->error;
-                  }
-                  // items
-                  if (!empty($items)) {
-                      $item_sql = 'INSERT IGNORE INTO item (biblio_id, item_code) VALUES ';
-                      $item_array = explode('><', $items);
-                      foreach ($item_array as $item) {
-                          $item = trim(str_replace(array('>', '<'), '', $item));
-                          $item_sql .= " ($biblio_id, '$item'),";
+                      // set topic
+                      if (!empty($subjects)) {
+                          $biblio_subject_sql = 'INSERT IGNORE INTO biblio_topic (biblio_id, topic_id, level) VALUES ';
+                          $subjects = explode('><', $subjects);
+                          foreach ($subjects as $subject) {
+                              $subject = trim(str_replace(array('>', '<'), '', $subject));
+                              $subject_id = utility::getID($dbs, 'mst_topic', 'topic_id', 'topic', $subject, $subject_id_cache);
+                              $biblio_subject_sql .= " ($biblio_id, $subject_id, 2),";
+                          }
+                          // remove last comma
+                          $biblio_subject_sql = substr_replace($biblio_subject_sql, '', -1);
+                          // execute query
+                          $dbs->query($biblio_subject_sql);
+                          // echo $dbs->error;
                       }
-                      // remove last comma
-                      $item_sql = substr_replace($item_sql, '', -1);
-                      // execute query
-                      $dbs->query($item_sql);
+                      // items
+                      if (!empty($items)) {
+                          $item_sql = 'INSERT IGNORE INTO item (biblio_id, item_code) VALUES ';
+                          $item_array = explode('><', $items);
+                          foreach ($item_array as $item) {
+                              $item = trim(str_replace(array('>', '<'), '', $item));
+                              $item_sql .= " ($biblio_id, '$item'),";
+                          }
+                          // remove last comma
+                          $item_sql = substr_replace($item_sql, '', -1);
+                          // execute query
+                          $dbs->query($item_sql);
+                      }
                   }
-              }
 
-              // create biblio index
-              if ($sysconf['index']['type'] == 'index') {
-                $indexer->makeIndex($biblio_id);
+                  // create biblio index
+                  if ($sysconf['index']['type'] == 'index') {
+                    $indexer->makeIndex($biblio_id);
+                  }
               }
           }
           $row_count++;
