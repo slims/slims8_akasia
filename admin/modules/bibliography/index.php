@@ -317,7 +317,7 @@ if (isset($_POST['saveData']) AND $can_read AND $can_write) {
           }
         }
         // insert custom data
-        if ($custom_data) {
+        if (isset($custom_data)) {
           $custom_data['biblio_id'] = $last_biblio_id;
           @$sql_op->insert('biblio_custom', $custom_data);
         }
