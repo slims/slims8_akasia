@@ -46,7 +46,7 @@ define('PASSWD_NOT_MATCH', -2);
 define('CANT_UPDATE_PASSWD', -3);
 
 if (isset($_GET['destination'])) {
-    $destination = $_GET['destination'];
+    $destination = strip_tags($_GET['destination']);
     if (isset($_GET['fid'])) {
         $destination .= '&fid='.$_GET['fid'];
     }
