@@ -27,6 +27,9 @@ if (!defined('INDEX_AUTH')) {
     die("can not access this file directly");
 }
 
+// require composer library
+if (file_exists(realpath(dirname(__FILE__)) . '/vendor/autoload.php')) require 'vendor/autoload.php';
+
 // be sure that magic quote is off
 @ini_set('magic_quotes_gpc', false);
 @ini_set('magic_quotes_runtime', false);
@@ -45,7 +48,7 @@ if (get_magic_quotes_gpc()) {
   $_REQUEST = array_map('stripslashes_deep', $_REQUEST);
 }
 // turn off all error messages for security reason
-@ini_set('display_errors', false);
+@ini_set('display_errors', true);
 // check if safe mode is on
 if ((bool) ini_get('safe_mode')) {
     define('SENAYAN_IN_SAFE_MODE', 1);
@@ -56,7 +59,7 @@ if ((bool) ini_get('safe_mode')) {
 @date_default_timezone_set('Asia/Jakarta');
 
 // senayan version
-define('SENAYAN_VERSION', 'SLiMS 8.3.1 (Akasia)');
+define('SENAYAN_VERSION', 'SLiMS 8.5 (Akasia)');
 
 // senayan session cookies name
 define('COOKIES_NAME', 'SenayanAdmin');
@@ -235,6 +238,9 @@ $sysconf['webcam'] = 'flex'; //enabled this feature by changed to 'html5' or 'fl
 /* SCANNER feature */
 $sysconf['scanner'] = false;
 
+/* Barcode Reader */
+$sysconf['barcode_reader'] = true;
+
 // Zend Barcode Engine
 $sysconf['zend_barcode_engine'] = true;
 // Zend Barcode Engine Encoding selection
@@ -328,6 +334,7 @@ $sysconf['mimetype']['flv'] = 'video/x-flv';
 $sysconf['mimetype']['mp4'] = 'video/mp4';
 $sysconf['mimetype']['xml'] = 'text/xml';
 $sysconf['mimetype']['mrc'] = 'text/marc';
+$sysconf['mimetype']['txt'] = 'text/plain';
 
 /* PRICE CURRENCIES SETTING */
 $sysconf['currencies'] = array( array('0', 'NONE'), 'Rupiah', 'USD', 'Euro', 'DM', 'Pounds', 'Yen', 'Won', 'Yuan', 'SGD', 'Bath', 'Ruppee', 'Taka', 'AUD');
@@ -338,7 +345,7 @@ $sysconf['reserve_expire_periode'] = 7;
 /* CONTENT */
 $sysconf['library_name'] = 'Senayan';
 $sysconf['library_subname'] = 'Open Source Library Management System';
-$sysconf['page_footer'] = ' SENAYAN Library Automation System (SLiMS) - SLiMS Developer Community - Released Under GNU GPL License';
+$sysconf['page_footer'] = ' Senayan Library Management System (SLiMS). Released Under GNU GPL License.<br>Made with love by SLiMS Developer Community';
 
 /* HTTPS Setting */
 $sysconf['https_enable'] = false;
@@ -356,7 +363,6 @@ if (!file_exists($sysconf['template']['dir'].'/'.$sysconf['template']['theme'].'
 }
 
 $sysconf['pdf']['viewer'] = 'pdfjs'; # 'pdfjs'
-$sysconf['allow_pdf_download'] = true;
 
 /**
  * UCS global settings
@@ -383,6 +389,12 @@ $sysconf['ucs']['name'] = 'SLiMS Library';
 $sysconf['z3950_max_result'] = 50;
 $sysconf['z3950_source'][1] = array('uri' => 'z3950.loc.gov:7090/voyager', 'name' => 'Library of Congress Voyager');
 $sysconf['z3950_SRU_source'][1] = array('uri' => 'http://z3950.loc.gov:7090/voyager', 'name' => 'Library of Congress SRU Voyager');
+
+/**
+ * MARC copy cataloguing sources
+ */
+$sysconf['marc_SRU_source'][1] = array('uri' => 'http://opac.perpusnas.go.id/sru.aspx', 'name' => 'Perpustakaan Nasional RI');
+
 
 /**
  * Peer to peer server config
@@ -441,6 +453,20 @@ $sysconf['index']['sphinx_opts'] = array(
 	'select' => null, 'limit' => 20,
     'max_limit' => 100000, // must be less or same with max_matches in sphinx.conf
 	'ranker' => null);
+
+$sysconf['index']['engine']['enable'] = FALSE;
+$sysconf['index']['engine']['type'] = 'es'; // value can be 'solr' OR 'es' for ElasticSearch
+$sysconf['index']['engine']['solr_opts'] = array(
+    'host' => 'http://172.17.0.4',
+    'port' => 8983,
+    'collection' => 'slims' // name of collection in Solr
+  );
+
+$sysconf['index']['engine']['es_opts'] = array(
+  'hosts' => ['localhost:9200'],
+  'index' => 'slims' // name of index in ElasticSearch
+);
+
 
 /**
  * Captcha Settings
@@ -513,7 +539,7 @@ $sysconf['OAI']['MetadataFormats']['Dublin Core'] = array(
   'namespace' => 'http://www.openarchives.org/OAI/2.0/oai_dc/');
 
 // Search clustering
-$sysconf['enable_search_clustering'] = true;
+$sysconf['enable_search_clustering'] = false;
 
 // comment
 $sysconf['comment']['enable'] =  true;
@@ -537,7 +563,7 @@ $sysconf['chat_system']['enabled']    	= false;
 $sysconf['chat_system']['vendors']    	= 'phpwebscoketchat';
 $sysconf['chat_system']['opac']       	= false;
 $sysconf['chat_system']['librarian']  	= false;
-$sysconf['chat_system']['server']  		 = '127.0.0.1';
+$sysconf['chat_system']['server']  		= '127.0.0.1';
 $sysconf['chat_system']['server_port']  = 9300;
 
 /* NEWS */

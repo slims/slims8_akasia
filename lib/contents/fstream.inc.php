@@ -40,7 +40,7 @@ $file_q = $dbs->query($sql_q);
 $file_d = $file_q->fetch_assoc();
 
 if ($file_q->num_rows > 0) {
-  $file_loc_url = SWB.'index.php?p=fstream-pdf&fid='.$fileID.'&bid='.$biblioID;
+  $file_loc_url = SWB.'index.php?p=fstream&fid='.$fileID.'&bid='.$biblioID;
   $file_loc = REPOBS.( $file_d['file_dir']?$file_d['file_dir'].'/':'' ).$file_d['file_name'];
   if (file_exists($file_loc)) {
     // check access limit
@@ -62,7 +62,7 @@ if ($file_q->num_rows > 0) {
 
       if ($file_d['mime_type'] == 'application/pdf') {
         if ($sysconf['pdf']['viewer'] == 'pdfjs') {
-          // header('Location: ./js/pdfjs/web/viewer.php?file=../../../repository/'.$file_d['file_dir'].'/'.$file_d['file_name']);
+          $file_loc_url = SWB.'index.php?p=fstream-pdf&fid='.$fileID.'&bid='.$biblioID;
           require './js/pdfjs/web/viewer.php';
           exit();
         }

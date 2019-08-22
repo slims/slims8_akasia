@@ -52,31 +52,57 @@ if (isset($_SESSION['memberID']) AND !empty($_SESSION['memberID'])) {
     include MDLBS.'circulation/circulation_action.php';
 } else {
 ?>
-<fieldset class="menuBox">
+<div class="menuBox">
   <div class="menuBoxInner circulationIcon">
     <div class="per_title">
 	    <h2><?php echo __('Circulation'); ?></h2>
     </div>
+    <div class="infoBox">
+        <?php echo __('CIRCULATION - Insert a member ID to start transaction with keyboard or barcode reader'); ?>
+    </div>
     <div class="sub_section">
-	    <div class="action_button">
-		    <?php echo __('CIRCULATION - Insert a member ID to start transaction with keyboard or barcode reader'); ?>
-	    </div>
-      <form id="startCirc" action="<?php echo MWB; ?>circulation/circulation_action.php" method="post" style="display: inline;">
-      <?php echo __('Member ID'); ?> :
+      <form id="startCirc" action="<?php echo MWB; ?>circulation/circulation_action.php" method="post" class="form-inline">
+      <?php echo __('Member ID'); ?>
       <?php
       // create AJAX drop down
       $ajaxDD = new simbio_fe_AJAX_select();
       $ajaxDD->element_name = 'memberID';
-      $ajaxDD->element_css_class = 'ajaxInputField';
+      $ajaxDD->element_css_class = 'form-control col-3 ajaxInputField';
       $ajaxDD->handler_URL = MWB.'membership/member_AJAX_response.php';
       echo $ajaxDD->out();
       ?>
-      <input type="submit" value="<?php echo __('Start Transaction'); ?>" name="start" id="start" class="button" />
+      <input type="submit" value="<?php echo __('Start Transaction'); ?>" name="start" id="start" class="s-btn btn btn-default" />
+      <?php if($sysconf['barcode_reader']) : ?>
+      <a class="s-btn btn btn-default notAJAX" id="barcodeReader" href="<?php echo MWB.'circulation/barcode_reader.php?mode=membership' ?>">Open Barcode Reader - Experimental (F8)</a>
+      <?php endif ?>
       </form>
     </div>
   </div>
-</fieldset>
-<?php
+</div>
+<?php 
+  if($sysconf['barcode_reader']) {
+    ob_start();
+    require SB.'admin/'.$sysconf['admin_template']['dir'].'/barcodescannermodal.tpl.php';
+    $barcode = ob_get_clean();
+    echo $barcode;
+  ?>
+  <script type="text/javascript">
+    $('#barcodeReader').click(function(e){
+      e.preventDefault();
+      var url = $(this).attr('href');
+      $('#iframeBarcodeReader').attr('src', url);
+      $('#barcodeModal').modal('show');
+    });
+
+    $(document.body).bind('keyup', this, function(e){
+      // F8
+      if(e.keyCode == 119) {
+        $('#barcodeReader').click();
+      }
+    });
+    parent.$(".modal-backdrop").remove();
+  </script>
+  <?php }
     if (isset($_POST['finishID'])) {
       $msg = str_ireplace('{member_id}', $_POST['finishID'], __('Transaction with member {member_id} is completed'));
       echo '<div class="infoBox">'.$msg.'</div>';

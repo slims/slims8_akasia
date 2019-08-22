@@ -86,6 +86,7 @@ if (isset($_POST['save']) AND (isset($_POST['topicID']) OR trim($_POST['search_s
                 // adding new topic
                 $topic_data['topic'] = $subject;
                 $topic_data['topic_type'] = $_POST['type'];
+                $topic_data['classification'] = '';
                 $topic_data['input_date'] = date('Y-m-d');
                 $topic_data['last_update'] = date('Y-m-d');
                 // insert new topic to topic master table
@@ -97,12 +98,12 @@ if (isset($_POST['save']) AND (isset($_POST['topicID']) OR trim($_POST['search_s
         $data['level'] = intval($_POST['level']);
 
         if ($sql_op->insert('biblio_topic', $data)) {
+            utility::jsToastr('Subject', __('Topic succesfully updated!'), 'success');
             echo '<script type="text/javascript">';
-            echo 'alert(\'' . addslashes(__('Topic succesfully updated!')) . '\');';
             echo 'parent.setIframeContent(\'topicIframe\', \''.MWB.'bibliography/iframe_topic.php?biblioID='.$data['biblio_id'].'\');';
             echo '</script>';
         } else {
-            utility::jsAlert(__('Subject FAILED to Add. Please Contact System Administrator')."\n".$sql_op->error);
+            utility::jsToastr('Subject', __('Subject FAILED to Add. Please Contact System Administrator')."\n".$sql_op->error, 'error');
         }
     } else {
         if (!empty($_POST['topicID'])) {
@@ -117,6 +118,7 @@ if (isset($_POST['save']) AND (isset($_POST['topicID']) OR trim($_POST['search_s
                 // adding new topic
                 $topic_data['topic'] = $subject;
                 $topic_data['topic_type'] = $_POST['type'];
+                $topic_data['classification'] = '';
                 $topic_data['input_date'] = date('Y-m-d');
                 $topic_data['last_update'] = date('Y-m-d');
                 // insert new topic to topic master table
@@ -126,8 +128,8 @@ if (isset($_POST['save']) AND (isset($_POST['topicID']) OR trim($_POST['search_s
             $_SESSION['biblioTopic'][$last_id] = array($last_id, intval($_POST['level']));
         }
 
+        utility::jsToastr('Subject', __('Subject added!'), 'success');
         echo '<script type="text/javascript">';
-        echo 'alert(\''.__('Subject added!').'\');';
         echo 'parent.setIframeContent(\'topicIframe\', \''.MWB.'bibliography/iframe_topic.php\');';
         echo '</script>';
     }
@@ -137,20 +139,19 @@ if (isset($_POST['save']) AND (isset($_POST['topicID']) OR trim($_POST['search_s
 
 <div class="popUpForm">
 <form name="mainForm" action="pop_topic.php?biblioID=<?php echo $biblioID; ?>" method="post">
-<div>
-    <strong><?php echo __('Add Subject'); ?></strong>
-    <hr />
-    <form name="searchTopic" method="post" style="display: inline;">
+<strong><?php echo __('Add Subject'); ?></strong>
+<hr />
+<div class="form-inline">
     <?php
     $ajax_exp = "ajaxFillSelect('../../AJAX_vocabolary_control.php', 'mst_topic', 'topic_id:topic:topic_type', 'topicID', $('#search_str').val())";
-    ?>
-    <?php echo __('Keyword'); ?> : <input type="text" name="search_str" id="search_str" style="width: 30%;" oninput="<?php echo $ajax_exp; ?>" />
-    <select name="type" style="width: 20%;"><?php
+    ?>    
+    <input type="text" name="search_str" class="form-control col" id="search_str" placeholder="<?php echo __('Keyword'); ?>" oninput="<?php echo $ajax_exp; ?>" />
+    <select name="type" class="form-control col"><?php
     foreach ($sysconf['subject_type'] as $type_id => $type) {
         echo '<option value="'.$type_id.'">'.$type.'</option>';
     }
     ?></select>
-    <select name="level" style="width: 20%;">
+    <select name="level" class="form-control col">
     <?php
     echo '<option value="1">' . __('Primary') . '</option>';
     echo '<option value="2">' . __('Additional') . '</option>';
@@ -158,11 +159,11 @@ if (isset($_POST['save']) AND (isset($_POST['topicID']) OR trim($_POST['search_s
     </select>
 </div>
 <div class="popUpSubForm">
-    <ul id="topicID">
+    <ul id="topicID" class="form-control">
         <li><?php echo __('Type to search for existing topics or to add a new one'); ?></li>
     </ul>
     <?php if ($biblioID) { echo '<input type="hidden" name="biblioID" value="'.$biblioID.'" />'; } ?>
-    <input type="submit" name="save" value="<?php echo __('Insert To Bibliography'); ?>" class="popUpSubmit btn btn-primary" />
+    <input type="submit" name="save" value="<?php echo __('Insert To Bibliography'); ?>" class="s-btn btn btn-primary popUpSubmit" />
 </div>
 </form>
 <script type="text/javascript">

@@ -94,9 +94,9 @@ if (isset($_POST['itemID']) AND !empty($_POST['itemID']) AND isset($_POST['itemA
   sleep(2);
   if (isset($limit_reach)) {
     $msg = str_replace('{max_print}', $max_print, __('Selected items NOT ADDED to print queue. Only {max_print} can be printed at once'));
-    utility::jsAlert($msg);
+    utility::jsToastr('Item Barcode', $msg, 'warning');
   } else {
-    utility::jsAlert(__('Selected items added to print queue'));
+    utility::jsToastr('Item Barcode', __('Selected items added to print queue'), 'success');
   }
   exit();
 }
@@ -105,7 +105,7 @@ if (isset($_POST['itemID']) AND !empty($_POST['itemID']) AND isset($_POST['itemA
 if (isset($_GET['action']) AND $_GET['action'] == 'clear') {
   // update print queue count object
   echo '<script type="text/javascript">top.$(\'#queueCount\').html(\'0\');</script>';
-  utility::jsAlert(__('Print queue cleared!'));
+  utility::jsToastr('Item Barcode', __('Print queue cleared!'), 'success');
   unset($_SESSION['barcodes']);
   exit();
 }
@@ -114,11 +114,11 @@ if (isset($_GET['action']) AND $_GET['action'] == 'clear') {
 if (isset($_GET['action']) AND $_GET['action'] == 'print') {
   // check if label session array is available
   if (!isset($_SESSION['barcodes'])) {
-    utility::jsAlert(__('There is no data to print!'));
+    utility::jsToastr('Item Barcode', __('There is no data to print!'), 'error');
     die();
   }
   if (count($_SESSION['barcodes']) < 1) {
-    utility::jsAlert(__('There is no data to print!'));
+    utility::jsToastr('Item Barcode', __('There is no data to print!'), 'error');
     die();
   }
 
@@ -200,38 +200,38 @@ if (isset($_GET['action']) AND $_GET['action'] == 'print') {
     echo '<script type="text/javascript">parent.$(\'#queueCount\').html(\'0\');</script>';
     // open result in window
     echo '<script type="text/javascript">top.$.colorbox({href: "'.SWB.FLS.'/'.$print_file_name.'", iframe: true, width: 800, height: 500, title: "'.__('Item Barcodes Printing').'"})</script>';
-  } else { utility::jsAlert(str_replace('{directory}', SB.FLS, __('ERROR! Item barcodes failed to generate, possibly because {directory} directory is not writable'))); }
+  } else { utility::jsToastr('Item Barcode', str_replace('{directory}', SB.FLS, __('ERROR! Item barcodes failed to generate, possibly because {directory} directory is not writable')), 'error'); }
   exit();
 }
 
 ?>
-<fieldset class="menuBox">
+<div class="menuBox">
 <div class="menuBoxInner printIcon">
   <div class="per_title">
 	  <h2><?php echo __('Item Barcodes Printing'); ?></h2>
   </div>
   <div class="sub_section">
 	  <div class="btn-group">
-      <a target="blindSubmit" href="<?php echo MWB; ?>bibliography/item_barcode_generator.php?action=clear" class="notAJAX btn btn-default"><i class="glyphicon glyphicon-trash"></i>&nbsp;<?php echo __('Clear Print Queue'); ?></a>
-      <a target="blindSubmit" href="<?php echo MWB; ?>bibliography/item_barcode_generator.php?action=print" class="notAJAX btn btn-default"><i class="glyphicon glyphicon-print"></i>&nbsp;<?php echo __('Print Barcodes for Selected Data');?></a>
-	    <a href="<?php echo MWB; ?>bibliography/pop_print_settings.php?type=barcode" class="notAJAX btn btn-default openPopUp" title="<?php echo __('Change print barcode settings'); ?>"><i class="glyphicon glyphicon-wrench"></i></a>
+      <a target="blindSubmit" href="<?php echo MWB; ?>bibliography/item_barcode_generator.php?action=clear" class="notAJAX btn btn-default"> <?php echo __('Clear Print Queue'); ?></a>
+      <a target="blindSubmit" href="<?php echo MWB; ?>bibliography/item_barcode_generator.php?action=print" class="notAJAX btn btn-default"><?php echo __('Print Barcodes for Selected Data');?></a>
+	    <a href="<?php echo MWB; ?>bibliography/pop_print_settings.php?type=barcode" class="notAJAX btn btn-default openPopUp" width="780" height="500" title="<?php echo __('Change print barcode settings'); ?>"><?php echo __('Change print barcode settings'); ?></a>
 	  </div>
-    <form name="search" action="<?php echo MWB; ?>bibliography/item_barcode_generator.php" id="search" method="get" style="display: inline;"><?php echo __('Search'); ?> :
-    <input type="text" name="keywords" size="30" />
+    <form name="search" action="<?php echo MWB; ?>bibliography/item_barcode_generator.php" id="search" method="get" class="form-inline"><?php echo __('Search'); ?> 
+    <input type="text" name="keywords" class="form-control col-md-3" />
     <input type="submit" id="doSearch" value="<?php echo __('Search'); ?>" class="btn btn-default" />
     </form>
   </div>
   <div class="infoBox">
   <?php
-  echo __('Maximum').' <font style="color: #f00">'.$max_print.'</font> '.__('records can be printed at once. Currently there is').' ';
+  echo __('Maximum').' <strong class="text-danger">'.$max_print.'</strong> '.__('records can be printed at once. Currently there is').' ';
   if (isset($_SESSION['barcodes'])) {
-    echo '<font id="queueCount" style="color: #f00">'.count($_SESSION['barcodes']).'</font>';
-  } else { echo '<font id="queueCount" style="color: #f00">0</font>'; }
+    echo '<strong id="queueCount" class="text-danger">'.count($_SESSION['barcodes']).'</strong>';
+  } else { echo '<strong id="queueCount" class="text-danger">0</strong>'; }
   echo ' '.__('in queue waiting to be printed.');
   ?>
   </div>
 </div>
-</fieldset>
+</div>
 <?php
 /* search form end */
 
@@ -282,7 +282,7 @@ if (isset($criteria)) {
   $datagrid->setSQLcriteria('('.$criteria['sql_criteria'].')');
 }
 // set table and table header attributes
-$datagrid->table_attr = 'align="center" id="dataList" cellpadding="5" cellspacing="0"';
+$datagrid->table_attr = 'id="dataList" class="s-table table"';
 $datagrid->table_header_attr = 'class="dataListHeader" style="font-weight: bold;"';
 // edit and checkbox property
 $datagrid->edit_property = false;

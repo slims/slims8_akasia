@@ -60,8 +60,17 @@ if ($stk_query->num_rows < 1) {
     if (isset($_GET['view']) AND $_GET['view']) {
         $view = trim($_GET['view']);
     }
+    // Include Barcode Scanner
+    if($sysconf['barcode_reader']) {
+        ob_start();
+        require SB.'admin/'.$sysconf['admin_template']['dir'].'/barcodescannermodal.tpl.php';
+        $barcode = ob_get_clean();
+        echo $barcode;
+        echo '<script>parent.$(".modal-backdrop").remove(); </script>';
+    } 
+
 ?>
-    <fieldset class="menuBox">
+    <div class="menuBox">
     <div class="menuBoxInner stockTakeIcon">
       <div class="per_title">
         <h2><?php
@@ -70,26 +79,59 @@ if ($stk_query->num_rows < 1) {
         } else {
           echo __('Current Missing/Lost Items');
         }
-        ?></h2>
+        ?>
+        </h2>
+      </div>
+      <div class="infoBox">
+      <?php
+      if ($view != 'm') { ?>
+      <form action="<?php echo MWB ?>stock_take/stock_take_action.php" method="post" target="stockTakeAction" name="stockTakeForm" class="notAJAX" >
+          <div class="form-group">
+              <label><?php echo __('Item Code') ?></label>
+              <div class="form-row">
+                  <input type="text" id="itemCode" name="itemCode" size="30" class="form-control col-2" autofocus />
+                  <input type="submit" value="<?php echo __('Change Status') ?>" class="btn btn-primary" id="checkItem" />
+                  <?php if($sysconf['barcode_reader']) : ?>
+                  &nbsp;<a class="s-btn btn btn-default notAJAX" id="barcodeReader" href="<?php echo MWB.'circulation/barcode_reader.php?mode=stockopname' ?>">Open Barcode Reader - Experimental (F8)</a>
+                  <?php endif ?>
+              </div>
+          </div>
+          <div class="form-row">
+              <label><?php echo __('List stocktakes by') ?></label>
+              <div class="form-check">
+                  <input type="radio" id="listShow" name="listShow" value="1" onclick="$(\'mainContent\').simbioAJAX(\'<?php echo MWB ?>stock_take/current.php?listShow=1\')" <?php echo ( isset($show_only_current)?'checked="checked"':'' ) ?> />
+                  <label for="listShow"><?php echo __('Current User Only') ?></label>
+              </div>
+              <div class="form-check">
+                  <input type="radio" id="listShow2" name="listShow" value="0" onclick="$(\'mainContent\').simbioAJAX(\'<?php echo MWB ?>stock_take/current.php?listShow=0\')" <?php echo ( isset($show_only_current)?'':'checked="checked"' ) ?> />
+                  <label for="listShow2"><?php echo __('All User') ?></label>
+              </div>
+          </div>
+          <iframe name="stockTakeAction" style="display: none; width: 0; height: 0; visibility: hidden;"></iframe></div>
+          <?php if($sysconf['barcode_reader']) : ?>
+          <script type="text/javascript">
+              $('#barcodeReader').click(function(e){
+                  e.preventDefault();
+                  var url = $(this).attr('href');
+                  parent.$('#iframeBarcodeReader').attr('src', url);
+                  parent.$('#barcodeModal').modal('show');
+              });
+          </script>
+          <?php endif ?>
+      </form>
+      <?php } ?>
       </div>
       <div class="sub_section">
-      <?php
-      if ($view != 'm') {
-        echo '<form name="stockTakeForm" class="notAJAX" action="'.MWB.'stock_take/stock_take_action.php" target="stockTakeAction" method="post" style="display: inline;">
-          <div><div style="width: 140px; float: left;">'.__('Item Code').':</div><input type="text" id="itemCode" name="itemCode" size="30" autofocus /> <input type="submit" value="'.__('Change Status').'" class="btn btn-default" /></div>
-          <div style="margin-top: 3px;"><div style="width: 140px; float: left;">'.__('List stocktakes by').':</div>
-          <input type="radio" id="listShow" name="listShow" value="1" onclick="$(\'mainContent\').simbioAJAX(\''.MWB.'stock_take/current.php?listShow=1\')" '.( isset($show_only_current)?'checked="checked"':'' ).' /> '.__('Current User Only').'
-          <input type="radio" id="listShow2" name="listShow" value="0" onclick="$(\'mainContent\').simbioAJAX(\''.MWB.'stock_take/current.php?listShow=0\')" '.( isset($show_only_current)?'':'checked="checked"' ).' /> '.__('All User').'
-          <iframe name="stockTakeAction" style="width: 0; height: 0; visibility: hidden;"></iframe></div>
-          </form>';
-      }
-      ?>
-      <form name="search" id="search" action="<?php echo MWB; ?>stock_take/current.php" method="get" style="display: inline;">
-      <div style="margin-top: 3px;"><div style="width: 90px; float: left;"><?php echo __('Search'); ?> : </div><input type="text" name="keywords" size="30" /> <input type="hidden" name="view" value="<?php echo $view; ?>" /> <input type="submit" id="doSearch" value="<?php echo __('Search'); ?>" class="btn btn-default" /></div>
-      </form>
+        <form name="search" id="search" action="<?php echo MWB; ?>stock_take/current.php" method="get" class="form-inline">
+          <div class="form-group">
+            <label><?php echo __('Search'); ?> </label>
+            <input type="text" name="keywords" class="form-control" />
+            <input type="hidden" name="view" value="<?php echo $view; ?>" />
+            <input type="submit" id="doSearch" value="<?php echo __('Search'); ?>" class="btn btn-default" />
+          </div>
+        </form>
       </div>
     </div>
-    </fieldset>
     <!-- give focus to itemCode text field -->
     <script type="text/javascript">
     //Form.Element.focus('itemCode');
@@ -139,7 +181,7 @@ if ($stk_query->num_rows < 1) {
     $datagrid->setSQLCriteria($criteria);
 
     // set table and table header attributes
-    $datagrid->table_attr = 'align="center" id="dataList" cellpadding="5" cellspacing="0"';
+    $datagrid->table_attr = 'id="dataList" class="s-table table"';
     $datagrid->table_header_attr = 'class="dataListHeader" style="font-weight: bold;"';
     // set delete proccess URL
     $datagrid->delete_URL = $_SERVER['PHP_SELF'];

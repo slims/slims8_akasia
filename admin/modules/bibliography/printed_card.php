@@ -89,18 +89,18 @@ if (isset($_POST['itemID']) AND !empty($_POST['itemID']) AND isset($_POST['itemA
     }
     if (isset($limit_reach)) {
         $msg = str_replace('{max_print}', $max_print, __('Selected items NOT ADDED to print queue. Only {max_print} can be printed at once')); //mfc
-        utility::jsAlert($msg);
+        utility::jsToastr(__('Print Catalog Format'), $msg, 'warning');
     } else {
         // update print queue count object
         echo '<script type="text/javascript">parent.$(\'#queueCount\').html(\''.$print_count.'\');</script>';
-        utility::jsAlert(__('Selected items added to print queue'));
+        utility::jsToastr(__('Print Catalog Format'), __('Selected items added to print queue'), 'success');
     }
     exit();
 }
 
 // clean print queue
 if (isset($_GET['action']) AND $_GET['action'] == 'clear') {
-    utility::jsAlert(__('Print queue cleared!'));
+    utility::jsToastr(__('Print Catalog Format'), __('Print queue cleared!'), 'success');
     echo '<script type="text/javascript">parent.$(\'#queueCount\').html(\'0\');</script>';
     unset($_SESSION['cards']);
     exit();
@@ -110,7 +110,7 @@ if (isset($_GET['action']) AND $_GET['action'] == 'clear') {
 if (isset($_GET['action']) AND $_GET['action'] == 'print') {
     // check if label session array is available
     if (!isset($_SESSION['cards']['item']) && !isset($_SESSION['cards']['biblio'])) {
-        utility::jsAlert(__('There is no data to print!'));
+        utility::jsToastr(__('Print Catalog Format'), __('There is no data to print!'), 'error');
         die();
     }
 
@@ -276,24 +276,25 @@ if (isset($_GET['action']) AND $_GET['action'] == 'print') {
         echo '<script type="text/javascript">parent.$(\'#queueCount\').html(\'0\');</script>';
         // open result in new window
         echo '<script type="text/javascript">top.$.colorbox({href: "'.SWB.FLS.'/'.$print_file_name.'", iframe: true, width: 800, height: 500, title: "'.__('Catalog Printing').'"})</script>';
-    } else { utility::jsAlert(str_replace('{directory}', SB.FLS, __('ERROR! Catalog card failed to generate, possibly because {directory} directory is not writable'))); }
+    } else { utility::jsToastr(__('Print Catalog Format'), str_replace('{directory}', SB.FLS, __('ERROR! Catalog card failed to generate, possibly because {directory} directory is not writable')), 'error'); }
     exit();
 }
 
 /* search form */
 ?>
-<fieldset class="menuBox">
+<div class="menuBox">
 <div class="menuBoxInner printIcon">
 	<div class="per_title">
     <h2><?php echo __('Print Catalog Format'); ?></h2>
     </div>
 	<div class="sub_section">
     <div class="btn-group">
-    <a target="blindSubmit" href="<?php echo MWB; ?>bibliography/printed_card.php?action=clear" class="notAJAX btn btn-default"><i class="glyphicon glyphicon-trash"></i>&nbsp;<?php echo __('Clear Print Queue'); ?></a>
-	  <a target="blindSubmit" href="<?php echo MWB; ?>bibliography/printed_card.php?action=print" class="notAJAX btn btn-default"><i class="glyphicon glyphicon-print"></i>&nbsp;<?php echo __('Print Catalog for Selected Data'); ?></a>
+        <a target="blindSubmit" href="<?php echo MWB; ?>bibliography/printed_card.php?action=clear" class="notAJAX btn btn-default"><?php echo __('Clear Print Queue'); ?></a>
+        <a target="blindSubmit" href="<?php echo MWB; ?>bibliography/printed_card.php?action=print" class="notAJAX btn btn-default"><?php echo __('Print Catalog for Selected Data'); ?></a>
 	</div>
-    <form name="search" action="<?php echo MWB; ?>bibliography/printed_card.php" id="search" method="get" style="display: inline;"><?php echo __('Search'); ?> :
-    <input type="text" name="keywords" size="30" />
+    <form name="search" action="<?php echo MWB; ?>bibliography/printed_card.php" id="search" method="get" class="form-inline">
+    <?php echo __('Search'); ?>
+    <input type="text" name="keywords" class="form-control col-md-3" />
     <input type="submit" id="doSearch" value="<?php echo __('Search'); ?>" class="btn btn-default" />
     </form>
     </div>
@@ -307,7 +308,7 @@ if (isset($_GET['action']) AND $_GET['action'] == 'print') {
         ?>
     </div>
 </div>
-</fieldset>
+</div>
 <?php
 /* search form end */
 
@@ -368,7 +369,7 @@ if (isset($criteria)) {
 $datagrid->sql_group_by = "biblio.biblio_id";
 
 // set table and table header attributes
-$datagrid->table_attr = 'align="center" id="dataList" cellpadding="5" cellspacing="0"';
+$datagrid->table_attr = 'id="dataList" class="s-table table"';
 $datagrid->table_header_attr = 'class="dataListHeader" style="font-weight: bold;"';
 // edit and checkbox property
 $datagrid->edit_property = false;

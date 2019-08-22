@@ -78,8 +78,8 @@ function confirmProcess(int_biblio_id, int_item_id)
 if (isset($_GET['removesess'])) {
   $idx = $_GET['removesess'];
   unset($_SESSION['biblioAuthor'][$idx]);
+  utility::jsToastr('Author', __('Author succesfully removed!'), 'success');
   echo '<script type="text/javascript">';
-  echo 'alert(\''.__('Author succesfully removed!').'\');';
   echo 'location.href = \'iframe_author.php\';';
   echo '</script>';
 }
@@ -89,8 +89,8 @@ if (isset($_POST['remove'])) {
   $bid = (integer)$_POST['bid'];
   $sql_op = new simbio_dbop($dbs);
   $sql_op->delete('biblio_author', 'author_id='.$id.' AND biblio_id='.$bid);
+  utility::jsToastr('Author', __('Author removed!'), 'success');
   echo '<script type="text/javascript">';
-  echo 'alert(\''.__('Author removed!').'\');';
   echo 'location.href = \'iframe_author.php?biblioID='.$bid.'\';';
   echo '</script>';
 }
@@ -111,7 +111,7 @@ if ($biblioID) {
     $row_class = ($row%2 == 0)?'alterCell':'alterCell2';
 
     // remove link
-    $remove_link = '<a href="#" class="notAJAX btn button btn-danger btn-delete" onclick="confirmProcess('.$biblioID.', '.$biblio_author_d['author_id'].')">' . __('Delete') . '</a>';
+    $remove_link = '<a href="#" class="s-btn btn btn-danger notAJAX" onclick="confirmProcess('.$biblioID.', '.$biblio_author_d['author_id'].')">' . __('Delete') . '</a>';
     $author = $biblio_author_d['author_name'];
     $author_year = $biblio_author_d['author_year'];
     $authority_type = $sysconf['authority_type'][$biblio_author_d['authority_type']];

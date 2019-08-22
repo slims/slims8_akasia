@@ -84,23 +84,24 @@ if (isset($_POST['itemID']) AND !empty($_POST['itemID']) AND isset($_POST['itemA
             }
             $_SESSION['labels']['item'][$itemID] = $itemID;
             $print_count_item++;
+            $print_count++;
         }
     }
     $print_count = $print_count_item + $print_count_biblio;
     echo '<script type="text/javascript">top.$(\'#queueCount\').html(\''.$print_count.'\');</script>';
     if (isset($limit_reach)) {
         $msg = str_replace('{max_print}', $max_print, __('Selected items NOT ADDED to print queue. Only {max_print} can be printed at once'));
-        utility::jsAlert($msg);
+        utility::jsToastr('Labels Printing', $msg, 'warning');
     } else {
         // update print queue count object
-        utility::jsAlert(__('Selected items added to print queue'));
+        utility::jsToastr('Labels Printing', __('Selected items added to print queue'), 'success');
     }
     exit();
 }
 
 // clean print queue
 if (isset($_GET['action']) AND $_GET['action'] == 'clear') {
-    utility::jsAlert(__('Print queue cleared!'));
+    utility::jsToastr('Labels Printing', __('Print queue cleared!'), 'success');
     echo '<script type="text/javascript">top.$(\'#queueCount\').html(\'0\');</script>';
     unset($_SESSION['labels']);
     exit();
@@ -110,7 +111,7 @@ if (isset($_GET['action']) AND $_GET['action'] == 'clear') {
 if (isset($_GET['action']) AND $_GET['action'] == 'print') {
     // check if label session array is available
     if (!isset($_SESSION['labels']['item']) && !isset($_SESSION['labels']['biblio'])) {
-        utility::jsAlert(__('There is no data to print!'));
+        utility::jsToastr('Labels Printing', __('There is no data to print!'), 'error');
         die();
     }
 
@@ -207,39 +208,39 @@ if (isset($_GET['action']) AND $_GET['action'] == 'print') {
         echo '<script type="text/javascript">parent.$(\'#queueCount\').html(\'0\');</script>';
         // open result in new window
         echo '<script type="text/javascript">top.$.colorbox({href: "'.SWB.FLS.'/'.$print_file_name.'", iframe: true, width: 800, height: 500, title: "' . __('Labels Printing') . '"})</script>';
-    } else { utility::jsAlert(str_replace('{directory}', SB.FLS, __('ERROR! Label failed to generate, possibly because {directory} directory is not writable'))); }
+    } else { utility::jsToastr('Labels Printing', str_replace('{directory}', SB.FLS, __('ERROR! Label failed to generate, possibly because {directory} directory is not writable')), 'error'); }
     exit();
 }
 
 /* search form */
 ?>
-<fieldset class="menuBox">
+<div class="menuBox">
 <div class="menuBoxInner printIcon">
 	<div class="per_title">
     <h2><?php echo __('Labels Printing'); ?></h2>
   </div>
 	<div class="sub_section">
     <div class="btn-group">
-      <a target="blindSubmit" href="<?php echo MWB; ?>bibliography/dl_print.php?action=clear" class="notAJAX btn btn-default"><i class="glyphicon glyphicon-trash"></i>&nbsp;<?php echo __('Clear Print Queue'); ?></a>
-      <a target="blindSubmit" href="<?php echo MWB; ?>bibliography/dl_print.php?action=print" class="notAJAX btn btn-default"><i class="glyphicon glyphicon-print"></i>&nbsp;<?php echo __('Print Labels for Selected Data'); ?></a>
-	    <a href="<?php echo MWB; ?>bibliography/pop_print_settings.php?type=label" class="notAJAX btn btn-default openPopUp" title="<?php echo __('Change print barcode settings'); ?>"><i class="glyphicon glyphicon-wrench"></i></a>
+        <a target="blindSubmit" href="<?php echo MWB; ?>bibliography/dl_print.php?action=clear" class="btn btn-default notAJAX "><?php echo __('Clear Print Queue'); ?></a>
+        <a target="blindSubmit" href="<?php echo MWB; ?>bibliography/dl_print.php?action=print" class="btn btn-default notAJAX "><?php echo __('Print Labels for Selected Data'); ?></a>
+        <a href="<?php echo MWB; ?>bibliography/pop_print_settings.php?type=label" width="780" height="500" class="btn btn-default notAJAX openPopUp" title="<?php echo __('Change print barcode settings'); ?>"><?php echo __('Change print barcode settings'); ?></a>
 	</div>
-    <form name="search" action="<?php echo MWB; ?>bibliography/dl_print.php" id="search" method="get" style="display: inline;"><?php echo __('Search'); ?> :
-    <input type="text" name="keywords" size="30" />
-    <input type="submit" id="doSearch" value="<?php echo __('Search'); ?>" class="btn btn-default" />
+    <form name="search" action="<?php echo MWB; ?>bibliography/dl_print.php" id="search" method="get" class="form-inline"><?php echo __('Search'); ?>
+    <input type="text" name="keywords" class="form-control col-md-3" />
+    <input type="submit" id="doSearch" value="<?php echo __('Search'); ?>" class="s-btn btn btn-default" />
     </form>
     </div>
     <div class="infoBox">
         <?php
-        echo __('Maximum').' <font style="color: #FF0000">'.$max_print.'</font> '.__('records can be printed at once. Currently there is').' ';
+        echo __('Maximum').' <strong class="text-danger">'.$max_print.'</strong> '.__('records can be printed at once. Currently there is').' ';
         if (isset($_SESSION['labels'])) {
-            echo '<font id="queueCount" style="color: #FF0000">'.@( count($_SESSION['labels']['item'])+count($_SESSION['labels']['biblio']) ).'</font>';
-        } else { echo '<font id="queueCount" style="color: #FF0000">0</font>'; }
+            echo '<strong id="queueCount" class="text-danger">'.@( count($_SESSION['labels']['item'])+count($_SESSION['labels']['biblio']) ).'</strong>';
+        } else { echo '<strong id="queueCount" class="text-danger">0</strong>'; }
         echo ' '.__('in queue waiting to be printed.');
         ?>
     </div>
 </div>
-</fieldset>
+</div>
 <?php
 /* search form end */
 
@@ -292,7 +293,7 @@ if (isset($criteria)) {
     $datagrid->setSQLcriteria('('.$criteria['sql_criteria'].')');
 }
 // set table and table header attributes
-$datagrid->table_attr = 'align="center" id="dataList" cellpadding="5" cellspacing="0"';
+$datagrid->table_attr = 'id="dataList" class="s-table table"';
 $datagrid->table_header_attr = 'class="dataListHeader" style="font-weight: bold;"';
 // edit and checkbox property
 $datagrid->edit_property = false;

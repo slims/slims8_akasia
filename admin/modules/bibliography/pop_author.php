@@ -96,12 +96,12 @@ if (isset($_POST['save']) AND (isset($_POST['authorID']) OR trim($_POST['search_
       $data['level'] = intval($_POST['level']);
 
       if ($sql_op->insert('biblio_author', $data)) {
+          utility::jsToastr('Author', __('Author succesfully updated!'), 'success');
           echo '<script type="text/javascript">';
-          echo 'alert(\''.__('Author succesfully updated!').'\');';
           echo 'parent.setIframeContent(\'authorIframe\', \''.MWB.'bibliography/iframe_author.php?biblioID='.$data['biblio_id'].'\');';
           echo '</script>';
       } else {
-          utility::jsAlert(__('Author FAILED to Add. Please Contact System Administrator')."\n".$sql_op->error);
+          utility::jsToastr('Author', __('Author FAILED to Add. Please Contact System Administrator')."\n".$sql_op->error, 'error');
       }
   } else {
       if (isset($_POST['authorID']) AND !empty($_POST['authorID'])) {
@@ -125,8 +125,8 @@ if (isset($_POST['save']) AND (isset($_POST['authorID']) OR trim($_POST['search_
           $_SESSION['biblioAuthor'][$last_id] = array($last_id, intval($_POST['level']));
       }
 
+      utility::jsToastr('Author', __('Author added!'), 'success');
       echo '<script type="text/javascript">';
-      echo 'alert(\''.__('Author added!').'\');';
       echo 'parent.setIframeContent(\'authorIframe\', \''.MWB.'bibliography/iframe_author.php\');';
       echo '</script>';
   }
@@ -135,31 +135,31 @@ if (isset($_POST['save']) AND (isset($_POST['authorID']) OR trim($_POST['search_
 ?>
 
 <div class="popUpForm">
-<form name="mainForm" action="pop_author.php?biblioID=<?php echo $biblioID; ?>" method="post">
-<div>
     <strong><?php echo __('Add Author'); ?> </strong>
     <hr />
-    <form name="searchAuthor" method="post" style="display: inline;">
-    <?php
-    $ajax_exp = "ajaxFillSelect('../../AJAX_lookup_handler.php', 'mst_author', 'author_id:author_name:author_year:authority_type', 'authorID', $('#search_str').val())";
-    echo __('Author Name'); ?> : <input type="text" name="search_str" id="search_str" style="width: 30%;" oninput="<?php echo $ajax_exp; ?>"  />
-    <select name="type" style="width: 20%;"><?php
-    foreach ($sysconf['authority_type'] as $type_id => $type) {
-        echo '<option value="'.$type_id.'">'.$type.'</option>';
-    }
-    ?></select>
-    <select name="level" style="width: 20%;"><?php
-    foreach ($sysconf['authority_level'] as $level_id => $level) {
-        echo '<option value="'.$level_id.'">'.$level.'</option>';
-    }
-    ?></select>
-</div>
-<div class="popUpSubForm">
-<select name="authorID" id="authorID" size="5" style="width: 100%;"><option value="0"><?php echo __('Type to search for existing authors or to add a new one'); ?></option></select>
-<?php if ($biblioID) { echo '<input type="hidden" name="biblioID" value="'.$biblioID.'" />'; } ?>
-<input type="submit" name="save" value="<?php echo __('Insert To Bibliography'); ?>" class="popUpSubmit btn btn-primary" />
-</div>
-</form>
+    <form name="mainForm" action="pop_author.php?biblioID=<?php echo $biblioID; ?>" method="post">
+        <div class="s-margin__bottom-1 form-inline">
+            <?php
+            $ajax_exp = "ajaxFillSelect('../../AJAX_lookup_handler.php', 'mst_author', 'author_id:author_name:author_year:authority_type', 'authorID', $('#search_str').val())";?>
+            <input type="text" name="search_str" placeholder="<?php echo __('Author Name') ?>" class="form-control" id="search_str" style="width: 30%;" oninput="<?php echo $ajax_exp; ?>" />
+            <select name="type" class="col form-control"><?php
+            foreach ($sysconf['authority_type'] as $type_id => $type) {
+                echo '<option value="'.$type_id.'">'.$type.'</option>';
+            }
+            ?></select>
+            <select name="level" class="col form-control"><?php
+            foreach ($sysconf['authority_level'] as $level_id => $level) {
+                echo '<option value="'.$level_id.'">'.$level.'</option>';
+            }
+            ?></select>
+        </div>
+
+        <div class="popUpSubForm">
+            <select name="authorID" id="authorID" size="5" class="s-margin__bottom-1 form-control"><option value="0"><?php echo __('Type to search for existing authors or to add a new one'); ?></option></select>
+            <?php if ($biblioID) { echo '<input type="hidden" name="biblioID" value="'.$biblioID.'" />'; } ?>
+            <input type="submit" name="save" value="<?php echo __('Insert To Bibliography'); ?>" class="popUpSubmit btn btn-primary" />
+        </div>
+    </form>
 </div>
 
 <?php

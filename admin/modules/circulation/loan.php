@@ -25,7 +25,6 @@ if (!defined('INDEX_AUTH')) {
     define('INDEX_AUTH', '1');
 }
 
-
 // main system configuration
 require '../../../sysconfig.inc.php';
 // IP based access limitation
@@ -51,7 +50,6 @@ require SIMBIO.'simbio_UTILS/simbio_date.inc.php';
 
 // page title
 $page_title = 'Member Loan List';
-
 ob_start();
 ?>
 <script type="text/javascript">
@@ -109,6 +107,48 @@ var changeLoanDate = function(intLoanID, strDateToChange, dateElement, strDate)
     dateElement.remove();
     dateText.show();
 }
+
+function triggerKeys(){
+    // alert(event.keyCode);
+    // ESC
+    if(event.keyCode == 27) {
+        parent.$('#circFinish').click();
+    }
+
+    // F2
+    if(event.keyCode == 113) {
+        parent.$('#circLoan').click().focus();
+        parent.$('#listsFrame').attr('src', parent.$('#circLoan').attr('href'));
+    }
+    // // F3
+    if(event.keyCode == 114) {
+        parent.$('#circInLoan').click().focus();
+        parent.$('#listsFrame').attr('src', parent.$('#circInLoan').attr('href'));
+    }
+    // // F4
+    if(event.keyCode == 115) {
+        parent.$('#circReserve').click().focus();
+        parent.$('#listsFrame').attr('src', parent.$('#circReserve').attr('href'));
+    }
+
+    <?php if($sysconf['barcode_reader']) : ?>
+    // // F8
+    if(event.keyCode == 119) {
+        $('#barcodeReader').click();
+    }
+    <?php endif ?>
+
+    // // F9
+    if(event.keyCode == 120) {
+        parent.$('#circFine').click().focus();
+        parent.$('#listsFrame').attr('src', parent.$('#circFine').attr('href'));
+    }
+    // // F10
+    if(event.keyCode == 121) {
+        parent.$('#circHistory').click().focus();
+        parent.$('#listsFrame').attr('src', parent.$('#circHistory').attr('href'));
+    }
+}
 </script>
 <?php
 $js = ob_get_clean();
@@ -120,21 +160,35 @@ if (isset($_SESSION['memberID'])) {
     $memberID = trim($_SESSION['memberID']);
     ?>
     <!--item loan form-->
-    <div class="loanItemCodeInput">
-        <form name="itemLoan" id="loanForm" action="circulation_action.php" method="post" style="display: inline;">
-            <?php echo __('Insert Item Code/Barcode'); ?> :
-            <input type="text" id="tempLoanID" name="tempLoanID" />
-            <input type="submit" value="<?php echo __('Loan'); ?>" class="btn btn-warning button" />
+    <div class="s-circulation__loan loanItemCodeInput">
+        <form name="itemLoan" id="loanForm" action="circulation_action.php" method="post" class="form-inline">
+            <?php echo __('Insert Item Code/Barcode'); ?>&nbsp;
+            <input type="text" id="tempLoanID" name="tempLoanID" onKeyUp="triggerKeys()" class="form-control col-md-3"  />
+            <input type="submit" value="<?php echo __('Loan'); ?>" id="executeLoan" class="s-btn btn btn-default" />
+            <?php if($sysconf['barcode_reader']) : ?>
+            <a class="s-btn btn btn-default notAJAX" id="barcodeReader" href="<?php echo MWB.'circulation/barcode_reader.php?mode=circulation' ?>">Open Barcode Reader - Experimental (F8)</a>
+            <?php endif ?>
         </form>
     </div>
     <script type="text/javascript">$('#tempLoanID').focus();</script>
+    <?php if($sysconf['barcode_reader']) : ?>
+    <script type="text/javascript">
+        $('#barcodeReader').click(function(e){
+            e.preventDefault();
+            var url = $(this).attr('href');
+            parent.$('#iframeBarcodeReader').attr('src', url);
+            parent.$('#listsFrame').find('#tempLoanID').focus();
+            parent.$('#barcodeModal').modal('show');
+        });
+    </script>
+    <?php endif ?>
     <!--item loan form end-->
     <?php
     // make a list of temporary loan if there is any
     if (count($_SESSION['temp_loan']) > 0) {
         // create table object
         $temp_loan_list = new simbio_table();
-        $temp_loan_list->table_attr = "align='center' style='width: 100%;' cellpadding='3' cellspacing='0'";
+        $temp_loan_list->table_attr = 'class="s-circulation__loan-list" align="center" id="dataList" cellpadding="3" cellspacing="0"';
         $temp_loan_list->table_header_attr = 'class="dataListHeader" style="font-weight: bold;"';
         $temp_loan_list->highlight_row = true;
         // table header
@@ -147,7 +201,7 @@ if (isset($_SESSION['memberID'])) {
             $row_class = ($row%2 == 0)?'alterCell':'alterCell2';
 
             // remove link
-            $remove_link = '<a href="circulation_action.php?removeID='.$temp_loan_list_d['item_code'].'" title="Remove this item" class="trashLink">&nbsp;</a>';
+            $remove_link = '<a href="circulation_action.php?removeID='.$temp_loan_list_d['item_code'].'" title="'.__('Remove this item').'" class="btn btn-danger btn-sm"><span>'.__('Remove').'</span></a>';
 
             // check if manually changes loan and due date allowed
             if ($sysconf['allow_loan_date_change']) {
