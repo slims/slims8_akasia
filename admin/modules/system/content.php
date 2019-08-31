@@ -253,7 +253,7 @@ if (isset($_POST['detail']) OR (isset($_GET['action']) AND $_GET['action'] == 'd
     $criteria = 'c.content_id IS NOT NULL ';
     if (isset($_GET['keywords']) AND $_GET['keywords']) {
        $keywords = $dbs->escape_string($_GET['keywords']);
-       $criteria .= " AND MATCH(content_title, content_desc) AGAINST('$keywords')";
+       $criteria .= " AND MATCH(content_title, content_desc) AGAINST('$keywords' IN BOOLEAN MODE)";
     }
     $datagrid->setSQLCriteria($criteria);
 
