@@ -149,6 +149,7 @@ if (isset($_POST['doImport'])) {
               $authors = trim($field[15]);
               $subjects = trim($field[16]);
               $items = trim($field[17]);
+	      $price = $field[18];
               // sql insert string
               $sql_str = "INSERT IGNORE INTO biblio (title, gmd_id, edition,
                   isbn_issn, publisher_id, publish_year,
@@ -197,11 +198,12 @@ if (isset($_POST['doImport'])) {
                   }
                   // items
                   if (!empty($items)) {
-                      $item_sql = 'INSERT IGNORE INTO item (biblio_id, item_code) VALUES ';
+                      $item_sql = 'INSERT IGNORE INTO item (biblio_id, item_code, price) VALUES ';
                       $item_array = explode('><', $items);
                       foreach ($item_array as $item) {
                           $item = trim(str_replace(array('>', '<'), '', $item));
-                          $item_sql .= " ($biblio_id, '$item'),";
+						  $price = $price;
+                          $item_sql .= " ($biblio_id, '$item', $price),";
                       }
                       // remove last comma
                       $item_sql = substr_replace($item_sql, '', -1);
