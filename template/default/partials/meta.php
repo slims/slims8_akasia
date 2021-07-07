@@ -55,7 +55,6 @@
 <!-- Theme
 ============================================= -->
 <link rel="shortcut icon" href="webicon.ico" type="image/x-icon"/>
-<link rel="stylesheet" href="<?php echo $sysconf['template']['dir']; ?>/core.style.css" type="text/css" />
 <link rel="stylesheet" href="<?php echo JWB; ?>colorbox/colorbox.css" type="text/css" />
 <link rel="profile" href="http://www.slims.web.id/">
 <link rel="canonical" href="//<?php echo $_SERVER["SERVER_NAME"].$_SERVER["REQUEST_URI"]; ?>" />
