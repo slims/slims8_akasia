@@ -1,0 +1,3531 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Myanmar Unicode SLiMS v8\n"
+"POT-Creation-Date: 2019-08-16 00:31+0000\n"
+"PO-Revision-Date: 2022-07-05 21:10+1000\n"
+"Last-Translator: \n"
+"Language-Team: gurujim and members of MLA led by Daw Ah Win\n"
+"Language: my\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 3.1\n"
+
+msgid "LIBRARY CATALOG"
+msgstr "စာကြည့်တိုက်ကက်တလောက်"
+
+msgid "ID Available"
+msgstr "ရရှိနိုင် ID ကို"
+
+msgid "Add New"
+msgstr "သတင်းအချက်အလက်ထပ်ဖြည်.သည်"
+
+msgid "Dashboard"
+msgstr "Dashboard"
+
+msgid "OPAC"
+msgstr "OPAC"
+
+msgid "Help"
+msgstr "အကူအညီ"
+
+msgid "Bibliography"
+msgstr "စာပြုလုပ်ငန်း"
+
+msgid "Master File"
+msgstr "အဓိကဖိုင်များ"
+
+msgid ""
+"To <strong><!--MEMBER_NAME--> (<!--MEMBER_ID-->)</strong>\n"
+"This is notification e-mail to inform you that you have <strong>OVERDUED</strong> library loan,\n"
+"the overdued collection(s) are:"
+msgstr ""
+"သို့ <strong><!--MEMBER_NAME--> (<!--MEMBER_ID-->)</strong>\n"
+"ဒါဟာသင်ရှိသည်သောသငျသညျအကြောင်းကြားရန်အကြောင်းကြားစာအီးမေးလ်ကဖြစ်ပါတယ်<strong>မပွေကုနျနသော</strong> စာကြည့်တိုက်ချေးငွေ,\n"
+"အဆိုပါရက်ကျော်နေပြီပစ္စည်းများဖြစ်ကြသည်:"
+
+msgid ""
+"Please return all overdued collections immediately to library. If you have\n"
+"any complaint regarding to this overdue notification,\n"
+"please contact our circulation desk."
+msgstr ""
+"စာကြည့်တိုက်ကိုချက်ချင်းအားလုံးရက်လွန်ပစ္စည်းများပြန်လာပါ။ သငျသညျရှိပါက\n"
+"ဒီရက်ကျော်နေပြီအကြောင်းကြားစာမှနှင့် ပတ်သက်. မည်သည့်တိုင်ကြားမှု,\n"
+"ကျွန်တော်တို့ရဲ့စောင်ရေစားပွဲပေါ်မှာဆက်သွယ်နိုင်ပါသည်။"
+
+msgid ""
+"<p>Thank You.</p>\n"
+"\n"
+"<strong><!--DATE--></strong>\n"
+"<br />Library Management"
+msgstr ""
+"<p>ကျေးဇူးတင်ပါတယ်</p>\n"
+"\n"
+"<strong><!--DATE--></strong>\n"
+"<br />စာကြည့်တိုက်စီမံခန့်ခွဲမှု"
+
+msgid "Chat With Members"
+msgstr "အဖွဲ့ဝင်များနှင့်အတူ chat"
+
+msgid "Please type and hit Enter button to send your messages"
+msgstr "သင့်ရဲ့မက်ဆေ့ခ်ျများပေးပို့ဖို့ button ကို Enter ရိုက် hit ကျေးဇူးပြု."
+
+msgid "Members"
+msgstr "အသင်းဝင််များ"
+
+msgid "Librarian"
+msgstr "စာကြည့်တိုက်မှူး"
+
+msgid "Library Administration"
+msgstr "စာကြည့်တိုက်စီမံခန့်ခွဲခြင်းကွန်ပျူတာစနစ်"
+
+msgid "<strong>PHP GD</strong> extension is not installed. Please install it or application won't be able to create image thumbnail and barcode."
+msgstr "<strong>PHP GD</strong>  ဆက်လက်ဖြန့်ကြက်ခြင်းအားတင်မထားပါ။ ယင်းအားတင်ပါ။ သို့မဟုတ်ပါက thumbnail နှင့် barcode ဖန်တီး၍ ရမည်မဟုတ်။"
+
+msgid "<strong>Freetype</strong> support is not enabled in PHP GD extension. Rebuild PHP GD extension with Freetype support or application won't be able to create barcode."
+msgstr "<strong>Freetype</strong> အထောက်အ  ကူကို  PHP GD ဖြန့်ကြက်ခြင်းဖြခ့်  ဖွင့်မထားပါ။ PHP GD ဖြန့်ကြက်ခြင်းကို လွတ်လပ်သည့်အမျိုးအစား အထောက်အကူဖြင့်ပြန်ဖွင့်ပါ၊ သို့မဟုတ်ပါက barcode ဖန်တီး၍ ရမည်မဟုတ်။"
+
+msgid "There are currently <strong>{num_overdue}</strong> library members having overdue. Please check at <b>Circulation</b> module at <b>Overdues</b> section for more detail"
+msgstr "ရက်လွန်ရှိခြင်း <strong>{num_overdue}</strong> စာကြည့်တိုက်အဖွဲ့ဝင်များသည်လက်ရှိတွင်ရှိပါတယ်။ <b> ရက်ကျော်နေပြီ </b> ပိုပြီးအသေးစိတ်များအတွက်အပိုင်းမှာ <b> စောင်ရေ </b> module မှာစစ်ဆေးပါ"
+
+msgid "<strong>Images</strong> directory and directories under it is not writable. Make sure it is writable by changing its permission or you won't be able to upload any images and create barcodes"
+msgstr "<strong>Images</strong> လမ်းညွန်နှင့် လမ်းညွန်များ အောက်တွင်ရေး၍ မရပါ။ ခွင့်ပြုချက်ကိုပြောင်းယူခြင်းအား ဖြင့်ရေးနိုင်သည်ကိုသေခြာပါစေ။ သို့မဟုတ်ပါက ပုံတူများကို ရယူခြင်း barcodes များ ဖန်တီး နိုင်မည်မဟုတ်ပါ။"
+
+msgid "<strong>Repository</strong> directory is not writable. Make sure it is writable (and all directories under it) by changing its permission or you won't be able to upload any bibliographic attachments."
+msgstr "<strong>Repository</strong> လမ်းညွန်သည် ရေးသား၍မရပါ။ ယင်း လမ်းညွန် (နှင့်ယင်းအောက်ရှိ လမ်းညွန် များအားလုံး) ကို ယင်း၏ခွင့်ပြုချက်ကို ပြောင်းခြင်းအားဖြင့် ရေးနိုင်သည်ကိုသေချာပါစေ၊  သို့မဟုတ်ပါက စာကြည့်တိုက် ဆိုင်ရာ ပူးတွဲ ဖေါ်ပြချက်များ ထည့်သွင်းနိုင်မည်မဟုတ်ပါ။"
+
+msgid "<strong>File upload</strong> directory is not writable. Make sure it is writable (and all directories under it) by changing its permission or you won't be able to upload any file, create report files and create database backups."
+msgstr "<strong>File (upload)</strong> တွင် လမ်းညွန် ရေးမရပါ။ ယင်း လမ်းညွန် (နှင့်ယင်းအောက်ရှိ လမ်းညွန် များအားလုံး) ကို ယင်း၏ခွင့်ပြုချက်ကို ပြောင်းခြင်းအားဖြင့် ရေးနိုင်သည်ကိုသေချာပါစေ၊ သို့မဟုတ်ပါက ဖိုင်များကိုဆွဲတင် ခြင်း သတင်းအချက်အလက်ဖိုင်များ ဖန်တီးခြင်း နှင့်မှတ်သား သိမ်းဆည်း ထားသည်များကို တဖန် ပြန်လည် ကူးထားနိုင်မည် မဟုတ်ပါ။"
+
+msgid "The PATH for <strong>mysqldump</strong> program is not right! Please check configuration file or you won't be able to do any database backups."
+msgstr "The PATH for <strong>mysqldump</strong> အစီအစဉ် သည်မမှန်ပါ။လုပ်ငန်းစီစဉ်ညွန် ကြားသည့် ဖိုင်ကို စစ်ဆေးပါ၊ သို့မဟုတ်ပါက သိမ်းဆည်း ထားသည်များကို တဖန် ပြန်လည် ကူးထားနိုင်မည် မဟုတ်ပါ။"
+
+msgid "Installer folder is still exist inside your server. Please remove it or rename to another name for security reason."
+msgstr "Installer ဖိုင်တွဲနေတုန်းပဲသင့်ရဲ့ server ကိုအထဲမှာရှိပြီးသားဖြစ်ပါတယ်။ တစ်ခုကိုဖယ်ရှားရန်သို့မဟုတ်လုံခြုံရေးဆိုင်ရာအကြောင်းပြချက်များအတွက်အခြားအမည်မှအမည်ပြောင်းပေးပါ။"
+
+msgid "<strong><i>You are logged in as Super User. With great power comes great responsibility.</i></strong>"
+msgstr "<strong><i>သငျသညျစူပါအသုံးပြုသူအဖြစ် logged နေကြသည်။ ကြီးသောတန်ခိုးနှင့်အကြီးအတာဝန်လာသည်။</i></strong>"
+
+msgid "New"
+msgstr "အသစ်"
+
+msgid "Return"
+msgstr "ပြန်လည်အပ်နှံ သည့် အရာ"
+
+msgid "Extend"
+msgstr "သက်တမ်း တိုးမြှင့်"
+
+msgid "Summary"
+msgstr "အကျဥ်း"
+
+msgid "Total"
+msgstr "စုစုပေါင်း"
+
+msgid "Extends"
+msgstr "ရက်တိုးမြှင့်ပေးသည်။"
+
+msgid "Overdue"
+msgstr "ပြန်လည်အပ်နှံရန် ရက်လွန်ခြင်း"
+
+msgid "Total of Collections"
+msgstr "စာစုများစုစုပေါင်း"
+
+msgid "Total of Items"
+msgstr "စာအုပ်အမျိုးအစား စုစုပေါင်း"
+
+msgid "Available"
+msgstr "ရနိုင်သည်"
+
+msgid "Loan"
+msgstr "စာငှါးရမ်းခြင်း"
+
+msgid "You are not authorized to view this section"
+msgstr "သင့်မှာ ဤအပိုင်းကို ဝင်ရောက်ကြည့်ရူ့ခွင့် မရှိပါ။"
+
+msgid "Your Login Session has already timeout!"
+msgstr "သင်၏ဝင်ရောက်ရန်ခွင့်ပြုထားသည့်အချိန်ကုန်ဆုံးပြီ။"
+
+msgid "Change User Profiles"
+msgstr "စာကြည့်တိုက်အသုံးပြုသူ၏ကိုယ်ရေးမှတ်တမ်းပြောင်းလဲရန်"
+
+msgid "Change Current User Profiles and Password"
+msgstr "အသုံးပြုသူ၏ကိုယ်ရေးမှတ်တမ်းနှင်လှို့ဝှက်သင်ကေ တပြောင်းပါ။"
+
+msgid "File Not Found"
+msgstr "ဖိုင်ရှာမတွေ့ပါ"
+
+msgid "You Have Been Logged Out From Library Automation System"
+msgstr "သင်သည်စာကြည့်တိုက်အလိုအလျောက်စံနစ်မှထွက်ခွါစေပြီးဖြစ်ပါသည်"
+
+msgid "Checkout Items"
+msgstr "ငှါးရမ်းသည့်စာအုပ်များ"
+
+msgid "Search"
+msgstr "ရှာဖွေရန်"
+
+msgid "Item Code"
+msgstr "စာအုပ်သင်္ကေတနံပါတ်"
+
+msgid "Member ID"
+msgstr "စာကြည့်တိုက်အသင်းဝင်နံပါတ်"
+
+msgid "Title"
+msgstr "စာအုပ်အမည်"
+
+msgid "Loan Date"
+msgstr "စာငှါးနေ့စွဲ"
+
+msgid "Due Date"
+msgstr "ပြန်လည်အပ်နှံရမည့်နေ့စွဲ"
+
+msgid "Found <strong>{result->num_rows}</strong> from your keywords"
+msgstr "သင်၏ အဓိကစာလုံးများမှ ရလဒ်   <strong>{result->num_rows}</strong> ​ခုကိုတွေ့ ရှိသည်။"
+
+msgid "Selected items NOT ADDED to print queue. Only {max_print} can be printed at once"
+msgstr "ပုံနှိပ်ရန်တန်းစီ ထားသည်များတွင် ထပ်မထည့်သည့်စာအုပ်များကိုရွေးပါ။ တစ်ကြိမ်တွင်{max_print} သာ ပုံနှိပ်နိုင်သည်။"
+
+msgid "Selected items added to print queue"
+msgstr "ရွေးထားသည်စာအုပ်များကို ပုံနှိပ်ရန်တန်းစီတန်း တွင် ထပ်ထည့်လိုက်သည်။"
+
+msgid "Print queue cleared!"
+msgstr "ပုံနှိပ်ရန်တန်းစီထားသည်များရှင်းလင်းပြီး"
+
+msgid "There is no data to print!"
+msgstr "ပုံနှိပ်ရန်အချက်အလက်မရှိပါ"
+
+msgid "Labels Printing"
+msgstr "အမှတ်အသားတံဆိပ်များ ပုံနှိပ်ခြင်း"
+
+msgid "Clear Print Queue"
+msgstr "ပုံနှိပ်ရန်တန်းစီတန်းထားခြင်းကို ပယ်ဖျက်ပါ။"
+
+msgid "Print Labels for Selected Data"
+msgstr "ရွေးချယ်ထားသော အချက်အလက်အတွက် အမှတ်အသားတံဆိပ်များပုံနှိပ်ပါ။"
+
+msgid "Change print barcode settings"
+msgstr "ဘားကုဒ်ပုံနှိပ်သည့်အစီအစဉ်ပြောင်းရန်"
+
+msgid "Maximum"
+msgstr "အများဆုံး"
+
+msgid "records can be printed at once. Currently there is"
+msgstr "ခ်က္ျခင္းပံုနိွပ္မူ.မွတ္တမ္းတင္သည္။ယခုခ်က္ျခင္းလုပ္ေဆာင္သည္း"
+
+msgid "in queue waiting to be printed."
+msgstr "ပုံနှိပ်ရန်စောင့်ဆိုင်းနေသောအတန်းတွင်"
+
+msgid "Call Number"
+msgstr "စာထုတ်အမှတ်"
+
+msgid "Add"
+msgstr "ထပ်ဖြည့်စွက်ပါ။"
+
+msgid "Add To Print Queue"
+msgstr "ပုံနှိပ်ရန်တန်းစီတန်းတွင်ထပ်ဖြည့်စွက်ရန်"
+
+msgid "Add to print queue?"
+msgstr "ပုံနှိပ်ရန်တန်းစီတန်းတွင် ထပ်ဖြည့်စွက်မည်လား။"
+
+msgid "Query took"
+msgstr "ရှာ ဖွေသည်.အချိန်"
+
+msgid "second(s) to complete"
+msgstr "စက္ကန့် "
+
+msgid "Required fields (*)  must be filled correctly!"
+msgstr "(*) ဖြင့် ပြထားသော လိုအပ်သည့် အကွက်ကို မှန်ကန်စွာ ဖြည့်စွက်ရမည်။"
+
+msgid "Error on query to database, Export FAILED!"
+msgstr "အချက်အလက်စုဘဏ်တွင်လိုအပ်သည်ကိုရှာ ဖွေရာတွင် မှားယွင်းချွတ်ချော် နေသည်။"
+
+msgid "There is no record in bibliographic database yet, Export FAILED!"
+msgstr " စာအုပ်ဆိုင်ရာအချက်အလက်များ သိမ်းဆည်း ရာတွင် မှတ်တမ်းများမရှိပါ၊ ပြင်ပသို့ ပို့ဆောင်ခြင်း မအောင်မြင်ပါ။"
+
+msgid "Export Tool"
+msgstr "ပြင်ပသို့ ပို့ဆောင်ရန် ကိရိယာ"
+
+msgid "Export bibliographics data to CSV file"
+msgstr "CSV ဖိုင်သို့  စာအုပ်ဆိုင်ရာအချက်အလက်များပို့ဆောင်ပါ။"
+
+msgid "Export Now"
+msgstr "ယခုချက်ချင်း ပေးပို့ပါ။"
+
+msgid "Field Separator"
+msgstr "အကွက်များ, ဖြင့်ခွဲခြား ထား"
+
+msgid "Field Enclosed With"
+msgstr "အကွက်များ “ “ ဖြင့် ပိတ်ကာ ထား"
+
+msgid "Record Separator"
+msgstr "မွတ္တမ္းခြဲျခားမွဳ"
+
+msgid "Number of Records To Export (0 for all records)"
+msgstr "မွတ္တမ္းပို.ရန္အေရအတြက္(သံုညမွမွတ္တမ္းအားလံုး)"
+
+msgid "Start From Record"
+msgstr "စတင် ရန်မှတ်တမ်း နံပါတ်"
+
+msgid "Are you sure to remove the file attachment data?"
+msgstr "ိုပူးတွဲဖိုင်ကိုဖယ်ရှားပစ်ရန်သေချာလား?"
+
+msgid "Attachment removed!"
+msgstr "ပူးတွဲဖိုင်ကိုဖယ်ရှားပြီး"
+
+msgid "File Attachments"
+msgstr "ပူးတွဲဖိုင်များ"
+
+msgid "Edit"
+msgstr "တည္းၿဖတ္သည္။"
+
+msgid "Remove"
+msgstr "ဖယ်ထုတ်ပါ။"
+
+msgid "Are you sure to remove selected author?"
+msgstr "ရွေးချယ်ထားသောစာရေးဆရာဖယ်ရှားပစ်ရန်သေချာလား?"
+
+msgid "Once deleted, it can't be restored!"
+msgstr "ဖျက်ပစ်ပြီးတာနဲ့ပြန်မရနိုငျပါသညျ!"
+
+msgid "Author succesfully removed!"
+msgstr "စာရေးသူအမည်အောင်မြင်စွာဖယ်ရှားပြီး"
+
+msgid "Author removed!"
+msgstr "စာရေးသူအမည်ဖယ်ရှားပြီး"
+
+msgid "Are you sure to remove selected title?"
+msgstr "ရွေးချယ်ထားသည့်ခေါင်းစဉ်ကိုဖယ်ရှားပစ်ရန်သေချာလား?"
+
+msgid "Are you sure to remove selected item?"
+msgstr "ရွေးချယ်ထားသညကိုဖယ်ရှားပစ်ရန်သေချာလား?"
+
+msgid "Item data can not be deleted because still on hold by members"
+msgstr "စာအုပ်အချက်အလက်များကို ဖျက်ပြစ်၍ မရပါ၊ အသင်းဝင်များမှ လက်ဝယ် ရယူထားဆဲ ဖြစ်ပါတယ်"
+
+msgid "Item succesfully removed!"
+msgstr "စာအုပ်အချက်အလက်အောင်မြင်စွာ ပယ်ထုတ်ပြီး"
+
+msgid "Item FAILED to removed!"
+msgstr "စာအုပ်အချက်အလက်ပယ်ထုတ်ခြင်း မအောင်မြင်ပါ"
+
+msgid "Items/Copies"
+msgstr "စာအုပ်များ / အုပ်ရေများ"
+
+msgid "Are you sure to remove selected topic?"
+msgstr "ရွေးချယ်ထားသည့်အကြောင်းအရာဖယ်ရှားပစ်ရန်သေချာလား?"
+
+msgid "Please select the file to import!"
+msgstr "ပြင်ပသို့ ပို့ပေးမည့် ဖိုင်ကို ရွေးပါ။"
+
+msgid "Upload failed! File type not allowed or the size is more than"
+msgstr "ဖိုင်တင်ခြင်း မအောင်မြင်ပါ။ ဖိုင်အမျိုးအစားခွင့်မပြုပါ၊ သို့မဟုတ် ဖိုင်အရွယ်အစားသည် မှတ်တမ်းအရ အသင်းဝင် အချက်အလက်စုဆောင်းရာနေရာတွင် ထည့်ထားသည်ထက် ကျော်လွန်နေသည်။"
+
+msgid "Import Tool"
+msgstr "ရယူရန် ကိရိယာ"
+
+msgid "Import Now"
+msgstr "ယခု ပို့လွတ်ပါ။"
+
+msgid "File To Import"
+msgstr "ရယူရန်ဖိုင်"
+
+msgid "Title can not be empty"
+msgstr "စာအုပ်အမည် ကို ဗလာထား၍ မရပါ"
+
+msgid "Image Uploaded Successfully"
+msgstr "ရုပ်ပုံအောင်မြင်စွာတင်ပြီးပြီ။"
+
+msgid "Image Uploaded Failed"
+msgstr "ဖိုင်တင်ပါ"
+
+msgid "Bibliography Data Successfully Updated"
+msgstr "ကက်တလောက်အောင်မြင်စွာ ထပ်ဖြည့်ပြီး"
+
+msgid "Bibliography Data FAILED to Updated. Please Contact System Administrator"
+msgstr "ကက်တလောက်အချက်အလက် ထပ်ဖြည့်ခြင်း မအောင်မြင်ပါ၊ ကွန်ပြူတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "New Bibliography Data Successfully Saved"
+msgstr "ကက်တလောက်အချက်အလက်အသစ်အောင်မြင်စွာ သိမ်းဆည်းပြီး"
+
+msgid "Bibliography Data FAILED to Save. Please Contact System Administrator"
+msgstr "ကက်တလောက်အချက်အလက်သိမ်းဆည်းခြင်း မအောင်မြင်ပါ၊ ကွန်ပြူတာစံနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "Below data can not be deleted:"
+msgstr "အောက်ဖေါ်ပြပါ အချက်အလက်များကို ဖျောက်ပြစ်၍ မရပါ။"
+
+msgid "All Data Successfully Deleted"
+msgstr "မှတ်တမ်းအချက်အလက်များအောင်မြင်စွာပယ်ဖျက်ပြီး။"
+
+msgid "Some or All Data NOT deleted successfully!\\nPlease contact system administrator"
+msgstr "မှတ်တမ်းအချက်အလက်အချို့ သော်၄င်း အားလုံးသော်၄င်း အောင်မြင်အောင်မပယ်ဖျက်နိုင်ပါ။ \\nကွန်ပျူတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ်လုပ်ဆောင်ပါ။"
+
+msgid "Bibliographic"
+msgstr "စာအုပ်ဆိုင်ရာအချက်အလက်များ/ကက်တလောက်စာရင်း"
+
+msgid "Bibliographic List"
+msgstr "စာကြည့်တိုက်ရှိစာအုပ်စာတမ်းများစာရင်း"
+
+msgid "Add New Bibliography"
+msgstr "ကက်တလောက်အသစ်ထပ်ထည့်ရန်"
+
+msgid "All Fields"
+msgstr "နယ်ပယ်များအားလုံး"
+
+msgid "Title/Series Title"
+msgstr "စာအုပ်အမည်/စာစဉ်အမည်"
+
+msgid "Topics"
+msgstr "အကြောင်းအရာအမည်"
+
+msgid "Authors"
+msgstr "စာရေးသူများ"
+
+msgid "ISBN/ISSN"
+msgstr "ISBN/ISSN"
+
+msgid "Publisher"
+msgstr "ပုံနှိပ်ထုတ်ဝေသူ"
+
+msgid "Upload Selected Bibliographic data to Union Catalog Server*"
+msgstr "ရွေးချယ်ထားသောစာအုပ်ဆိုင်ရာ အချက်အလက် များကို Union Catalog Server* သို့ ထည့်သွင်းပေးပါ"
+
+msgid "Save"
+msgstr "သိမ်းဆည်းရန်"
+
+msgid "Update"
+msgstr "အချက်အလက်များဖြည့်စွက်ရန်"
+
+msgid "Main title of collection. Separate child title with colon and pararel title with equal (=) sign."
+msgstr "အဓိကခေါင်းစဉ်၊  ခေါင်းစဉ်သေးကို (:) လက္ခဏာနှင့် ခေါင်းစဉ်တူကို (=) လက္ခဏာနှင့်သီးခြားပါ၊ "
+
+msgid "Authors/Roles"
+msgstr "စာရေးသူများ / ကျင်လည် လုပ်ဆောင်ရသည့် အပိုင်း"
+
+msgid "Add Author(s)"
+msgstr "စာ​ရေးသူ(များ)ထပ်ထည့်ရန်"
+
+msgid "Author(s)"
+msgstr "စာရေးသူများ"
+
+msgid "Statement of Responsibility"
+msgstr "တာဝန်ယူလုပ်ဆောင်ချက်များ"
+
+msgid "Main source of information to show who has written, composed, illustrated, or in other ways contributed to the existence of the item."
+msgstr "သတင္းအခ်က္အလက္အရင္းအျမစ္ကိုေဖၚျပပါ။ထိုစာအုပ္ကိုမည္သူေရးသည္၊ေရးစပ္သီကံုးသည္၊သို.မဟုတ္အျခားနည္းလမ္းျဖင္.မည္သူမွအေထာက္အပံ.ေပးသည္။"
+
+msgid "Edition"
+msgstr "ထုတ်ဝေသည့်အကြိမ်"
+
+msgid "A version of publication having substantial changes or additions."
+msgstr "နောက်ဆုံးထုတ်ဝေခြင်းတွင်ပြည်.စုံသောပြောင်းလဲခြင်းသို.မဟုတ်ထပ်မံထုတ်ဝေခြင်း"
+
+msgid "Specific Detail Info"
+msgstr "အသေးစိပ်အချက်အလက်"
+
+msgid "explain more details about an item e.g. scale within a map, running time in a movie dvd."
+msgstr "ထိုအကြောင်းအရာကိုအသေးစိတ်ပိုမိုရှင်းပြပါဥပမာမြေပုံတွင်ဖေါ်ပြထားသောကြားအကွာအဝေး၊ဒိဗီဒီစနစ်ဖြင်.ပြသပါကကြာချိန်။"
+
+msgid "Total item(s)"
+msgstr "စာအုပ်အမျိုးအစား စုစုပေါင်း"
+
+msgid "Collection Type"
+msgstr "စာစုအမျိုးအစား"
+
+msgid "Location"
+msgstr "စာအုပ်တည်နေရာ "
+
+msgid "Add New Items"
+msgstr "စာအုပ်အသစ်ထပ်ထည့်ပါ"
+
+msgid "Item(s) Data"
+msgstr "စာအုပ်ဆိုင်ရာအချက်အလက်"
+
+msgid "GMD"
+msgstr "GMD"
+
+msgid "General material designation. The physical form of publication."
+msgstr "အထွေထွေရုပ်ဝတ္တုပုံစံ၊ထုတ်ဝေမူ.ဖေါ်ပြချက်အပြည်.အစုံ"
+
+msgid "RDA "
+msgstr "RDA "
+
+msgid "Not Applicable"
+msgstr "မသက်ဆိုင်ပါ။"
+
+msgid "Use this for Serial publication"
+msgstr "ဤအချက်အလက်ကိုစာနယ်ဇင်းများအတွက်သုံးရန်"
+
+msgid "Frequency"
+msgstr "အကြိမ်ပေါင်း"
+
+msgid "Unique publishing number for each title of publication."
+msgstr "တစ်ခုတည်းသောပုံနှိပ်ထုတ်ဝေရေးနံပါတ်"
+
+msgid "Publishing Year"
+msgstr "ပုံနှိပ်ထုတ်ဝေသည့်နှစ်"
+
+msgid "Year of publication"
+msgstr "  ပုံနှိပ်ထုတ်ဝေသည့်ခုနှစ်"
+
+msgid "Publishing Place"
+msgstr "ပုံနှိပ်ထုတ်ဝေသည့်နေရာ"
+
+msgid "Collation"
+msgstr "ပုံ ထုတ်ဝေသည့် သမိုင်း"
+
+msgid "Physical description of a publication e.g. publication length, width, page numbers, etc."
+msgstr "ကိုယ္တိုင္ပံုေဖၚထားေသာထုတ္ေဝျခင္း။ဥပမာထုတ္ေဝျခင္းအရွည္၊အက်ယ္၊စာရြက္အေရအတြက္"
+
+msgid "Series Title"
+msgstr "စာစဉ်များအမည် "
+
+msgid "Classification"
+msgstr "မျိုးတူစုအမှတ်"
+
+msgid "Sets of ID that put in the book spine."
+msgstr "သက္ေသခံကဒ္ျပားျပဳလုပ္ၿပီးစာအုပ္ေက်ာရိုးတြင္ထည္.သြင္းပါ။"
+
+msgid "Subjects/Topics"
+msgstr "ပညာရပ်များ /အကြောင်းအရာအမည်"
+
+msgid "Add Subject(s)"
+msgstr "ပညာရပ်များထပ်ထည့်ရန်"
+
+msgid "Subject(s)"
+msgstr "ပညာရပ်များ"
+
+msgid "Language"
+msgstr "ဘာသာစကား"
+
+msgid "Language use by publication."
+msgstr "ပုံနှိပ်ထုတ်ဝေခြင်းတွင်အသုံးပြုထားသည့်ဘာသာစကား"
+
+msgid "Abstract/Notes"
+msgstr "အကျဉ်းချုပ်/မှတ်စုများ၊ကောက်နှုတ်ချက်"
+
+msgid "Insert here any abstract or notes from the publication."
+msgstr "သည်နေရာတွင်မည်သည်.အကျဉ်းချုပ်မဆိုထည်.သွင်းပါသို.မဟုတ်ပုံနှိပ်ထုတ်ဝေခြင်းမှမှတ်စုများ"
+
+msgid "REMOVE IMAGE"
+msgstr "ရုပ်ပုံများကိုဖယ်ထုတ်ပါ။"
+
+msgid "or scan a cover"
+msgstr "သို့မဟုတ်စာအုပ်အဖုံးအား scan ဖတ်ပါ"
+
+msgid "Show scan dialog"
+msgstr "စကားေျပာပံုေဖၚျခင္းျပပါ"
+
+msgid "Scan a cover"
+msgstr "စာအုပ်အဖုံးအား scan ဖတ်ပါ"
+
+msgid "Format:"
+msgstr "ပံုစံအခ်ိဳးအစား"
+
+msgid "Scan"
+msgstr "ပုံ ကူး တယ်"
+
+msgid "Click to show or hide options"
+msgstr "ဖေါ်ပြရန်သို့မဟုတ်ဖုံးကွယ်ရန်ရေွးပါ"
+
+msgid "History index:"
+msgstr "ရာဇဝင်အညွှန်း"
+
+msgid "Recall"
+msgstr "ျပန္ေခၚသည္"
+
+msgid "Host:"
+msgstr "အစီအစဉ်လက်ခံသည်။"
+
+msgid "Get machine"
+msgstr "စက်ရသည်။"
+
+msgid "Scanner:"
+msgstr "စကင်နာ"
+
+msgid "Default"
+msgstr "ကွန်ပြူတာပရိုဂရမ်၏မူလအစီအစဉ်"
+
+msgid "Resolution"
+msgstr "ပံုသိပ္သည္းဆ"
+
+msgid "Horizontal:"
+msgstr "ရေညီမျဉ်း"
+
+msgid "Vertical:"
+msgstr "ေထာင္လိုက္"
+
+msgid "Capture"
+msgstr "အမိအရ ရိုက်ကူးသည်။ "
+
+msgid "Width:"
+msgstr "အက်ယ္"
+
+msgid "Height:"
+msgstr "အမြင့်"
+
+msgid "Result"
+msgstr "ရလဒ်"
+
+msgid "Max Width:"
+msgstr "အျမင္.ဆံုးအက်ယ္"
+
+msgid "Max Height:"
+msgstr "အျမင္.ဆံုးအျမင္."
+
+msgid "Scan result"
+msgstr "ရလဒ်အားဖတ်ရှုစစ်ဆေးရန်"
+
+msgid "Preview"
+msgstr "ၿကိုတင္ႀကည့္ရွုျခင္း"
+
+msgid "Rotate Left"
+msgstr "လက္ဝဲရစ္လွည္.ပါ"
+
+msgid "Rotate Right"
+msgstr "လကၤ်ာရစ္လွည္.ပါ"
+
+msgid "Image"
+msgstr "ရုပ်ပုံ"
+
+msgid "Add Attachment"
+msgstr "ပူးတွဲဖိုင်ကိုထပ်ထည့်ရန်"
+
+msgid "File Attachment"
+msgstr "ပူးတွဲဖိုင်"
+
+msgid "Show"
+msgstr "ဖေါ်ပြပါ"
+
+msgid "Hide"
+msgstr "မမြင်ရအောင်ဖုံးကွယ်ထားပါ"
+
+msgid "Hide in OPAC"
+msgstr "OPAC တွင် မမြင်ရအောင်ဖုံးကွယ်ထားပါ"
+
+msgid "Don't Promote"
+msgstr "အများသိအောင်မပြုလုပ်ပါနှင့်"
+
+msgid "Promote"
+msgstr "အများသိအောင်ပြုလုပ်ပါ"
+
+msgid "Promote To Homepage"
+msgstr "မူလကနဦးစာမျက်နှာသို့တင်ပေးပါ"
+
+msgid "You are going to edit biblio data"
+msgstr "သင်သည်စာအုပ်ဆိုင်ရာအချက်အလက်များကိုတည်းဖြတ်တော့မည်။"
+
+msgid "Last Updated"
+msgstr "နောက်ဆုံးအကြိမ်က ဖြည့်စွက်ခဲ့သည့် နေ့စွဲ"
+
+msgid "None"
+msgstr "မရှိပါ။"
+
+msgid "Copies"
+msgstr "စောင်ရေ"
+
+msgid "Last Update"
+msgstr "နောက်ဆုံးဖြည့်စွက်ခဲ့သည့်နေ့စွဲ"
+
+msgid "Item Code can't be empty!"
+msgstr "စာအုပ်အမှတ်အသားနံပါတ်ကိုဗလာထား၍ မရပါ။"
+
+msgid "Item Data Successfully Updated"
+msgstr "စာအုပ်အချက်အလက်အောင်မြင်စွာထပ်ဖြည့်ပြီး"
+
+msgid "Item Data FAILED to Save. Please Contact System Administrator"
+msgstr "စာအုပ်အချက်အလက် သိမ်းဆည်းခြင်း မအောင်မြင်ပါ။ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "New Item Data Successfully Saved"
+msgstr "စာအုပ်အချက်အလက်အသစ်အောင်မြင်စွာသိမ်း ဆည်းပြီး"
+
+msgid "Items"
+msgstr "စာအုပ်များ"
+
+msgid "Others"
+msgstr "အခြားကိစ်စ ရပ်များ"
+
+msgid "Edit Biblographic data"
+msgstr "စာအုပ်ဆိုင်ရာအချက်အလက်များကိုတည်းဖြတ်ရန်"
+
+msgid "Inventory Code"
+msgstr "စာရင်းသင်္ကေတများ"
+
+msgid "Shelf Location"
+msgstr "စင်တည်ရှိရာနေရာ"
+
+msgid "Item Status"
+msgstr "စာအုပ်အခြေအနေ"
+
+msgid "Order Number"
+msgstr "မှာယူသော နံပါတ်"
+
+msgid "Order Date"
+msgstr "မှာယူသော နေ့စွဲ"
+
+msgid "Receiving Date"
+msgstr "လက်ခံ ရရှိ သောနေ့စွဲ"
+
+msgid "Supplier"
+msgstr "ဖြန့်ဝေသူ"
+
+msgid "Buy"
+msgstr "ဝယ်ပါ"
+
+msgid "Prize/Grant"
+msgstr "ဆု / အကူအညီ"
+
+msgid "Source"
+msgstr "မည်သည် မှ"
+
+msgid "Invoice"
+msgstr "ငွေ တောင်းခံလွှာ"
+
+msgid "Invoice Date"
+msgstr "ငွေတောင်းခံလွှာ နေ့စွဲ"
+
+msgid "Price"
+msgstr "တန်ဖိုး"
+
+msgid "You are going to edit Item data"
+msgstr "သင်သည်စာအုပ်အချက်အလက်များကိုတည်းဖြတ်တော့မည်။"
+
+msgid "Author"
+msgstr "စာရေးသူ"
+
+msgid "Item Barcodes Printing"
+msgstr "စာအုပ်ဘားကုဒ်များ ပုံနှိပ်ခြင်း"
+
+msgid "Print Barcodes for Selected Data"
+msgstr "ရွှေးချယ်ထားသောအချက်အလက်များအတွက် ဘားကုဒ်များကို ပုံနှိပ်ရန် "
+
+msgid "There is no record in item database yet, Export FAILED!"
+msgstr "အချက်အလက်ဘဏ်တွင် မှတ်တမ်း မရှိသေးပါ၊ ပြင်ပသို့ပိုံ့ ဆောင်ခြင်း မအောင်မြင်ပါ။"
+
+msgid "Item Export Tool"
+msgstr "စာအုပ်အချက်အလက်ပြင်ပသို့ ပို့ဆောင်ရန်"
+
+msgid "Export item data to CSV file"
+msgstr "အချက်အလက်များCSVဖိုင်သို့ ပို့ဆောင်ခြင်း"
+
+msgid "Item Import tool"
+msgstr "ပစ္စည်းသွင်းယူရန် ကိရိယာ"
+
+msgid "Import for item data from CSV file"
+msgstr "CSV ဖိုင်မှ စာအုပ်အချက်အလက်များ ရယူပါ "
+
+msgid "You don't have enough privileges to access this area!"
+msgstr "သင်တွင်ဤဧရိယာသို့ ဝင်ရောက်ရန်လုံလောက်သော ခွင့်ပြုချက်မရှိပါ။"
+
+msgid ""
+"<a href=\"http://pear.php.net/index.php\">PEAR</a>, <a href=\"http://pear.php.net/package/File_MARC\">File_MARC</a>\n"
+"    and <a href=\"http://pear.php.net/package/Structures_LinkedList/\">Structures_LinkedList</a>\n"
+"    packages need to be installed in order\n"
+"    to import MARC record"
+msgstr ""
+"<a href=\"http://pear.php.net/index.php\">PEAR</a>, <a href=\"http://pear.php.net/package/File_MARC\">File_MARC</a>\n"
+" and <a href=\"http://pear.php.net/package/Structures_LinkedList/\">Structures_LinkedList</a>\n"
+" packages need to be installed in order\n"
+"MARC record ရယူခြင်း"
+
+msgid "MARC Import tool"
+msgstr "MARC သြင္းကုန္ကရိယာ "
+
+msgid "Number of records to import (0 for all records)"
+msgstr "သြင္းကုန္ပစၥည္းအေရအတြက္(သံုညမွမွတ္တမ္းအားလံုး)"
+
+msgid "Sorry, no result found from %s OR maybe XML result and detail disabled."
+msgstr "%s OR  မှ ရလဒ် များ မတွေ့ပါ၊ XML ရလဒ် နှင့် အသေးစိပ် မရနိင်စေရန် ဖန်တီး ထားခြင်း ဟုဆိုနိုင်သည်"
+
+msgid "P2P Service"
+msgstr "P2P Service"
+
+msgid "Server"
+msgstr "Server"
+
+msgid "* Please make sure you have a working Internet connection."
+msgstr "* သင့်တွင်ဆက်သွယ်မှုရရှိနေသောအင်တာနက်လက်ဝယ်ရှိ နေသည်ကို သေချာပါစေ"
+
+msgid "Upload FAILED! Forbidden file type or file size too big!"
+msgstr "ရယူ ခြင်း မအောင်မြင်ပါ၊ တားမြစ်ထားသည့်  ဖိုင်အမျိုးအစား သို့မဟုတ် ဖိုင်အရွယ်အစား အလွန် ကြီးမားသည်"
+
+msgid "File Attachment data updated!"
+msgstr "ပူးတွဲဖိုင်အချက်အလက် ထပ်ဖြည့်ပြီး"
+
+msgid "File Attachment data FAILED to update!"
+msgstr "ပူးတွဲဖိုင်အချက်အလက်ထပ်ဖြည့်ခြင်း မအောင်မြင်ပါ"
+
+msgid "File Attachment uploaded succesfully!"
+msgstr "ပူးတွဲဖိုင်အောင်မြင်စွာ ရယူပြီး"
+
+msgid "File Attachment data FAILED to save!"
+msgstr "ပူးတွဲဖိုင်အချက်အလက် သိမ်ဆည်းခြင်း မအောင်မြင်ပါ"
+
+msgid "Upload Now"
+msgstr "အခု ရယူပါ"
+
+msgid "Repository ROOT"
+msgstr "သိုလှောင် ရာ အရင်းအမြစ်"
+
+msgid "Repo. Directory"
+msgstr "သိုလှောင် ရာ လမ်းညျွန်"
+
+msgid "File To Attach"
+msgstr "ချိတ်ဆွဲ၇န် ဖိုင်"
+
+msgid "URL"
+msgstr "URL ( အင်တာနက် တွင်ရယူလို သည့် အရာအတွက်တူညီသော တည်နေရာ အညွှန်း)"
+
+msgid "Description"
+msgstr "အကြောင်း အရာ"
+
+msgid "Public"
+msgstr "အများနှင့်သက်ဆိုင်သော"
+
+msgid "Private"
+msgstr "ကိုယ္ပိုင္"
+
+msgid "Access"
+msgstr "ဝင်ရောက်ခွင့်"
+
+msgid "Access Limit by Member Type"
+msgstr "အသင်းဝင်အမျိုးအစားအရဝင်ရောက်ခွင့်ကန့်သတ်ချက်"
+
+msgid "Author succesfully updated!"
+msgstr "စာရေးသူအောင်မြင်စွာ ထပ်ဖြည့်ပြီး"
+
+msgid "Author FAILED to Add. Please Contact System Administrator"
+msgstr "စာရေးသူထပ်ဖြည့်ခြင်း မအောင်မြင်ပါ၊ ကွန်ပြူတာစံနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "Author added!"
+msgstr "စာရေးသူထပ်ထည့်ပြီး"
+
+msgid "Add Author"
+msgstr "စာ​ရေးသူထပ်ထည့်ရန်"
+
+msgid "Author Name"
+msgstr "စာရေးသူအမည်"
+
+msgid "Type to search for existing authors or to add a new one"
+msgstr "လက်ရှိစာရေးသူများရှာရန်သော်၄င်း၊ နောက်ထပ်စာရေးသူ အသစ်ထည့်ရန်သော်၄င်းစာရိုက်ပါ။"
+
+msgid "Insert To Bibliography"
+msgstr "ကက်တလောက်သို့ထည့်သွင်းပါ"
+
+msgid "Subject FAILED to Add. Please Contact System Administrator"
+msgstr "ပညာရပ် ထပ်ထည့်ခြင်း မအောင်မြင်ပါ"
+
+msgid "Subject added!"
+msgstr "ပညာရပ် ထပ် ထည့်ပြီး"
+
+msgid "Add Subject"
+msgstr "ပညာရပ်ထပ်ထည့်ရန်"
+
+msgid "Keyword"
+msgstr "အဓိကစကားလုံး"
+
+msgid "Primary"
+msgstr "အဓိက"
+
+msgid "Type to search for existing topics or to add a new one"
+msgstr "လက်ရှိအကြောင်းအရာခေါင်းစည်း ရှာဖွေရန်သော်၄င်း၊ သို့မဟုတ်ခေါင်းစည်းအသစ်ထည့် ရန်သော်၄င်းစာရိုက်ပါ"
+
+msgid "Settings saved"
+msgstr "သတ်မှတ် ခြင်း သိမ်းဆည်းပြီး"
+
+msgid "Save Settings"
+msgstr "တည်ဆောက်ထားသော အခြအနေ များကို သိမ်းဆည်းပါ"
+
+msgid "1-100 percent"
+msgstr "၁-၁၀၀ ရာခိုင်နှုန်းကို"
+
+msgid "Print setting for"
+msgstr "ပုံနှိပ်ရန်သတ်မှတ်ခြင်း"
+
+msgid "Catalog Printing"
+msgstr "ကတ်တလောက်ပုံနှိပ်ခြင်း"
+
+msgid "Print Catalog Format"
+msgstr "ကတ်တလောက်ပုံစံကိုပုံနှိပ်ရန်"
+
+msgid "Print Catalog for Selected Data"
+msgstr "ရွှေးချယ်ထားသောအချက်အလက်များအတွက်ကတ်တလောက်ကိုပုံနှိပ်ရန် "
+
+msgid "Item"
+msgstr "စာအုပ်"
+
+msgid "Show Existing Bibliographic Data"
+msgstr "လက်ရှိ စာကြည့်တိုက် ဆိုင်ရာ သိုမှီးထားပြီး  အချက် အလက်များကို ပြပါ"
+
+msgid "Add New Bibliographic Data/Catalog"
+msgstr "စာအုပ်ဆိုင်ရာအချက်အလက်အသစ်များ/ကက်တလောက် ထပ်ဖြည့်ပါ။"
+
+msgid "Item List"
+msgstr "စာအုပ်စာရင်း"
+
+msgid "Show List of Library Items"
+msgstr "စာကြည့်တိုက်ဆိုင်ရာစာအုပ်များစာရင်းပြပါ။"
+
+msgid "Show List of Checkout Items"
+msgstr "ငှါးရမ်းသည့်စာအုပ်များစာရင်းကိုပြပါ။"
+
+msgid "Copy Cataloguing"
+msgstr "ကက်တလောက်မိတ္တူကူးယူခြင်း"
+
+msgid "Z3950 SRU"
+msgstr "Z3950 SRU"
+
+msgid "Grab Bibliographic Data from Z3950 SRU Web Services"
+msgstr "Z3950 SRU  အင်တာနက် ဝန် ဆောင် မှု များမှ စာကြည့်တိုက် ဆိုင်ရာ အချက်အလက်များကို ရယူပါ"
+
+msgid "Z3950 Service"
+msgstr "Z3950 ဝန်ဆောင်မှု"
+
+msgid "Grab Bibliographic Data from Z3950 Web Services"
+msgstr "Z3950 SRU  အင်တာနက် ဝန် ဆောင် မှု များမှ စာကြည့်တိုက် ဆိုင်ရာ အချက်အလက်များကို ရယူပါ"
+
+msgid "Grab Bibliographic Data from Other SLiMS Web Services"
+msgstr "အချား SLiMS အင်တာနက် ဝန် ဆောင် မှု များမှ စာကြည့်တိုက် ဆိုင်ရာ အချက်အလက်များကို ရယူပါ"
+
+msgid "Tools"
+msgstr "လုပ်ဆောင်ဖွယ်ရာများ"
+
+msgid "Print Document Labels"
+msgstr "စာရွက်စာတမ်းများ၏အမှတ်အသားတံဆိပ်များ ပုံနှိပ်ခြင်း"
+
+msgid "Print Item Barcodes"
+msgstr "စာအုပ်ဘားကုဒ်များ ပုံနှိပ်ရန်"
+
+msgid "MARC Import"
+msgstr "MARC တင်သွင်း"
+
+msgid "Import Bibliographic Data from MARC file"
+msgstr "MARC ဖိုင်မှအချက်အလက်များရယူရန်"
+
+msgid "Print Catalog Card"
+msgstr "ကတ်တလောက်ကဒ်ကိုပုံနှိပ်ရန် "
+
+msgid "Data Export"
+msgstr "မှတ်တမ်း အချက်အလက်များ ပြင်ပသို့ ပို့ ခြင်း"
+
+msgid "Export Bibliographic Data To CSV format"
+msgstr "CSV ပုံစံ သို့ စာအုပ်ဆိုင်ရာအချက်အလက်များကိုပို့ပါ။"
+
+msgid "Data Import"
+msgstr "အချက်အလက်များ ရယူခြင်း"
+
+msgid "Import Data to Bibliographic Database from CSV file"
+msgstr "CSV ဖိုင်မှ စာကြည့်တိုက် ဆိုင်ရာ အချက်အလက်များကို ရယူပါ"
+
+msgid "Item Export"
+msgstr "စာအုပ်အချက်အလက်ပြင်ပသို့ ပို့ခြင်း"
+
+msgid "Export Item/Copies data To CSV format"
+msgstr "စာအုပ်ဆိုင်ရာအချက်အလက်များကို CSV ပုံစံ သို့  ပို့ရန်"
+
+msgid "Item Import"
+msgstr "အရာဝတ်ထု ရယူခြင်း"
+
+msgid "Import Data to Item/Copies database from CSV file"
+msgstr "CSV ဖိုင်မှ အရာဝတ်ထု /အချက်အလက် မိတ်တူများ သိမ်းဆည်းရာသို့  အချက်အလက်များ ရယူပါ"
+
+msgid "UCS is not enabled! Change global system configuration to enable UCS"
+msgstr "UCS ကိုအသုံးပြုနိုင် အောင်ပြုလုပ် မထားပါ။ UCS ကိုအသုံးပြုနိုင် အောင် ကွန်ပြူတာ စံနစ် တစ်ခုလုံး၏ စီစဉ်ထားပုံ ကို ပြောင်းပါ"
+
+msgid "No Results Found!"
+msgstr "ရလဒ်မရှိပါ"
+
+msgid "Z3950"
+msgstr "Z3950"
+
+msgid "All fields"
+msgstr "နယ်ပယ်များအားလုံး"
+
+msgid "SRU Server"
+msgstr "SRU ကွန်ပြူတာ နှင့် ယင်းကို အသုံးပြုသူများ ကိုသော်၄င်း၊ အခြား ကွန်ပြူတာများနှင့်သော်၄င်း  ပန့်ပိုး ပေးသော အစီအစဉ်"
+
+msgid "ERROR! Loan data can't be saved to database"
+msgstr "အမှား! စာငှါးအချက်အလက်များ စုဆောင်းသိမ်းဆည်း၍ မရပါ။"
+
+msgid "Transaction finished"
+msgstr "စာငှါးခြင်းဆောင်ရွက်ခြင်းပြီးပြီ။"
+
+msgid "Overdue fines inserted to fines database"
+msgstr "ရက်လွန်ဒဏ်ငွေ ကို ဒဏ်ငွေအချက်အလက်စုဘဏ်တွင် ထည့်သွင်းပြီး။"
+
+msgid "Item CANNOT BE Extended! This Item is being reserved by other member"
+msgstr "ဤစာအုပ်သည် အခြားအသင်းဝင်မှ သီးသန့်လျာထားသည့်အတွက်ငှါးရက်တိုးမြှင့်၍ မရပါ၊ "
+
+msgid "Loan Extended"
+msgstr "ငှါးရမ်းခြင်းကာလ တိုးမြှင့်ပြီး။"
+
+msgid "Loan Limit Reached!"
+msgstr "ငှါးရမ်းခြင်းကာလ အဆုံးစွန် သို့ရောက်ပြီး။"
+
+msgid "Do You Want To Overide This?"
+msgstr "သင်ဤအရာကို အစားထိုး သိမ်းဆည်းမလား။"
+
+msgid "WARNING! This Item is reserved by another member"
+msgstr "အသိပေးချက်! ၊ ဤစာအုပ်ကို အခြားအသင်းဝင်မှ သီးသန့်လျာထားသည်။"
+
+msgid "This Item is not registered in database"
+msgstr "ဤစာအုပ်ကို အချက်အလက်များဘဏ်တွင် မှတ်ပုံတင် ထားခြင်းမရှိပါ။"
+
+msgid "This Item is currently not available"
+msgstr "ဤစာအုပ်ကိုလက်ရှိအချိန်တွင် မရနိုင်ပါ။"
+
+msgid "Loan NOT PERMITTED! Membership already EXPIRED!"
+msgstr "စာငှါးခြင်းခွင့်မပြုပါ၊ အသင်းဝင်အဖြစ်ကုန်ဆုံးသွားပြီ။"
+
+msgid "Loan NOT PERMITTED! Membership under PENDING State!"
+msgstr "စာငှါးခြင်းခွင့်မပြုပါ။ အသင်းဝင်အဖြစ်စီစစ်ဆဲကာလတွင်း ဖြစ်ပါသည်။"
+
+msgid "Loan Forbidden for this Item!"
+msgstr "ဤစာအုပ်အတွက် စာငှါးတားမြစ်ထားသည်။"
+
+msgid "Item {removeID} removed from session"
+msgstr "အရာဝတ်ထု {removeID} ကို လုပ်ငန်းဆောင်တာလုပ်ကွင်းမှဖယ်ထုတ်ပါ။"
+
+msgid "This is item already returned or not exists in loan database"
+msgstr "ဤအရာဝတ်ထုကို ပြန်လည်အပ်နှံပြီး၊ သိုမဟုတ် ငှါးရမ်းခြင်း အချက်အလက်များ စုဆောင်းသိမ်းဆည်း ရာနေရာတွင် မရှိပါ။"
+
+msgid "OVERDUED for {overdueDays} days(s) with fines value of"
+msgstr "ရက်လွန် အတွက် {overdueDays} ရက်(များ) နှင့် ဒဏ်ငွေတန်ဖိုး ပမာဏ"
+
+msgid "Item {itemCode} is being reserved by member {member}"
+msgstr "ဤစာအုပ် {itemCode} သည် အသင်းဝင်မှသီးသန့်လျာထားသည် {member}"
+
+msgid "Member Name"
+msgstr "အသင်းဝင်အမည်"
+
+msgid "NO DATA Selected to reserve!"
+msgstr "အငှါးသီးသန့်လျာထားခြင်းအတွက် အချက်အလက်မရှိပါ။"
+
+msgid "Can not add more reservation. Maximum limit reached"
+msgstr "ငှါးရမ်းရန် ကြိုတင်ရယူခြင်းတွင် ထပ်ဖြည့်၍ မရပါ။ သတ်မှတ်ထားသည့် အမြင့်ဆုံးကျော်နေပြီ။"
+
+msgid "Can't reserve this Item. Loan Forbidden!"
+msgstr "ဤစာအုပ်ကိုသီးသန့်လျာထား၍မရပါ၊ ငှါးရမ်းခြင်း တားမြစ်ထားသည်။"
+
+msgid "Reservation added"
+msgstr "ကြိုတင်ရယူခြင်း ထပ်ဖြည့် ထားသည်။"
+
+msgid "Item for this title is already available or already on hold by this member!"
+msgstr "ဤစာအုပ်သည်စာကြည့်တိုက်တွင်ရရှိနိုင်သည် သို့မဟုတ်ဤအသင်းဝင်အတွက်လျာထားသည်။"
+
+msgid "Reservation removed"
+msgstr "ကြိုတင်ရယူထားခြင်း ဖယ်ရှားပြီး။"
+
+msgid "Fines data removed"
+msgstr "ဒဏ်ငွေအချက်အလက်ဖယ်ရှားပြီး"
+
+msgid " not valid (unregistered in database)"
+msgstr "ခွင့်ပြုချက်နှင့် မညီပါ၊ (အချက်အလက်များဘဏ်တွင် မှတ်ပုံတင်ထားခြင်းမရှိပါ)"
+
+msgid "Circulation"
+msgstr "စာဌားလုပ်ငန်း"
+
+msgid "Finish Transaction"
+msgstr "ညှိနှိင်း ဆောင်ရွက်ရန် ပေးပို့ ခြင်း ပြီးဆုံးပြီ။"
+
+msgid "Are you sure want to finish current transaction?"
+msgstr "သင်သည် ယခုဆောင်ရွက်ခြင်း ပြီးဆုံးရန် အကယ်ပင် သေချာရဲ့ လား။"
+
+msgid "Member Email"
+msgstr "အသင်းဝင်အီးမေးလ်လိပ်စာ"
+
+msgid "Member Type"
+msgstr "အသင်းဝင်အမျိုးအစား"
+
+msgid "Register Date"
+msgstr "မှတ်ပုံတင်သည့် နေ့စွဲ"
+
+msgid "Membership Already Expired"
+msgstr "အသင်းဝင်သက်တမ်း ကုန်ဆုံးပြီး"
+
+msgid "Expiry Date"
+msgstr "ကုန်ဆုံးသည့်နေ့စွဲ"
+
+msgid "Membership currently in pending state, loan transaction is locked."
+msgstr "အသင်းဝင်အဖြစ်လက်ရှိဆိုင်းငံ့ထားဆဲ၊ စာငှါးခြင်းကိုထိမ်းချုပ်ထားသည်။."
+
+msgid "Loans"
+msgstr "စာငှါးခြင်းများ"
+
+msgid "Current Loans"
+msgstr "လက်ရှိစာငှါးများ"
+
+msgid "Reserve"
+msgstr "သီးသန့်လျာထားသည်။"
+
+msgid "Fines"
+msgstr "ဒဏ်ငွေ"
+
+msgid "Loan History"
+msgstr "စာငှါးမှတ်တမ်း"
+
+msgid "Overdue fines for item {item_code}"
+msgstr " item {item_code} များအတွက်ရက်လွန်ဒဏ်ငွေ"
+
+msgid "Fines Description and Debet value can't be empty"
+msgstr "ဒဏ်ငွေအကြောင်းအရာနှင့်ကျသင့်ငွေကို ဗလာထား၍မရပါ။"
+
+msgid "Value of Credit can not be higher that Debet Value"
+msgstr "ပေးသွင်းငွေသည် ကျသင့်ငွေထက် မကျော်စေရပါ။"
+
+msgid "Fines Data Successfully Updated"
+msgstr "ဒဏ်ငွေအချက်အလက်ကို အောင်မြင်စွာထပ်မံဖြည့်စွက်ပြီး"
+
+msgid "Fines Data FAILED to Updated. Please Contact System Administrator"
+msgstr "ဒဏ်ငွေအချက်အလက် ထပ်မံဖြည့်စွက်ခြင်း မအောင်မြင်ပါ။ ကွန်ပျူတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "New Fines Data Successfully Saved"
+msgstr "ဒဏ်ငွေအချက်အလက်အသစ် ကို အောင်မြင်စွာ သိမ်းဆည်း ပြီး။"
+
+msgid "Fines Data FAILED to Save. Please Contact System Administrator"
+msgstr "ဒဏ်ငွေအချက်အလက် သိမ်းဆည်းခြင်းမအောင်မြင်ပါ။ ကွန်ပျုတာစံနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "Add New Fines"
+msgstr "ဒဏ်ငွေအသစ် ဖြည့် စွက်ပါ။"
+
+msgid "Fines List"
+msgstr "ဒဏ်ငွေ စာရး ဇယား"
+
+msgid "View Balanced Overdue"
+msgstr "ပေးဆောင်ရန်ရက်လွန်ကြေးကြည့်ရှု့ပါ။"
+
+msgid "Fines Date"
+msgstr "ဒဏ်ငငွပေးဆောင်ရမည့် နေ့"
+
+msgid "Description/Name"
+msgstr "အကြာင်းအရာ / အမည်"
+
+msgid "Debit"
+msgstr "တောင်းခံသည့်ငွေ"
+
+msgid "Credit"
+msgstr "ပေးဆောင် သည့်ငွေ"
+
+msgid "You are going to edit fines data"
+msgstr "သင်သည်ဒဏ်ငေွအချက်အလက်များကိုတည်းဖြတ်တော့မည်။"
+
+msgid "You don't have enough privileges to view this section"
+msgstr "သင်တွင် ဤ အပိုင်းသို့ ဝင်ရောကကြည့် ရှု့၇န် လုံလောက်သော အခွင့်အရေး မရှိပါ။"
+
+msgid "CIRCULATION - Insert a member ID to start transaction with keyboard or barcode reader"
+msgstr "စာဌားရန်အသင်းဝင်နံပါတ်ကိုကီးဘုတ်သိုမဟုတ်ဘားကုတ်ဖတ်သည့်ကိရိယာဖြင့်ထည့်ပါ။"
+
+msgid "Start Transaction"
+msgstr "စာငှါးဆောင်ရွက်ခြင်းစတင်ပါ။"
+
+msgid "Transaction with member {member_id} is completed"
+msgstr "စာငှါးခြင်းဆောင်ရွက်ရန် အသင်းဝင်{member_id} ပြီးပြည့် စုံပြီး။"
+
+msgid "Insert Item Code/Barcode"
+msgstr "စာအုပ်သင်္ကေတနံပါတ်/ဘားကုတ် ထည့်ပါ။"
+
+msgid "Click To Change Loan Date"
+msgstr "စာငှါးနေ.စွဲပြောင်းရန်"
+
+msgid "Click To Change Due Date"
+msgstr "ပြန်လည်အပ်နှံရမည့်နေ့စွဲပြောင်းရန်နှိပ်ပါ။"
+
+msgid "Are you sure you want to return the item"
+msgstr "သင်သည် ငှါးရမ်းထားသည့်စာအုပ်ကိုပြန်လည်အပ်နှံ လိုသည်မှာသေချာရဲ့ လား။"
+
+msgid "Are you sure to extend loan for"
+msgstr "သင်သည်စာငှါးရက်တိုးမြှင့် လိုသည်မှာသေချာရဲ့လား။"
+
+msgid "Col. Type"
+msgstr "စာစုအမျိုးအစား"
+
+msgid "Return this item"
+msgstr "ပြန်လည်အပ်နှံသည့် ငှါးရမ်း ထားသည့် အရာ"
+
+msgid "No Extend"
+msgstr "ငှါး ရမ်းခွင့် ရက်တိုးမြှင့် မပေးပါ။"
+
+msgid "Extend loan for this item"
+msgstr "ဤ စာငှါးအတွက် ရက်တိုးမြှင့်ပေးပါ။"
+
+msgid "Extended"
+msgstr "ရက်တိုးမြှင့်ပေးသည်။"
+
+msgid "OVERDUED for"
+msgstr "…..ရက် ရက်လွန်သည်။"
+
+msgid "days(s) with fines value"
+msgstr "ရက်လွန်အရေအတွက်နှင့် ဒဏ်ငွေတန်ဖိုး"
+
+msgid "Send overdues notice e-mail"
+msgstr "ရက်လွန်နေကြောင်းအီးမေးလ် ပို့ပါ။"
+
+msgid "Loan Rules Successfully Updated"
+msgstr "စာငှါးစည်းမျဉ်းစည်းကမ်းများအောင်မြင်စွာဖြည့်စွက်ပြုပြင်ပြီ။"
+
+msgid "Loan Rules FAILED to Updated. Please Contact System Administrator"
+msgstr "စာငှါးစည်းမျဉ်းစည်းကမ်း ဖြည့်စွက်ပြုပြင်ခြင်း မအောင်မြင်ပါ။ ကွန်ပျူတာစံနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ်ပါ"
+
+msgid "New Loan Rules Successfully Saved"
+msgstr "စာငှါးစည်းမျဉ်းစည်းကမ်းအသစ်အားအောင်မြင်စွာသိမ်းဆည်းပြီး။"
+
+msgid "Loan Rules FAILED to Save. Please Contact System Administrator"
+msgstr "စာငှါးစည်းမျဉ်းစည်းကမ်းသိမ်းဆည်းခြင်း မအောင်မြင်ပါ။ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ်ပါ။"
+
+msgid "Loan Rules"
+msgstr "စာငှါးစည်းမျဉ်းစည်းကမ်း"
+
+msgid "Loan Rules List"
+msgstr "စာငှါးစည်းမျဉ်းစည်းကမ်းများစာရင်း"
+
+msgid "Add New Loan Rules"
+msgstr "စာငှါးစည်းမျဉ်းစည်းကမ်း အသစ်အား ဖြည့်စွက်ပါ။"
+
+msgid "ALL"
+msgstr "အားလုံး"
+
+msgid "Loan Limit"
+msgstr "ငှါးရမ်းနိုင်သည့်အရေအတွက်"
+
+msgid "Loan Period"
+msgstr "စာငှါးကာလ"
+
+msgid "Reborrow Limit"
+msgstr "ဆက်လက်ငှါးရမ်းခွင့် ကန့်သတ်ချက်"
+
+msgid "Fines Each Day"
+msgstr "တစ်ရက် အတွက် ဒဏ်ငွေ"
+
+msgid "Overdue Grace Periode"
+msgstr "ပြန်လည် အပ်နှံရန် စေ.ရက်မှ အသာတကြည်ကျော်လွန်ခွင့်"
+
+msgid "You are going to edit loan rules"
+msgstr "သင်သည်စာငှါးစည်းမျဉ်းစည်းကမ်းများကိုတည်းဖြတ်တော့ မည်။"
+
+msgid "Not Returned Yet"
+msgstr "ပြန်လည်မအပ်နှံသေးပါ။"
+
+msgid "Returned Date"
+msgstr "ြန်လည်အပ်နှံ သည့် နေ့စွဲ"
+
+msgid "Quick Return is disabled"
+msgstr "အမြန်ပြန်လည်အပ်နှံခြင်းကိုမရနိုင်ရန်ပြုလုပ်ထားသည်။"
+
+msgid "Quick Return"
+msgstr "အမြန်ပြန်လည်အပ်နှံခြင်း"
+
+msgid "Insert an item ID to return collection with keyboard or barcode reader"
+msgstr "စာအုပ်ကိုပြန်လည်အပ်နှံရန် စာအုပ်၏အမှတ်အသားကို ကီးဘုတ် သို့မဟုတ် ဘားကုတ် ဖတ်သည့်ကိရိယာဖြင့် ထည့်သွင်းပါ။"
+
+msgid "Item ID"
+msgstr "စာအုပ်၏သင်္ကေတ"
+
+msgid "Are you sure to remove reservation for"
+msgstr "အတွက် ကြိုတင်ရယူထားခြင်း ဖယ်ထုတ်မှာ သေချာရဲ့လား"
+
+msgid "Search Collection"
+msgstr "စာစုများရှာဖွေရန်"
+
+msgid "Add Reserve"
+msgstr "သီးသန့်လျာထားခြင်းထပ်ဖြည့်ပါ။"
+
+msgid "Reserve Date"
+msgstr "သီးသန့်လျာထားသည့်နေ့စွဲ"
+
+msgid "ALREADY EXPIRED"
+msgstr "ကုန်ဆုံး ပြီး"
+
+msgid "Start Circulation Transaction Proccess"
+msgstr "စာငှါးဆောင်ရွက်ခြင်းလုပ်ငန်းစဉ်စတင်ပါ။"
+
+msgid "Quick Return Collection"
+msgstr "အမြန်ပြန်လည်အပ်နှံခြင်များစာစု"
+
+msgid "View and Modify Circulation Loan Rules"
+msgstr "စာငှါးစည်းမျဉ်းစည်းကမ်းကိုဆန်းစစ်၍ လိုအပ်သလို ပြင်ဆင်ရေးသားရန်"
+
+msgid "Loan History Overview"
+msgstr "စာငှါးမှတ်တမ်းအားဆန်းစစ်လေ့လာခြင်း"
+
+msgid "Overdued List"
+msgstr "ငှါးရမ်းရက်လွန်စာရင်း"
+
+msgid "View Members Having Overdues"
+msgstr "ရက်လွန်အသင်းဝင်များ ကိုကြည့်ရှု့ခြင်း"
+
+msgid "Reservation"
+msgstr "ငှါးရမ်းခွင့် ကြိုတင် ရယူထားခြင်း"
+
+msgid "Author name can't be empty"
+msgstr "စာ​ရေးသူအမည်ကို ဗလာထား၍ မရပါ။"
+
+msgid "Author Data Successfully Updated"
+msgstr "စာ​ရေးသူအချက်အလက် အောင်မြင်စွာ ထပ်ဖြည့်ပြီး"
+
+msgid "Author Data FAILED to Updated. Please Contact System Administrator"
+msgstr "စာ​ရေးသူအချက်အလက် ထပ်ဖြည့်ခြင်း မအောင်မြင်ပါ၊ ကွန်ပျူတာစံနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ်လုပ်ဆောင်ပါ။"
+
+msgid "New Author Data Successfully Saved"
+msgstr "စာရေးသူဆိုင်ရာအချက်အလက်အသစ်အောင်မြင်စွာသိမ်းဆည်းပြီး။"
+
+msgid "Author Data FAILED to Save. Please Contact System Administrator"
+msgstr "စာရေးသူအချက်အလက်သိမ်ဆည်းခြင်း မအောင်မြင်ပါ၊ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "Author List"
+msgstr "စာ​ရေးသူစာရင်း"
+
+msgid "Add New Author"
+msgstr "စာ​ရေးသူ အသစ်ထပ်ဖြည့်ရန်"
+
+msgid "Author Birth Year"
+msgstr "စာရေးသူမွေးဖွားသည့်နှစ်"
+
+msgid "Authority Type"
+msgstr "စာရေးသူအမျိုးအစား"
+
+msgid "Authority Files"
+msgstr "ဝေါဟာရအသုံးအနှုန်းများဖိုင်"
+
+msgid "You are going to edit author data"
+msgstr "သင်သည်စာရေးသူအချက်အလက်ကိုတည်းဖြတ်တော့မည်။"
+
+msgid "Author Year"
+msgstr "စာရေး ပြီး ဆုံးသည့် နှစ်"
+
+msgid "Collection type name can't be empty"
+msgstr "စာစုအမျိုးအစားအမည်ကို ဗလာထား၍ မရပါ"
+
+msgid "Colllection Type Data Successfully Updated"
+msgstr "စာစုအမျိုးအစားစာရင်းအချက်အလက် အောင်မြင်စွာ ဖြည့် ထည့်ပြီး"
+
+msgid "Colllection Type Data FAILED to Updated. Please Contact System Administrator"
+msgstr "စာစုအမျိုးအစားအချက်အလက်များ ထပ်ဖြည့်ခြင်း မအောင်မြင်ပါ။ ကွန်ပျူတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "New Colllection Type Data Successfully Saved"
+msgstr "စာစုအမျိုးအစားအချက်အလက်အသစ်များ အောင်မြင်စွာ သိမ်ဆည်း ပြီး"
+
+msgid "Collection Type List"
+msgstr "စာစုအမျိုးအစားစာရင်း"
+
+msgid "Add New Collection Type"
+msgstr "စာစုအမျိုးအစားအသစ်ထပ်ထည့်ရန်"
+
+msgid "You are going to edit collection type data"
+msgstr "သင်သည် စုဆောင်းထားသည့်စာစုအမျိုးအစား အချက်အလက် ကိုတည်းဖြတ်တော့မည်။"
+
+msgid "Add New Term"
+msgstr "စကားလုံး အသစ် ထပ်ထည့်ရန်"
+
+msgid "Subject List"
+msgstr "ပညာရပ် စာရင်း"
+
+msgid "You are going to edit Subject data"
+msgstr "သင်သည်ပညာရပ်အချက်အလက်များကို တည်းဖြတ်တော့မည်။"
+
+msgid "Language ID or Name can't be empty"
+msgstr "ဘာသာစကားသင်္ကေတနှင့် အမည်ကို ဗလာထား၍မရပါ။"
+
+msgid "Language Data Successfully Updated"
+msgstr "ဘာသာစကားအချက်အလက်များ အောင်မြင်စွာဖြည့်စွက်ခြင်း"
+
+msgid "Language Data FAILED to Updated. Please Contact System Administrator"
+msgstr "ဘာသာစကားအချက်အလက်များဖြည့် စွက် ခြင်း မအောင်မြင်ပါ၊ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "New Language Data Successfully Saved"
+msgstr "ဘာသာစကားအချက်အလက်အသစ်များ အောင်မြင်စွာ သိမ်းဆည်းပြီး"
+
+msgid "Language Data FAILED to Save. Please Contact System Administrator"
+msgstr "ဘာသာစကားအချက်အလက် သိမ်းဆည်းခြင်း မအောင်မြင်ပါ၊ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "Doc. Language"
+msgstr "ဘာသာစကား"
+
+msgid "Language List"
+msgstr "ဘာသာစကားစာရင်း"
+
+msgid "Add New Language"
+msgstr "ဘာသာစကားအသစ် ထပ်ဖြည့်ရန်"
+
+msgid "Language Code"
+msgstr "ဘာသာစကားသင်္ကေတ"
+
+msgid "You are going to edit language data"
+msgstr "သင်သည်ဘာသာစကားအချက်အလက်များကို တည်းဖြတ်တော့မည်။"
+
+msgid "Frequency Data Successfully Updated"
+msgstr "အကြိမ်အချက်အလက် အောင်မြင်စွာဖြည့် စွက်ပြီး"
+
+msgid "Frequency Data FAILED to Updated. Please Contact System Administrator"
+msgstr "အကြိမ်အချက်အလက် လတ်တလော ဖြည့် စွက် ခြင်း မအောင်မြင်ပါ၊ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "New Frequency Data Successfully Saved"
+msgstr "အကြိမ် အချက် အလက် အောင်မြင်စွာ သိမ်းဆည်းပြီး"
+
+msgid "Frequency Data FAILED to Save. Please Contact System Administrator"
+msgstr "အကြိမ်အချက်အလက် သိမ်းဆည်းခြင်း မအောင်မြင်ပါ၊ ကွန်ပြူတာစံနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ်လုပ်ဆောင်ပါ။"
+
+msgid "Frequency Available"
+msgstr "ရရှိနှိင်သော အကြိမ်"
+
+msgid "Add New Frequency"
+msgstr "အကြိမ် အသစ် ထပ်ဖြည့်ပါ"
+
+msgid "Time Increment"
+msgstr "တိုးသွားသော အချိန် အတိုင်း အတာ"
+
+msgid "Day"
+msgstr "နေ့"
+
+msgid "Week"
+msgstr "သတင်းပတ်"
+
+msgid "Month"
+msgstr "လ"
+
+msgid "Year"
+msgstr "ခုနှစ်"
+
+msgid "Time Unit"
+msgstr "အချိန် အတိုင်းအတာ"
+
+msgid "You are going to edit Frequency data"
+msgstr "သင်သည်အကြိမ်အချက်အလက်များကိုတည်းဖြတ်တော့မည်။"
+
+msgid "GMD Code And Name can't be empty"
+msgstr "GMD သင်္ကေတ နှင့် အမည်ကို ဗလာထား၍ မရပါ"
+
+msgid "GMD Data Successfully Updated"
+msgstr "GMD  အချက်အလက်အောင်မြင်စွာ ဖြည့်ထည့်ပြီး"
+
+msgid "GMD Data FAILED to Updated. Please Contact System Administrator"
+msgstr "GMD အချက်အလက် ဖြည့်ထည့်ခြင်း မအောင်မြင်ပါ၊ ကွန်ပျူတာစံနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ်လုပ်ဆောင်ပါ။"
+
+msgid "New GMD Data Successfully Saved"
+msgstr "GMD  အချက်အလက် အသစ် အောင်မြင်စွာ သိမ်း ဆည်းပြီး"
+
+msgid "GMD Data FAILED to Save. Please Contact System Administrator"
+msgstr "GMD  အချက်အလက် သိမ်း ဆည်းခြင်း မအောင်မြင်ပါ၊ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "GMD (General Material Designation)"
+msgstr "GMD (General Media Designation)"
+
+msgid "GMD List"
+msgstr "GMD စာရင်း"
+
+msgid "Add New GMD"
+msgstr "GMD အသစ် ထပ်ဖြည့်ပါ"
+
+msgid "GMD Code"
+msgstr "GMD သင်္ကေတ"
+
+msgid "GMD Name"
+msgstr "GMD အမည်"
+
+msgid "You are going to edit gmd data"
+msgstr "သင်သည် GMD အချက်အလက်ကိုတည်းဖြတ်တော့မည်။"
+
+msgid "Delete Selected Data"
+msgstr "ရွှေး ချယ်ထားသောအချက်အလက်များကိုဖျက်ပြစ်ပါ"
+
+msgid "Check All"
+msgstr "အားလုံး ကို မှတ်ယူပါ"
+
+msgid "Uncheck All"
+msgstr "အားလုံး ကို မှတ်ယူခြင်းမှ ပယ်ဖျက်ပါ"
+
+msgid "No Loan Transaction"
+msgstr "စာငှါးဆောင်ရွက်မှုမရှိပါ။"
+
+msgid "Skipped By Stock Take"
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူခြင်းမှကျော်သွားသည်။"
+
+msgid "Item Status ID and Name can't be empty"
+msgstr "စာအုပ်အချက်အလက်အခြေအနေပြသင်္ကေတနှင့် အမည်ကို ဗလာထား၍မရပါ"
+
+msgid "Item Status Data Successfully Updated"
+msgstr "စာအုပ်အချက်အလက်အခြေအနေအောင်မြင်စွာ ထပ်ဖြည့် ပြီး"
+
+msgid "Item Status Data FAILED to Updated. Please Contact System Administrator"
+msgstr "စာအုပ်အချက်အလက်အခြေအနေထပ်ဖြည့် ခြင်း မအောင်မြင်ပါ၊ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "New Item Status Data Successfully Saved"
+msgstr "စာအုပ်အချက်အလက်အခြေအနေအသစ် သိမ်းဆည်းခြင်း မအောင်မြင်ပါ"
+
+msgid "Item Status Data FAILED to Save. Please Contact System Administrator"
+msgstr "စာအုပ်အချက်အလက်အခြေအနေ သိမ်ဆည်းခြင်း မအောင် မြင်ပါ၊ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "Add New Item Status"
+msgstr "စာအုပ်အသစ် အခြေအနေထပ်ဖြည့်ရန်"
+
+msgid "Item Status Code"
+msgstr "စာအုပ်အခြေအနေသင်္ကေတ"
+
+msgid "Item Status Name"
+msgstr "စာအုပ်အချက်အလက်အခြေအနေအမည်"
+
+msgid "Rules"
+msgstr "စည်းမျဉ်း စည်းကမ်း"
+
+msgid "You are going to edit Item Status data"
+msgstr "သင်သည်စာအုပ်အခြေအနေအချက်အလက်များကိုတည်း ဖြတ်တော့မည်။"
+
+msgid "Label Data Successfully Updated"
+msgstr "အမှတ်အသားတံဆိပ်အချက်အလက်အောင်မြင်စွာ ဖြည့်ထည့်ပြီး"
+
+msgid "Label Data FAILED to Updated. Please Contact System Administrator"
+msgstr "အမှတ်အသားတံဆိပ်အချက်အလက်ဖြည့်ထည့်ခြင်း  မအောင်မြင်ပါ၊ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ်လုပ်ဆောင်ပါ။"
+
+msgid "New Label Data Successfully Saved"
+msgstr "အမှတ်အသားတံဆိပ်အချက်အလက် အသစ်အောင်မြင်စွာ သိမ်းဆည်းပြီး"
+
+msgid "Label Data FAILED to Save. Please Contact System Administrator"
+msgstr "အမှတ်အသားတံဆိပ်အချက်အလက် အသစ်သိမ်းဆည်းခြင်း မအောင်မြင်ပါ၊ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "Label"
+msgstr "အမှတ်အသားတံဆိပ်"
+
+msgid "Label List"
+msgstr "အမှတ်အသားတံဆိပ်အချက်အလက် စာရင်း"
+
+msgid "Add New Label"
+msgstr "အမှတ်အသားတံဆိပ်အသစ်များထပ်ထည့်ရန်"
+
+msgid "Label Name"
+msgstr "အမှတ်အသားတံဆိပ်အချက်အလက်အမည်"
+
+msgid "Label Description"
+msgstr "အမှတ်အသားတံဆိပ်အချက်အလက် အကြောင်း အရာ"
+
+msgid "You are going to edit Label data"
+msgstr "သင်သည်အမှတ်အသားတံဆိပ်အချက်အလက်များကို တည်းဖြတ်တော့မည်။"
+
+msgid "Location ID and Name can't be empty"
+msgstr "တည်နေရာသင်္ကေတနှင့် အမည်ကို ဗလာထား၍မရပါ"
+
+msgid "Location Data Successfully Updated"
+msgstr "တည်နေရာအချက်အလက် အောင်မြင်စွာထပ်ဖြည့် ပြီး"
+
+msgid "Location Data FAILED to Updated. Please Contact System Administrator"
+msgstr "တည်နေရာအချက်အလက်ထပ်ဖြည့်ခြင်း မအောင်မြင်ပါ၊ ကွန်ပျူတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "New Location Data Successfully Saved"
+msgstr "နေရာအချက်အလက်အသစ် အောင်မြင်စွာသိမ်းဆည်းပြီး"
+
+msgid "Location Data FAILED to Save. Please Contact System Administrator"
+msgstr "တည်နေရာအချက်အလက်သိမ်းဆည်းခြင်း မအောင်မြင်ပါ။ ကွန်ပျူတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "Location List"
+msgstr "စာအုပ်တည်နေရာစာရင်း"
+
+msgid "Add New Location"
+msgstr "နေရာအသစ်ထပ်မံဖြည့် ပါ"
+
+msgid "Location Code"
+msgstr "စာအုပ်တည်နေရာသင်္ကေတ"
+
+msgid "Location Name"
+msgstr "စာအုပ်တည်နေရာအမည်"
+
+msgid "You are going to edit location data"
+msgstr "သင်သည်တည်နေရာအချက်အလက်ကို တည်းဖြတ်တော့မည်။"
+
+msgid "Server Name And URI can't be empty"
+msgstr "Server အမည်နှင့် URI ဗလာမဖွစျနိုငျ"
+
+msgid "Server Data Successfully Updated"
+msgstr "Server ဒေတာများကိုအောင်မြင်စွာနောက်ဆုံးရေးသားချိန်"
+
+msgid "Server Data FAILED to Updated. Please Contact System Administrator"
+msgstr "Server ဒေတာများကိုနောက်ဆုံးရေးသားချိန်ရန်မအောင်မြင်ခဲ့ပါ။ System ကိုအုပ်ချုပ်ရေးမှူးကိုဆက်သွယ်ပါ ကျေးဇူးပြု."
+
+msgid "Server Data FAILED to Save. Please Contact System Administrator"
+msgstr "Server ဒေတာများသိမ်းဆည်းရန်မအောင်မြင်ပါ။ System ကိုအုပ်ချုပ်ရေးမှူးကိုဆက်သွယ်ပါ ကျေးဇူးပြု."
+
+msgid "P2P Servers"
+msgstr "P2P Servers"
+
+msgid "Server List"
+msgstr "Server များစာရင်း"
+
+msgid "Add New Server"
+msgstr "server အသစ် ထပ်ထည့်ရန်"
+
+msgid "Server Name"
+msgstr "Server အမည်"
+
+msgid "Server Type"
+msgstr "Server အမျိုးအစား"
+
+msgid "SERVER"
+msgstr "SERVER"
+
+msgid "Place Name can't be empty"
+msgstr "ပုံနှိပ်ထုတ်ဝေသည့်နေရာအမည်ကိုဗလာထား၍မရပါ။"
+
+msgid "Place Data Successfully Updated"
+msgstr "ပုံနှိပ်ထုတ်ဝေသည့်နေရာအချက်အလက်အောင်မြင်စွာဖြည့် ထည့်ပြီး"
+
+msgid "Place Data FAILED to Updated. Please Contact System Administrator"
+msgstr "ပုံနှိပ်ထုတ်ဝေသည့်နေရာအချက် အလက်ဖြည့်ထည့်ခြင်း မအောင်မြင်ပါ။ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "New Place Data Successfully Saved"
+msgstr "ပုံနှိပ်ထုတ်ဝေသည့်နေရာအချက်အလက်အသစ် အောင်မြင်စွာ သိမ်းဆည်းပြီး"
+
+msgid "Place Data FAILED to Save. Please Contact System Administrator"
+msgstr "ပုံနှိပ်ထုတ်ဝေသည့်နေရာအချက်အလက်အောင်မြင်စွာ မသိမ်းဆည်းပါ။ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "Place"
+msgstr "ပုံနှိပ်ထုတ်ဝေသည့်နေရာ"
+
+msgid "Place List"
+msgstr "ပုံနှိပ်ထုတ်ဝေသည့်နေရာစာရင်း"
+
+msgid "Add New Place"
+msgstr "ပုံနှိပ်ထုတ်ဝေသည့်နေရာအသစ်ထပ်ဖြည့်ရန်"
+
+msgid "Place Name"
+msgstr "ပုံနှိပ်ထုတ်ဝေသည့်နေရာအမည်"
+
+msgid "You are going to edit place data"
+msgstr "သင်သည်ပုံနှိပ်ထုတ်ဝေသည့်နေရာအချက်အလက်ကို တည်းဖြတ်မည်။"
+
+msgid "Cancel"
+msgstr "ပယ်ဖျက်ရန်"
+
+msgid "Add Vocabulary"
+msgstr "ဝေါဟာရ အသစ်ထည်ရန်"
+
+msgid "Publisher Name can't be empty"
+msgstr "ထုတ် ဝေသူ အမည် ကို ဗလာ ထား၍ မရပါ"
+
+msgid "Publisher Data Successfully Updated"
+msgstr "ထုတ်ဝေသူ အချက်အလက် အောင်မြင်စွာ ထပ်ဖြည့်ပြီး"
+
+msgid "PUBLISHER Data FAILED to Updated. Please Contact System Administrator"
+msgstr "ထုတ် ဝေသူအချက်အလက် ထပ်ဖြည့်ခြင်း မအောင် မြင်ပါ၊ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "New Publisher Data Successfully Saved"
+msgstr "ထုတ်ဝေသူအချက်အလက်အသစ်အောင်မြင်စွာသိမ်းဆည်းပြီး။"
+
+msgid "Publisher Data FAILED to Save. Please Contact System Administrator"
+msgstr "ထုတ်ဝေသူအချက်အလက်သိမ်းဆည်းခြင်း မအောင်မြင်ပါ၊ ကွန်ပျုတာစနစ်စီမံခန့်ခွဲသူနှင့်ဆက်သွယ်လုပ်ဆောင်ပါ။"
+
+msgid "Publisher List"
+msgstr "ထုတ် ဝေသူ စာ ရင်း"
+
+msgid "Add New Publisher"
+msgstr "ထုတ်ဝေသူအသစ်ထပ်ဖြည့် ပါ။"
+
+msgid "Publisher Name"
+msgstr "ထုတ် ဝေသူ အမည်"
+
+msgid "You are going to edit publisher data"
+msgstr "သင်သည်ထုတ်ဝေသူအချက်အလက်ကိုတည်းဖြတ်တော့မည်။"
+
+msgid "Name can't be empty"
+msgstr "အမည် ကို ဗလာ ထား၍ မရပါ"
+
+msgid "Add New "
+msgstr "အသစ် ထပ်ထည့်ရန်"
+
+msgid "Code"
+msgstr "ကုဒ်"
+
+msgid "Name"
+msgstr "အမည်"
+
+msgid "General Material Designation"
+msgstr "အထွေထွေ ပစ်စည်း အမျိုးအစား သတ်မှတ်ခြင်း ( GMD)"
+
+msgid "Content Type"
+msgstr "အကြောင်းအရာအမျိုးအစား"
+
+msgid "RDA Content Type"
+msgstr "RDA အကြောင်းအရာအမျိုးအစား"
+
+msgid "Media Type"
+msgstr "မီဒီယာအမျိုးအစား"
+
+msgid "RDA Media Type"
+msgstr "RDA မီဒီယာအမျိုးအစား"
+
+msgid "Document Publisher"
+msgstr "စာရွက် စာတမ်း ထုတ်ဝေသူ"
+
+msgid "Item Supplier"
+msgstr "ဖြန့်ဝေသူ"
+
+msgid "Document Authors"
+msgstr "စာရေးသူများ"
+
+msgid "Subject"
+msgstr "ပညာရပ်"
+
+msgid "Item Location"
+msgstr "စာအုပ်တည်နေရာ"
+
+msgid "Lookup Files"
+msgstr "ရှာကြည့်ရန် ဖိုင်"
+
+msgid "Document Content Language"
+msgstr "စာရွက်စာတမ်း ပါဝင်ရေးသားထားသောဘာသာစကား"
+
+msgid "Special Labels for Titles to Show Up On Homepage"
+msgstr "မူလကနဦး စာမျက်နှာတွင် တင်ရန်အထူးခေါင်းစည်းများ"
+
+msgid "Orphaned Author"
+msgstr "အမည်မသိစာရေးသူ"
+
+msgid "Orphaned Authors"
+msgstr "အမည်မသိစာရေးသူများ"
+
+msgid "Orphaned Subject"
+msgstr "အမည်မသိပညာရပ်"
+
+msgid "Orphaned Publisher"
+msgstr "အမည်မသိပုံနှိပ်ထုတ်ဝေသူ"
+
+msgid "Orphaned Place"
+msgstr "အမည်မသိပုံနှိပ်ထုတ်ဝေသည့်နေရာ"
+
+msgid "Supplier Name can't be empty"
+msgstr "ဖြန့်ဝေသူအမည်ကိုဗလာထား၍ မရပါ။"
+
+msgid "Supplier Data Successfully Updated"
+msgstr "ဖြန့်ဝေသူအချက်အလက်အောင်မြင်စွာထပ်ဖြည့်ပြီး"
+
+msgid "Supplier Data FAILED to Updated. Please Contact System Administrator"
+msgstr "ဖြန့်ဝေသူအချက်အလက်ထပ်ဖြည့်ခြင်းမအောင် မြင်ပါ။၊ ကွန်ပျူတာစနစ်စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "New Supplier Data Successfully Saved"
+msgstr "ဖြန့်ဝေသူအချက်အလက်အသစ်အောင်မြင်စွာသိမ်းဆည်းနိုင်သည်၊၊"
+
+msgid "Supplier Data FAILED to Save. Please Contact System Administrator"
+msgstr "ဖြန့်ဝေသူအချက်အလက် သိမ်းဆည်းခြင်း မအောင်မြင်ပါ၊ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "Supplier List"
+msgstr "ဖြန့်ဝေသူစာရင်း"
+
+msgid "Add New Supplier"
+msgstr "ဖြန့်ဝေသူအသစ်ထပ်ဖြည့်ပါ။"
+
+msgid "Supplier Name"
+msgstr "ဖြန့်ဝေသူအမည်"
+
+msgid "Address"
+msgstr "နေရပ်လိပ်စာ"
+
+msgid "Contact"
+msgstr "ဆက်သွယ်ပါ။"
+
+msgid "Phone Number"
+msgstr "ဖုံးနံပါတ်"
+
+msgid "Fax Number"
+msgstr "ပုံ၊ စာရွက် စာတမ်း တိုရိုက်ပို့နိုင်သော ဖုံးနံပါတ်"
+
+msgid "Account Number"
+msgstr "စာရင်း အမှတ်"
+
+msgid "You are going to edit Supplier data"
+msgstr "သင်သည်ဖြန့်ဝေသူ၏အချက်အလက်များကို တည်းဖြတ်မည်။"
+
+msgid "Subject can't be empty"
+msgstr "ပညာရပ်ကို ဗလာထား၍ မရပါ"
+
+msgid "Subject Data Successfully Updated"
+msgstr "ပညာရပ် အချက်အလက်များ အောင်မြင်စွာ လတ်တလောအချိန်ထိ ဖြည့် ထည့်ပြီး"
+
+msgid "Subject Data FAILED to Updated. Please Contact System Administrator"
+msgstr "ပညာရပ် အချက်အလက်များလတ်တလောအချိန်ထိ ဖြည့် ထည့်ခြင်း မအောင်မြင်ပါ။ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "New Subject Data Successfully Saved"
+msgstr "ဘာသာရပ်ဆိုင်ရာအချက်အလက်အသစ်အောင်မြင်စွာ သိမ်းဆည်းပြီး"
+
+msgid "Subject Data FAILED to Save. Please Contact System Administrator"
+msgstr "ပညာရပ်အချက်အလက် သိမ်ဆည်းခြင်း မအောင်မြင်ပါ။ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "Add New Subject"
+msgstr "ပညာရပ်အသစ် ထပ်ဖြည့်ပါ"
+
+msgid "Classification Code"
+msgstr "မျိုးတူစုသင်္ကေတ"
+
+msgid "Subject Type"
+msgstr "ပညာရပ်အမျိုးအစား"
+
+msgid "Add New Vocabulary"
+msgstr "ဝေါဟာရ အသစ်ထည်ရန်"
+
+msgid "Class. Code"
+msgstr "မျိုးတူစုသင်္ကေတ"
+
+msgid "There is no record in membership database yet, Export FAILED!"
+msgstr "အသင်းဝင်များအချက်အလက်ဘဏ်တွင်မှတ်တမ်းမရှိသေးပါ၊ ပြင်ပသို့ပေးပို့ခြင်း မအောင်မြင်ပါ၊"
+
+msgid "Export Data"
+msgstr "အချက်အလက်များအခြားသို့ ပို့ဆောင်ခြင်း"
+
+msgid "Export member(s) data to CSV file"
+msgstr "အသင်းဝင်များ၏ သတင်းအချက်အလက်များကို CSV  ဖိုင်သို့ ပေးပို့ရန်"
+
+msgid "records inserted successfully to members database, from record"
+msgstr "မွတ္တမ္းမွအသင္းဝင္၏အေျခခံအခ်က္အလက္ထည္.သြင္းျခင္းေအာင္ျမင္ေျကာင္းမွတ္တမ္းတင္သည္။"
+
+msgid "Import Data"
+msgstr "ပြင်ပမှအချက်အလက်များ လက်ခံရယူခြင်း"
+
+msgid "Import for members data from CSV file"
+msgstr "CSV ဖိုင်မှ အသင်းဝင်များ၏ အချက်အလက်များအတွက် ပြင်ပသို့ ပို့လွတ်ပါ။"
+
+msgid "Member ID and Name can't be empty"
+msgstr "အသင်းဝင်နံပါတ်နှင့် အမည်ကို ချန်လပ် ၍မရပါ။"
+
+msgid "Password confirmation does not match. See if your Caps Lock key is on!"
+msgstr "စကားဝှက်ကိုက်ညီမှန်ကန်ခြင်း မရှိပါ။ သင်၏ Caps Lock key ခလုပ် ဖွင့်ထားမိ သလား ကြည့်ပါ။"
+
+msgid "Member Data Successfully Updated"
+msgstr "အသင်းဝင်၏ ကိုယ်ရေးအချက်အလက်များ ထပ်မံအောင် မြင်စွာ ထည့်သွင်းခဲ.သည်။"
+
+msgid "Image FAILED to upload"
+msgstr "ရုပ်ပုံတင်ခြင်း မအောင်မြင်ပါ။"
+
+msgid "Member Data FAILED to Save/Update. Please Contact System Administrator"
+msgstr "အသင်းဝင်၏ ကိုယ်ရေးအချက်အလက်များထည့်သွင်း ခြင်းဖြည့်စွက်ခြင်းမအောင်ပါ။ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "New Member Data Successfully Saved"
+msgstr "အသင်းဝင်အသစ်၏ကိုယ်ရေးအချက်အလက်များ အောင်မြင်စွာ သိမ်းဆည်းပြီး။"
+
+msgid "Below member data can't be deleted because still have unreturned item(s)"
+msgstr "အောက်တွင်ရှိ အသင်းဝင်၏ ကိုယ်ရေး အချက်အလက်များ ပယ်ဖျက်ရန် မဖြစ်နိုင်ပါ၊ ပြန်လည်အပ်နှံရန် အရာများရှိနေသည်။"
+
+msgid "Membership"
+msgstr "အသင်းဝင်"
+
+msgid "Member List"
+msgstr "အသင်းဝင်များ စာရင်း"
+
+msgid "View Expired Member"
+msgstr "အသင်းဝင်အဖြစ်မှ ရပ်ဆိုင်း သွားသူများမှာ၊"
+
+msgid "Add New Member"
+msgstr "အသင်းဝင်အသစ်ထပ်ဖြည့်ရန်"
+
+msgid "Member Search"
+msgstr "အသင်းဝင်အမည်ရှာခြင်း"
+
+msgid "Extend Membership"
+msgstr "အသင်းဝင်သက်တမ်း တိုးမြှင့်ရန်"
+
+msgid "Birth Date"
+msgstr "မွေးရက်၊ လ၊ ခုနှစ်"
+
+msgid "Member Since"
+msgstr "အသင်းဝင်အဖြစ်စတင်သည့်နေ့စွဲ"
+
+msgid "Auto Set"
+msgstr "အလိုအလျှောက်အစုအဝေး"
+
+msgid "Institution"
+msgstr "အဖွဲ့ အစည်း"
+
+msgid "Membership Type"
+msgstr "အသင်းဝင် အမျိုးအစား"
+
+msgid "Male"
+msgstr "ကျား"
+
+msgid "Female"
+msgstr "မ"
+
+msgid "Sex"
+msgstr "ကျား/မ"
+
+msgid "Postal Code"
+msgstr "စာတိုက်သင်္ကေတ"
+
+msgid "Mail Address"
+msgstr "စာတိုက်မှ စာပေးပို့ရန် လိပ်စာ"
+
+msgid "Personal ID Number"
+msgstr "မိမိ၏ ကိုယ်ရေးဖေါ်ပြသင်ကေတနံပါတ်"
+
+msgid "Notes"
+msgstr "မှတ်စုများ"
+
+msgid "Pending Membership"
+msgstr "ဆိုင်းငံ့ထားသည့် အသင်းဝင်"
+
+msgid "Yes"
+msgstr "မှန်ပါတယ်"
+
+msgid "or take a photo"
+msgstr "သို.မဟုတ္ဓါတ္ပၤုယူခဲ.ပါ"
+
+msgid "Load Camera"
+msgstr "ကင်မရာအသုံးပြုပါ"
+
+msgid "Ratio:"
+msgstr "္အခ်ိဳး"
+
+msgid "Photo"
+msgstr "ဓါတ်ပုံ"
+
+msgid "E-mail"
+msgstr "အီးမေးလိပ်စာ"
+
+msgid "New Password"
+msgstr "စကားဝှက်အသစ်"
+
+msgid "Confirm New Password"
+msgstr "စကားဝှက်အသစ်မှန်ကြောင်းအတည်ပြုပါ။"
+
+msgid "You are going to edit member data"
+msgstr "သင်သည်အသင်းဝင်အချက်အလက်များတည်းဖြတ်တော့မည်။"
+
+msgid "Leave Password field blank if you don't want to change the password"
+msgstr "စကားဝှက်ထည့်သည့်အကွက်အားစကားဝှက်ကို မပြောင်းလဲ လိုပါကဗလာထားပါ။"
+
+msgid "Expired Member List"
+msgstr "အသင်းဝင်အဖြစ် ကုန်ဆုံးသွာသောသူများစာရင်း"
+
+msgid "Extend Selected Member(s)"
+msgstr "ရွေး ချယ်ထားသော အသင်းဝင်ကိုအသင်းဝင်သက်တမ်း တိုးပါ။"
+
+msgid "Are you sure to EXTEND membership for selected members?"
+msgstr "ရွေးချယ်ထားသော အသင်းဝင်များကိုသက်တမ်း တိုးရန် သင်သေချာ ရဲ့လား။"
+
+msgid "members extended!"
+msgstr "အသင်းဝင် များကို သက်တမ်း တိုးလိုက်ပြီ။"
+
+msgid "Found"
+msgstr "တွေ.ရှိသည်။"
+
+msgid "from your search with keyword"
+msgstr "သင်ရှာဖွေသောအဓိကစာလုံးမှ"
+
+msgid "days"
+msgstr "ရက်ပေါင်း"
+
+msgid "Overdue Notice for Member {member_name} ({member_email})"
+msgstr "အသင်းဝင် {member_name} ({member_email}) များအတွက်ရက်လွန်သတိပြုပါ"
+
+msgid "Member Card Printing"
+msgstr "အသင်းဝင်ကဒ်များရိုက်နှိပ်ခြင်း"
+
+msgid "Print Member Cards for Selected Data"
+msgstr "ရွေးထားသည့် မှတ်တမ်းအချက်အလက်များအတွက်အသင်းဝင်ကဒ် ပုံနှိပ်ပါ။"
+
+msgid "Member card print settings"
+msgstr "အသင်းဝင်ကဒ်များရိုက်နှိပ်ခြင်းသတ်မှတ်ခြင်း"
+
+msgid "Member Type Name can't be empty"
+msgstr "အသင်းဝင် အမျိုးအစားအမည်ကိုဗလာ ထား၍ မရပါ။"
+
+msgid "Member Type Successfully Updated"
+msgstr "အသင်းဝင် အမျိုးအစားအောင်မြင်စွာ ဖြည့်စွက်ပြီးပြီ။"
+
+msgid "Member Type Data FAILED to Save/Update. Please Contact System Administrator"
+msgstr "အသင်းဝင်အမျိုးအစား အချက်အလက်များ ဖြည့်စွက်ခြင်း မအောင်မြင်ပါ။ ကွန်ပျူတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ်လုပ်ဆောင်ပါ"
+
+msgid "New Member Type Successfully Saved"
+msgstr "အသင်းဝင်အမျိုးအစားအသစ်အောင်မြင်စွာ သိမ်းဆည်းပြီး။"
+
+msgid "Member Type List"
+msgstr "အသင်းဝင်အမျိုးအစား စာရင်း"
+
+msgid "Add New Member Type"
+msgstr "အသင်းဝင်အမျိုးအစားအသစ်ထပ်ထည့်ရန်"
+
+msgid "Member Type Name"
+msgstr "အသင်းဝင်အမျိုးအစားအမည်"
+
+msgid "Loan Periode (In Days)"
+msgstr "စာငှါးကာလ ( ရက်ဖြင့်)"
+
+msgid "Enable"
+msgstr "လုပ်နိုင်ရန် ဖွင့် ပေးသည်။"
+
+msgid "Disable"
+msgstr "မလုပ်နိုင်ရန်ပိတ်လိုက်သည်။"
+
+msgid "Reserve Limit"
+msgstr "သီးသန့်လျာထားနိုင်သည့်အကန့်အသတ်"
+
+msgid "Membership Periode (In Days)"
+msgstr "အသင်းဝင်ကာလ (ရက်ဖြင့်)"
+
+msgid "Fine Each Day"
+msgstr "တစ်ရက် အတွက် ဒဏ်ငွေ"
+
+msgid "View Member List"
+msgstr "အသင်းဝင်များ စာရင်းကြည့်ရန်"
+
+msgid "View Library Member List"
+msgstr "အသင်းဝင်စာကြည့်တိုက်များစာရင်းကြည့်ရန်"
+
+msgid "Add New Library Member Data"
+msgstr "အသင်းဝင်အသစ်များ၏ အချက်အလက်များ ထပ်ဖြည့်ပါ"
+
+msgid "View and modify member type"
+msgstr "အသင်းဝင်အမျိုးအစားကြည့်၍လိုအပ်သလိုပြင်ပါ"
+
+msgid "Print Member Card"
+msgstr "အသင်းဝင်ကဒ်ပုံနှိပ်ပါ"
+
+msgid "Export Members Data To CSV File"
+msgstr "CSV ဖိုင်သို့ အသင်းဝင်များ၏အချက်အလက်များ ပို့ဆောင်ခြင်း"
+
+msgid "Import Members Data From CSV File"
+msgstr "CSV ဖိုင်မှ အသင်းဝင်များ၏အချက်အလက်များ လက်ခံရယူခြင်း"
+
+msgid "Total Titles By Medium/GMD"
+msgstr "GMD/Medium မွစုစုေပါင္းေခါင္းစဥ္"
+
+msgid "Total Items By Collection Type"
+msgstr "စာစုအမျိုးအစားအလိုက်စာအုပ်စုစုပေါင်း"
+
+msgid "Total Members By Membership Type"
+msgstr "အသင်းဝင်အမျိုးအစားအလိုက် အသင်းဝင်စုစုပေါင်း"
+
+msgid "Total Loan By GMD/Medium"
+msgstr "GMD/Medium မွအားလံုးငွားရမ္းျခင္း"
+
+msgid "Total Loan By Collection Type"
+msgstr "စာစုအမျိုးအစားအလိုက်စာငှါးစုစုပေါင်း"
+
+msgid "Custom Recapitulations"
+msgstr "သုံးစွဲသူ၏အဓိကအချက်အလက်အနှစ်ချုင်္ပ"
+
+msgid "Report Filter"
+msgstr "အစီရင်ခံစာကိုစစ်ထုတ်ခြင်း "
+
+msgid "Recap By"
+msgstr "မှ တိကျစွာ ပြန်လည်ဖေါ်ပြသည်"
+
+msgid "Apply Filter"
+msgstr "စစ်ထုတ်ခြင်းအသုံးပြုရန်"
+
+msgid "Show More Filter Options"
+msgstr "စစ်ထုတ်နည်းများဖေါ်ပြပါ။"
+
+msgid "Hide Filter Options"
+msgstr "စစ်ထုတ်နည်းများကိုဖုံးကွယ်ထားရန်"
+
+msgid "Title and Collection Recap by"
+msgstr "ခေါင်းစည်း နှင်.စုဆောင်း ထားသည် ကို  တိကျစွာ ပြန်လည်ဖေါ်ပြသူ"
+
+msgid "Print Current Page"
+msgstr "လက်ရှိစာမျက်နှာကို ပုံနှိပ်ရန်"
+
+msgid "Export to spreadsheet format"
+msgstr "ဇယားပုံစံပို့ဆောင်ခြင်း"
+
+msgid "Title and Collection recapitulation based on classification and others"
+msgstr "အမျိုးအစား ခွဲခြား သတ်မှတ်ခြင်း နှင့် အခြားသော အချက် များ ပေါ်တွင်မူတည်၍ တိကျစွာ ပြန်လည်ဖေါ်ပြထားသော ခေါင်းစည်း အမည် နှင့် စုဆောင်းထားသည်များ"
+
+msgid "Title List"
+msgstr "စာအုပ်အမည်စာရင်း"
+
+msgid "List of bibliographic titles"
+msgstr "စာကြည့်တိုက် ဆိုင်ရာ ခေါင်းစည်း အမည် စာရင်း"
+
+msgid "Items Title List"
+msgstr "စာအုပ်ခေါင်းစည်းအမည်များစာရင်း"
+
+msgid "List of collection/items"
+msgstr "စာစုများ/ စာအုပ်များစာရင်း"
+
+msgid "Items Usage Statistics"
+msgstr "စာအုပ်များသုံးခြင်းစာရင်းဇယား"
+
+msgid "List of Collection/items usage statistic"
+msgstr "စာစုများ/ စာအုပ်များသုံးခြင်းစာရင်းဇယား"
+
+msgid "Loans by Classification"
+msgstr "မျိုးတူစုအလိုက် စာငှါးမှတ်တမ်းများ"
+
+msgid "Loan statistic by classification"
+msgstr "မျိုးတူစုအလိုက်စာငှါးစာရင်း"
+
+msgid "List of library member/patron"
+msgstr "စာကြည့်တိုက် အသင်းဝင်/ထောက်ခံ သူ စာရင်း"
+
+msgid "Loan List by Member"
+msgstr "အသင်းဝင်အလိုက်စာငှားစာရင်း"
+
+msgid "List of loan by each member"
+msgstr "အသင်းဝင်တစ်ဦးချင်း၏စာငှါးစာရင်း"
+
+msgid "Due Date Warning"
+msgstr "ပြန်လည်အပ်နှံရမည့်နေ့စွဲသတိပေးခြင်း"
+
+msgid "Loan Due Date Warnings"
+msgstr "ပြန်လည်အပ်နှံရမည့်နေ့စွဲများသတိပေးခြင်း"
+
+msgid "Staff Activity"
+msgstr "စာကြည့် တိုက် ဝန်ထမ်း လုပ်ငန်းဆောင်တာ"
+
+msgid "Staff activity log recapitulation"
+msgstr "စာကြည့် တိုက် ဝန်ထမ်း လုပ်ငန်းဆောင်တာ မှတ်တမ်း မှတ်ရာ တိကျစွာ ပြန်လည်ဖေါ်ပြခြင်း"
+
+msgid "Visitor Statistic"
+msgstr "စာကြည့် တိုက် သို.လာရောက် သူစာရငး"
+
+msgid "Visitor Statistic (by Day)"
+msgstr "စာကြည့် တိုက် သို.လာရောက် သူစာရငးလေ့လာဖေါ်ပြခြင်း (နေ့အလိုက်)"
+
+msgid "Visitor List"
+msgstr "စာကြည့် တိုက် သို.လာရောက် သူ စာရင်း"
+
+msgid "Fines Report"
+msgstr "ဒဏ်ငွေအစီရင်ခံစာ"
+
+msgid "This report loan items which will due in 3 to 0 days"
+msgstr "ပြန်လည်အပ်နှံရန် ၃ရက်အတွင်း စေ့ မည် အရာဝတ်ထုများ အတွက် အစီရင်ခံစာ"
+
+msgid "Record each page"
+msgstr "စာမျက်နှာတစ်ခုချင်းရှိမှတ်တမ်:များ"
+
+msgid "Set between 20 and 200"
+msgstr "အရေအတွက်အားဖြင့် ၂၀ မှ ၂၀၀ ထိထားပါ"
+
+msgid "Jan"
+msgstr "ဇန်နဝါရီ"
+
+msgid "Feb"
+msgstr "ဖေဖေါ်ဝါရီ"
+
+msgid "Mar"
+msgstr "မတ်"
+
+msgid "Apr"
+msgstr "ဧပြီ"
+
+msgid "May"
+msgstr "မေ"
+
+msgid "Jun"
+msgstr "ဇွန်"
+
+msgid "Jul"
+msgstr "ဇူလိုင်"
+
+msgid "Aug"
+msgstr "သြဂုတ်"
+
+msgid "Sep"
+msgstr "စက်တင်ဘာ"
+
+msgid "Oct"
+msgstr "အောက်တိုဘာ"
+
+msgid "Nov"
+msgstr "နိုဝင်ဘာ"
+
+msgid "Dec"
+msgstr "ဒီဇင်ဘာ"
+
+msgid "Title/ISBN"
+msgstr "စာအုပ်အမည်/ ISBN"
+
+msgid "Press Ctrl and click to select multiple entries"
+msgstr "Ctrl နှိပ်၍ အမျိုးမျိုး သော ထည့်သွင်းစရာများကို ရွေးချယ် ရန် နှိပ်ပါ"
+
+msgid "0 Classes"
+msgstr "မျိုးတူစုအမှတ် 0"
+
+msgid "1 Classes"
+msgstr "မျိုးတူစုအမှတ် ၁"
+
+msgid "2 Classes"
+msgstr "မျိုးတူစုအမှတ် ၂"
+
+msgid "2X Classes (Islamic Related)"
+msgstr "မ်ိဳးတူစုအမွတ္ ၂ (အစၥလာမ္ဘာသာႏွင္.သက္ဆိုင္သည္)"
+
+msgid "3 Classes"
+msgstr "မျိုးတူစုအမှတ် ၃"
+
+msgid "4 Classes"
+msgstr "မျိုးတူစုအမှတ် ၄"
+
+msgid "5 Classes"
+msgstr "မျိုးတူစုအမှတ် ၅"
+
+msgid "6 Classes"
+msgstr "မျိုးတူစုအမှတ် ၆"
+
+msgid "7 Classes"
+msgstr "မျိုးတူစုအမှတ် ၇"
+
+msgid "8 Classes"
+msgstr "မျိုးတူစုအမှတ် ၈"
+
+msgid "9 Classes"
+msgstr "မျိုးတူစုအမှတ် ၉"
+
+msgid "NON Decimal Classes"
+msgstr "ဒဿမနောက်ကိန်းများဖြင်. ဖေါ်ပြမထားသော အမျိုးအစားများ"
+
+msgid "Loan Date From"
+msgstr "စတင်ငှါးရမ်းသည့်နေ့စွဲ"
+
+msgid "Loan Date Until"
+msgstr "မည်သည့်နေ့ထိငှါးရမ်းသည့်နေ့စွဲ"
+
+msgid "Loan Status"
+msgstr "စာငှါးအခြေအနေ"
+
+msgid "On Loan"
+msgstr "ငှါးရမ်းထားသည်"
+
+msgid "Returned"
+msgstr "ပြန်လည် အပ်နှံ ခဲ့ သည်"
+
+msgid "Register Date From"
+msgstr "စတင်မှတ်တမ်းတင်သည့် နေ့စွဲ"
+
+msgid "Register Date Until"
+msgstr "မည်သည့်နေ့ထိ မှတ်တမ်းတင်သည့် နေ့စွဲ"
+
+msgid "day(s)"
+msgstr "ရက် မည်မျှ"
+
+msgid "Reserve Date From"
+msgstr "နေ့မှစ၍ သီးသန့်လျာထားသည်။"
+
+msgid "Reserve Date Until"
+msgstr "နေ့မတိုင်မီအထိသီးသန့်လျာထားသည်။"
+
+msgid "Activity Date From"
+msgstr "စတင်လုပ်ဆောင်သည့် နေ့စွဲ"
+
+msgid "Activity Date Until"
+msgstr "လုပ်ဆောင်ချက်နေ့စွဲအချိန်အထိ"
+
+msgid "Real Name"
+msgstr "အမည်အမှန်"
+
+msgid "Login Username"
+msgstr "ဝင်ရောက်ရန်အသုံးပြုသည့်အမည်"
+
+msgid "Bibliography Data Entry"
+msgstr "ကက်တလောက်အချက်အလက်ထည့်သွင်းခြင်း"
+
+msgid "Item Data Entry"
+msgstr "စာအုပ်ဆိုင်ရာအချက်အလက်ထည့် သွင်းခြင်း"
+
+msgid "Member Data Entry"
+msgstr "အသင်းဝင်ဆိုင်ရာအချက်အလက်ထည့် သွင်းခြင်း"
+
+msgid "Returns"
+msgstr "ပြန်လည်အပ်နှံသည်များ"
+
+msgid "NON-Member visitor"
+msgstr "စာကြည့် တိုက် သို့ လာရောက် သူ ထဲမှ အသင်းဝင်မဟုတ်သူ "
+
+msgid "Visitor ID"
+msgstr "လာရောက် သူ၏ကိုယ်ရေး သင်ကေတ"
+
+msgid "Visitor Name"
+msgstr "စာကြည့် တိုက် သို့ လာရောက် သူအမည်"
+
+msgid "Visit Date From"
+msgstr "စာကြည့် တိုက် သို့ လာရောက်ခြင်း စတင်သည့် နေ့စွဲ"
+
+msgid "Visit Date Until"
+msgstr "နေ့စွဲမှီတိုငျအောငျစာကြည့်တိုက်ကိုသွားရောက်ကြည့်ရှု"
+
+msgid "Visit Date"
+msgstr "စာကြည့် တိုက် သို့ လာရောက်သည့် နေ့စွဲ"
+
+msgid "Library Visitor Report"
+msgstr "စာကြည့်တိုက်ကို\t အသုံးပြုသူအစီရင်ခံစာ"
+
+msgid "NON-Member Visitor"
+msgstr "စာကြည့်တိုက် အသင်းဝင်မဟုတ်သူ များထဲမှ လာရောက်သူ"
+
+msgid "Total visit/month"
+msgstr "တနှစ် လာရောက်သူ စုစုပေါင်း"
+
+msgid "Visitor Report"
+msgstr "လာရောက်သူ အစီရင်ခံစာ"
+
+msgid "Total Titles"
+msgstr "အရာဝတ်ထုခေါင်းစည်း  အမည်စုစုပေါင်း"
+
+msgid "Total Titles with items"
+msgstr "စာအုပ်ခေါင်းစည်းအမည်နှင့်အုပ်ရေစုစုပေါင်း"
+
+msgid "Total Items/Copies"
+msgstr "စာအုပ်အမျိုးအစား စုစုပေါင်း / စောင်ရေစုစုပေါင်း"
+
+msgid "Total Checkout Items"
+msgstr "ငှါးရမ်းသည့်စာအုပ်စုစုပေါင်းစာရင်း"
+
+msgid "Total Items In Library"
+msgstr "စာကြည့်တိုက်ရှိစာအုပ်စုစုပေါင်း"
+
+msgid "Show in chart/plot"
+msgstr "ပံုစံကားခ်ပ္/ ဇတ္လမ္းျဖင္.ပံုေဖၚပါ"
+
+msgid "10 Most Popular Titles"
+msgstr "လူကြိုက်များသောစာအုပ်ခေါင်းစဉ်၁ဝခု"
+
+msgid "Collection Statistic Summary"
+msgstr "စာစုစာရင်းများအကျဉ်းချုပ်"
+
+msgid "Collection Statistic Report"
+msgstr "စာစုစာရင်းများအစီရင်ခံစာ"
+
+msgid "Collection Statistic"
+msgstr "စာစုစာရင်းများ "
+
+msgid "Download Report"
+msgstr "အစီရင်ခံစာ ကို ဆွဲချကူးယူပါ။"
+
+msgid "Total Loan"
+msgstr "စာငှါးစုစုပေါင်း"
+
+msgid "Total Loan Transactions"
+msgstr "စာငှါးခြင်းဆောင်ရွက်ပြီးစီးမှုစုစုပေါင်း"
+
+msgid "Transaction Average (Per Day)"
+msgstr "ပျမ်းမျှစာငှါးခြင်းဆောင်ရွက်ပြီးစီးမှု ( တစ်နေ့လျှင်)"
+
+msgid "Total Peak Transaction"
+msgstr "စာငှါးခြင်းဆောင်ရွက်ပြီးစီးမှု စုစုပေါင်းအမြင့်ဆုံးအတိုင်း အတာ"
+
+msgid "Members Already Had Loans"
+msgstr "စာငှါးလက်ဝယ်ရှိ အသင်းဝင်များ"
+
+msgid "Members Never Have Loans Yet"
+msgstr "စာငှါးခြင်း မည်သည့်အခါမျှမရှိသေးသည့်အသင်းဝင်များ"
+
+msgid "Total Overdued Loans"
+msgstr "ရက်လွန်နေသည့်အငှါးများစုစုပေါင်း"
+
+msgid "Loan Data Summary"
+msgstr "စာငှါးအချက်အလက်အကျဉ်းချုပ်"
+
+msgid "Loan Report"
+msgstr "စာငှါးအစီရင်ခံ စာ"
+
+msgid "Total Registered Members"
+msgstr "မှတ်ပုံတင်ထားသော အသင်းဝင်စုစုပေါင်း"
+
+msgid "Total Active Member"
+msgstr "စာကြည့်တိုက် ကို လက်ရှိ အသုံးပြုနေသော အသင်းဝင် စုစုပေါင်း"
+
+msgid "Total Expired Member"
+msgstr "စာကြည့်တိုက် ကိုအသုံးမပြု တော့ သည့် အသင်းဝင် စုစုပေါင်း"
+
+msgid "10 most active members"
+msgstr "စာကြည့်တိုက်ကိုအသုံးအများဆုံး အသင်းဝင်၁၀ ဦး"
+
+msgid "Membership Data Summary"
+msgstr "အသင်းဝင်အချက်အလက်အကျဉ်းချုပ်"
+
+msgid "Membership Report"
+msgstr "အသင်းဝင်များ အစီရင်ခံစာ"
+
+msgid "record(s) found. Currently displaying page"
+msgstr "စာငှါးရက်လွန်မှတ်တမ်းများ၊  လက်ရှိစာမျက်နှာ "
+
+msgid "record each page"
+msgstr "စာမျက်နှာတစ်ခုချင်းကိုမှတ်တမ်:တင်ရန်"
+
+msgid "Reporting"
+msgstr "အစီရင်ခံခြင်း"
+
+msgid "View Library Collection Statistic"
+msgstr "စာကြည့်တိုက်စာစုများစာရင်းကိုလေ့လာကြည့်ရှု့ခြင်း"
+
+msgid "View Library Loan Report"
+msgstr "စာကြည့်တိုက် ငှါးရမ်းထားခြင်း အစီရင်ခံ စာကို လေ့လာကြည့်ရှု့ခြင်း။"
+
+msgid "View Membership Report"
+msgstr "အသင်းဝင်များ အစီရင်ခံစာကို လေ့လာကြည့်ရှု့ခြင်း။"
+
+msgid "Other Reports"
+msgstr "အခြား အစီရင်ခံစာများ"
+
+msgid "Serial Control"
+msgstr "စာနယ်ဇင်းစီမံခန့်ခွဲမှု"
+
+msgid "Edit Bibliographic data"
+msgstr "စာအုပ်ဆိုင်ရာအချက်အလက်များကိုတည်းဖြတ်ရန်"
+
+msgid "Add New Subscription"
+msgstr "စာနယ်ဇင်းဆက်တိုက်မှာယူခြင်း အသစ်ကို ဖြည့်စွက်ပါ။"
+
+msgid "View Subscriptions"
+msgstr "ဆက်တိုက်မှာယူခြင်း ကို ဆန်း စစ် ကြည့် ရှု့ပါ။"
+
+msgid "CLOSE"
+msgstr "ပိတ်ပါ။"
+
+msgid "Serial Title"
+msgstr "စာစဥ်အမည်"
+
+msgid "Kardex data updated!"
+msgstr "မဂ္ဂဇင်းမှတ်တမ်းအချက်အလက်များကို ဖြည့်စွက်ပြီး။"
+
+msgid "Kardex data deleted!"
+msgstr "မဂ္ဂဇင်းအချက်အလက်များကိုပယ်ဖျက်ပြီး။"
+
+msgid "Are you sure to remove selected Kardex data?"
+msgstr "ရွေးချယ်ထားသော Kardex data တွေကိုဖယ်ရှားပစ်ရန်သေချာလား?"
+
+msgid "Date Expected"
+msgstr "ခန့်မှန်းသည့်နေစွဲ"
+
+msgid "Date Received"
+msgstr "ရရှိသည့်နေ့စွဲ"
+
+msgid "Seq. Number"
+msgstr "အစဉ်လိုက် နံပါတ်"
+
+msgid "Note"
+msgstr "မှတ်သားထားချက်"
+
+msgid "Add New Kardex"
+msgstr "Kardex အသစ်ထည်ရန်"
+
+msgid "Kardex Detail for subscription"
+msgstr "စာနယ်ဇင်းဆက်တိုက်မှာယူခြင်းအတွက်မှတ်တမ်းအချက်အလက်များ"
+
+msgid "Subscription"
+msgstr "ဆက်တိုက်မှာယူခြင်း"
+
+msgid "Manage Subscription"
+msgstr "စာနယ်ဇင်းဆက်တိုက်မှာယူခြင်းကိုစီမံပါ။"
+
+msgid "Error inserting subscription data, Subscription Date must be filled!"
+msgstr "စာနယ်ဇင်းဆက်တိုက်မှာယူခြင်းအချက်အလက်ထည့်သွင်းရာတွင်မှားယွင်းနေသည်။ စာနယ်ဇင်းဆက်တိုက် မှာယူသည့်နေ့စွဲထည့်ရမည်။"
+
+msgid "Subscription Data Successfully Updated"
+msgstr "ဆက်တိုက်မှာယူခြင်း အကြောင်းအရာ အချက်အလက် အောင်မြင်စွာ ထပ်မံ ထည့် သွင်းပြီး။"
+
+msgid "Subscription Data FAILED to Updated. Please Contact System Administrator"
+msgstr "ဆက်တိုက်မှာယူခြင်း အကြောင်းအရာအချက်အလက်ထပ်မံ ထည့်သွင်းခြင်း မအောင်မြင်၊ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "New Subscription Data Successfully Saved"
+msgstr "စာနယ်ဇင်းဆက်တိုက်မှာယူခြင်းအချက်အလက် အသစ်အား အောင်မြင်စွာသိမ်းဆည်းပြီး"
+
+msgid "Subscription Data FAILED to Save. Please Contact System Administrator"
+msgstr "ဆက်တိုက်မှာယူခြင်း သတင်းအချက်အလက်အား သိမ်း ဆည်းရာ မအောင်မြင်ပါ၊ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "Subscription data successfully deleted"
+msgstr "ဆက်တိုက်မှာယူခြင်းအချက်အလက်အားအောင်မြင်စွာ ပယ်ဖျက်ပြီး။"
+
+msgid "Subscription data FAILED to deleted!"
+msgstr "ဆက်တိုက်မှာယူခြင်းအချက်အလက်အား ပယ်ဖျက်ရာမအောင်မြင်ပါ။"
+
+msgid "Subscription Start"
+msgstr "ဆက်တိုက်မှာယူခြင်း စတင်သည့် နေ့စွဲ"
+
+msgid "Total Exemplar Expected"
+msgstr "အားလုံး သော နမူ နာ များ မျှော်မှန်း ထားပါသည်။"
+
+msgid "Period Name"
+msgstr "ကာလအပိုင္းအျခားအမည္။"
+
+msgid "Subscription Notes"
+msgstr "ဆက်တိုက်မှာယူခြင်း မှတ်စု များ"
+
+msgid "You are going to edit Subscription data"
+msgstr "သင်သည် ဆက်တိုက်မှာယူခြင်းအချက်အလက်များကို တည်းဖြတ်တော့မည်။"
+
+msgid "View/Edit Kardex Detail"
+msgstr "မဂ္ဂဇင်းမှတ်တမ်းအချက်အလက်များအသေးစိပ်အား ကြည့်ရှု့ပါတည်းဖြတ်ပါ။"
+
+msgid "NO stock taking proccess initialized yet!"
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူခြင်း လုပ်ငန်းကို မစတင်ရသေးပါ။"
+
+msgid "Stock Take Proccess"
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူခြင်းလုပ်နည်းစဉ်"
+
+msgid "Current Missing/Lost Items"
+msgstr "လက်ရှိရှာမတွေ့သော / ပျောက်ဆုံးနေသောစာအုပ်များ"
+
+msgid "Change Status"
+msgstr "အခြေအနေ အတန်းအစား ပြောင်းပါ"
+
+msgid "List stocktakes by"
+msgstr "လက်ကျန်ပစ်စည်းစာရင်း ကောက်ယူခြင်းများ စာရင်းလုပ်ပါ။"
+
+msgid "Current User Only"
+msgstr "လက်ရှိအသုံးပြုသူအတွက်သာ"
+
+msgid "All User"
+msgstr "အသုံးပြုသူအာလုံး"
+
+msgid "Exists"
+msgstr "လက်ရှိ"
+
+msgid "Missing"
+msgstr "လျှော့ နေသည်"
+
+msgid "NO stock taking proccess running!"
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူခြင်းလုပ်ငန်း လုပ်ဆောင်နေခြင်းမရှိ ပါ။"
+
+msgid "Stock Take Report"
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူခြင်းအစီရင်ခံစာ"
+
+msgid "Time"
+msgstr "အချိန်"
+
+msgid "Message"
+msgstr "ပို့လိုက်သည့် သတင်းစကား"
+
+msgid "Stock Take Proccess Finished!"
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူခြင်းလုပ်နည်းစဉ်ပြီးဆုံးပြီ။"
+
+msgid "Finish Stock Take"
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူခြင်းအဆုံး သတ်ပါ။"
+
+msgid "Are you sure to end current stock take proccess? Once it finished there is no way you can rollback this stock take"
+msgstr "သင်သည်စာကြည့်တိုက်စာရင်းကောက်ယူခြင်း လုပ်ငန်း အဆုံးသတ် ဖို့ သေချာရဲ့ လား။ အဆုံးသတ်လိုက်ပါကဤစာကြည့်တိုက်စာရင်းကောက်ယူခြင်းကို ပြန်လည်စတင်ရန်နည်းလမ်းမရှိပါ။"
+
+msgid "Purge Lost Item"
+msgstr "ပျောက်ဆုံး နေသော အရာဝတ်ထု ကို ထုတ်ပြစ်ပါ။"
+
+msgid "Stock Take"
+msgstr "စာရင်းကောက်ယူခြင်း"
+
+msgid "Stock Take Name"
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူခြင်းအမည်နာမ"
+
+msgid "Start Date"
+msgstr "စတင်သည့် နေ့စွဲ"
+
+msgid "End Date"
+msgstr "ပြီးဆုံးသည့် နေ့စွဲ"
+
+msgid "Initializer"
+msgstr "ကနဉီးအခြအနေဖန်တီး သည့်အရာ"
+
+msgid "Total Item Stock Taked"
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူခြင်းတွင် ပါဝင်သောစာရင်းစုစုပေါင်း"
+
+msgid "Total Item Lost"
+msgstr "ပေျာက်နေသောစာအုပ်များစုစုပေါင်း"
+
+msgid "Total Item Exists"
+msgstr "တည်ရှိဆဲစာအုပ်များ စုစုပေါင်း"
+
+msgid "Total Item On Loan"
+msgstr "ငှါးရမ်းထားသောစာအုပ်များစုစုပေါင်း"
+
+msgid "Stock Take Participants"
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူခြင်းတွင်ပါဝင်လုပ် ဆောင်သူများ"
+
+msgid "Status"
+msgstr "အခြေအနေ"
+
+msgid "Report"
+msgstr "အစီရင်ခံစာ"
+
+msgid "Currently Active"
+msgstr "လက်ရှိရှင်သန်နေသည်"
+
+msgid "There is already stock taking proccess running!"
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူခြင်းလုပ်ငန်းလုပ်နေပြီ ဖြစ်သည်။"
+
+msgid "Stock Take Name must be filled!"
+msgstr ""
+"စာကြည့်တိုက်စာရင်းကောက်ယူခြင်းအမည်နာမ\n"
+"ဖြည့်ပါ။"
+
+msgid "Stock Taking Initialized"
+msgstr "လက်ကျန်ပစ္စည်းစာရင်း ကောက်ယူခြင်း စတင်ရန်ဉီးတည် လုပ်ဆောင်ပြီး။"
+
+msgid "Stock Taking FAILED to Initialized.\\nNo item to stock take!"
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူခြင်း စတင်လုပ်ဆောင်ရန်ချွတ်ချော် သွားသည်။\\nစာကြည့်တိုက်စာရင်းကောက်ယူရန်ပစ္စည်းမရှိပါ။"
+
+msgid "Initialize Stock Take"
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူခြင်းစတင်ပါ။"
+
+msgid "Separate each class comma sign. Use * for wildcard"
+msgstr "အမျိုးအစား တစ်ခုခြင်း ကို , ဖြင့်ခြားပါ။ အမျိုးအစား ခွဲခြား မထားသောအများစု အတွက် * သုံးပါ။"
+
+msgid "Initialize Stock Take Process"
+msgstr "စာကြည့်တိုက်စာရင်း ကောက်ယူခြင်းလုပ်ငန်းစဉ် စတင်ရန်"
+
+msgid "Current Lost Item"
+msgstr "လက်ရှိပျောက်နေသောစာအုပ်"
+
+msgid "Re-synchronize will only update current stock take's item data. It won't update any new bibliographic or item data that were inserted in the middle of stock take proccess"
+msgstr "အချက်အလက်များ ညီညွတ်စေရန်ညှိခြင်းသည် လက်ရှိလက်ကျန်စာရင်း ကောက်ယူခြင်းအချက်အလက် များကို ဖြည့်တင်းရုံသာ ရှိသည်။ ယင်းသည်စာကြည့်တိုက်ဆိုင်ရာကိုသော်၄င်း၊ လက်ကျန်စာရင်း ကောက်ယူခြင်းလုပ်ငန်း လုပ်ဆဲတွင်ထည့်သွင်းသောအချက်အလက် ကိုသော်၄င်းဖြည့်တင်းမည်မဟုတ်ပါ။"
+
+msgid "Resynchronize Now"
+msgstr "အသစ်တဖန် အချက်အလက်များ ညီညွတ် စေရန် ညှိပါ။"
+
+msgid "Stock Take Log"
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူခြင်းမှတ်တမ်းရေး မှတ်ခြင်း။"
+
+msgid "Current Stock Take Report"
+msgstr "လက်ရှိစာရင်းကောက်ယူခြင်းအစီရင်ခံစာ"
+
+msgid "Total Checked/Scanned Items"
+msgstr "စစ်ဆေးထားသော / စကင်နာ ဖြင့် ဖတ်ထားသော စာအုပ်စုစုပေါင်း"
+
+msgid "items already checked"
+msgstr "စစ်ဆေးပြီးစီးသောစာအုပ်များ"
+
+msgid "Lost Items"
+msgstr "ပျောက်ဆုံးသောစာအုပ်များ"
+
+msgid "Existing Items"
+msgstr "တည်ရှိဆဲစာအုပ်များ"
+
+msgid "On Loan Items"
+msgstr "ငှါးရမ်းထားသောစာအုပ်များ"
+
+msgid " classes"
+msgstr "အမျိုးအစား"
+
+msgid "Succesfully upload stock take file"
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူခြင်းဖိုင်အောင်မြင်စွာတင်ပြီး။"
+
+msgid " item codes scanned!"
+msgstr "စာအုပ်အမှတ်အသားများ scan ဖတ်ပြီး"
+
+msgid "Stock Take Upload"
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူခြင်းတင်ပေးပို့ခြင်း"
+
+msgid "Upload a plain text file (.txt) containing list of Item Code to stock take. Each Item Code separated by line."
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူရန် အရာဝတ်ထု သင်ကေတ ကုဒ်စာရင်း ပါသော  ရိုးရိုး စာတမ်း ဖိုင်(.txt)  တင်ပါ။ အရာဝတ်ထု သင်ကေတတစ်ခုချင်း ကို မျဉ်း တစ်ချောင်းစီ ခြားပါ။"
+
+msgid "File"
+msgstr "ဖိုင်"
+
+msgid "Upload File"
+msgstr "ဖိုင်တင်ပါ"
+
+msgid "Stock Take History"
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူခြင်းအစဉ်အဆက်မှတ်တမ်း"
+
+msgid "View Stock Take History"
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူခြင်းအစဉ်အဆက်မှတ်တမ်း စစ်ဆေးကြည့်ရှု့ ခြင်း"
+
+msgid "Current Stock Take"
+msgstr "လက်ရှိစာရင်းကောက်ယူခြင်း"
+
+msgid "View Current Stock Take Process"
+msgstr "လက်ရှိစာရင်းကောက်ယူခြင်း လုပ်ငန်းကိုလေ့လာဖတ်ရှု့ပါ။"
+
+msgid "View Current Stock Take Report"
+msgstr "လက်ရှိစာရင်းကောက်ယူခြင်းအစီရင်ခံစာကိုလေ့လာဖတ်ရှု့ပါ။"
+
+msgid "Finish Current Stock Take Proccess"
+msgstr "လက်ရှိစာရင်းကောက်ယူခြင်း လုပ်ငန်းအပြီးသတ်ပါ။"
+
+msgid "View Lost Item in Current Stock Take Proccess"
+msgstr "လက်ရှိစာရင်းကောက်ယူခြင်းလုပ်ငန်းစဉ်တွင် ပျောက်ဆုံးနေသည်များကို လေ့လာဖတ်ရှု့ပါ"
+
+msgid "View Log of Current Stock Take Proccess"
+msgstr "လက်ရှိစာရင်းကောက်ယူခြင်းလုပ်ငန်းစဉ်မှတ်တမ်းကို လေ့လာဖတ်ရှု့ပါ"
+
+msgid "Resynchronize"
+msgstr "အကြောင်းအရာ အချက်အလက်များညီညွတ် စေရန်ညှိပါ။"
+
+msgid "Resynchronize bibliographic data with current stock take"
+msgstr "စာကြည့်တိုက်ဆိုင်ရာအချက်အလက်များ နှင့် စာကြည့်တိုက်စာရင်းကောက်ယူခြင်းအချက်အလက်များ ညီညွတ်စေရန်ညှိပါ။"
+
+msgid "Upload List"
+msgstr "စာရင်းဇယား တင်ပါ။"
+
+msgid "Upload List in text file"
+msgstr "စာရင်းဇယား ကို စာဖိုင် အနေဖြင့်တင်ပါ။"
+
+msgid "Initialize"
+msgstr "စတင်ဖန်တီးပါ။"
+
+msgid "Initialize New Stock Take Proccess"
+msgstr "စာကြည့်တိုက်စာရင်းကောက်ယူခြင်းလုပ်ငန်း အသစ်စတင်ပါ။"
+
+msgid "User Name or Real Name can't be empty"
+msgstr "အသုံးပြုသူအမည် သို့မဟုတ် အမည်မှန် ကို ဗလာ ပြုလုပ်၍ မရပါ"
+
+msgid "Login username or Real Name is probihited!"
+msgstr "ဝင်ရောက်ရန်အသုံးပြုသည့်အမည်သို့မဟုတ်အမည်မှန်ကို တားမြစ်ထားသည်။"
+
+msgid "User Data Successfully Updated"
+msgstr "အသုံးပြုသူ အချက်အလက် အောင်မြင်စွာ ထပ်ဖြည့်ပြီး"
+
+msgid "User Data FAILED to Updated. Please Contact System Administrator"
+msgstr "အသုံးပြုသူ အချက်အလက် ထပ်ဖြည့်ခြင်း မအောင်မြင်ပါ။ ကွန်ပြူတာစံနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "New User Data Successfully Saved"
+msgstr "စာကြည့်တိုက်အသုံးပြုသူအချက်အလက်အသစ်အောင်မြင်စွာ သိမ်းဆည်းပြီး"
+
+msgid "User Data FAILED to Save. Please Contact System Administrator"
+msgstr "အသုံးပြုသူ အချက်အလက် သိမ်းဆည်းခြင်း မအောင်မြင်ပါ"
+
+msgid "Librarian & System Users"
+msgstr "စာကြည့်တိုက်မူးနှင့်ကွန်ပျုတာစနစ်အသုံးပြုသူများ"
+
+msgid "User List"
+msgstr "အသုံးပြုသူ စာရင်း"
+
+msgid "Add New User"
+msgstr "စာကြည့်တိုက်အသုံးပြုသူအသစ်ထပ်ဖြည့်ရန်"
+
+msgid "User Type"
+msgstr "စာဖတ်သူအမျိုးအစား"
+
+msgid "E-Mail"
+msgstr "အီးမေးလိပ်စာ"
+
+msgid "Social Media"
+msgstr "လူမှုမီဒီယာ"
+
+msgid "User Photo"
+msgstr "အသုံးပြသူ ဓါတ်ပုံ "
+
+msgid "Group(s)"
+msgstr "အုပ်စု(များ)"
+
+msgid "You are going to edit user profile"
+msgstr "သင်သည်စာကြည့်တိုက်အသုံးပြုသူ၏ ကိုယ်ရေးကိုယ်တာဖေါ်ပြချက်များကို တည်းဖြတ်တော့မည်။"
+
+msgid "Last Login"
+msgstr "ကွန်ပြူတာစနစ်သို.နောက်ဆုံးဝင်ရောက်သူ"
+
+msgid "Database Backup"
+msgstr "အချက်အလက်စုဘဏ်ကိုထပ်မံသိမ်းဆည်းပါ"
+
+msgid "Start New Backup"
+msgstr "အသစ်တဖန် ပန့်ပိုး သိမ်းဆည်းခြင် စတင်ပါ"
+
+msgid "Barcode Generator"
+msgstr "ဘားကုဒ်ထုတ်လုပ်သည့် ကိရိယာ"
+
+msgid "Error creating barcode!"
+msgstr "ဘားကုဒ်ထုတ်လုပ်ရာတွင်အမှား"
+
+msgid "Barcode generation finished"
+msgstr "ဘားကုဒ်ထုတ်လုပ်၍ပြီးပြီ"
+
+msgid "Enter your barcodes code on one or more textboxes below to create barcode"
+msgstr "အောက်တွင်ရှိ စာသားထည့် သည့် အကွက် တစ်ခု၊ သို့မဟုတ် ယင်းထက်ပို သော အကွက်များတွင် ဘားကုဒ် ရိုက်ထည့်၍ နှိပ်ပါ"
+
+msgid "Barcode Size"
+msgstr "ဘားကုဒ်အရွယ်အစား"
+
+msgid "Small"
+msgstr "အသေးစား"
+
+msgid "Medium"
+msgstr "အလပ်စား"
+
+msgid "Big"
+msgstr "အကြီးစား"
+
+msgid "Generate Barcodes"
+msgstr "ဘားကုဒ်များထုတ်လုပ်ရန်"
+
+msgid "Index table truncated!"
+msgstr "အညွှန်းဇယားအတိုကောက်"
+
+msgid "Index table FAILED to truncated, probably because of database query error!"
+msgstr "အညွှန်းဇယားမပြည်စုံခြင်းကြောင်.ထည်.သွင်းခြင်းမအောင်မြင်ပါ။အဘယ်ကြောင်.ဆိုသော်သတင်းအချက်အလက်ဖိုင်မှအမှားမေးမြန်းသည်။"
+
+msgid "<strong>%d</strong> records (from total of <strong>%d</strong>) re-indexed. Finished in %d minutes %d second(s)"
+msgstr "<strong>%d</strong> records (from total of <strong>%d</strong>) re-indexed. Finished in %d minutes %d second(s)"
+
+msgid "<strong>%d</strong> index records failed to indexed. The IDs are: %s"
+msgstr "<strong>%d</strong> index records failed to index. The IDs are: %s"
+
+msgid "Please empty the Index first before re-creating the Index"
+msgstr "အက္ခရာစဉ်အညွှန်းကိုဉီးစွာဗလာလုပ်ပြီးမှယင်းကို ပြန်လည်ဖန်တီးပါ"
+
+msgid "<strong>%d</strong> records (from total of <strong>%d</strong>) re-indexed. Finished in %d second(s)"
+msgstr "<strong>%d</strong> အချက်အလက်မှတ်တမ်းများ (အားလုံး စုစု ပေါင်းမှ <strong>%d</strong>) တဖန်အက်ခရာ အညွှန်း ပြုလုပ်ပါ။ ရာခိုင်နှန်း %d စက်ကန့်တွင် ပြီးသည်။"
+
+msgid "Bibliographic Index"
+msgstr "စာအုပ်ဆိုင်ရာအချက်အလက်များအညွှန်း"
+
+msgid "Emptying Index"
+msgstr "အက္ခရာအညွှန်းထုတ်ပြစ်ရန်"
+
+msgid "Re-create Index"
+msgstr "အက္ခရာစဉ်အညွှန်းပြန်လည်ဖန်တီးပါ"
+
+msgid "Update Index"
+msgstr "အညွှန်းဖြည့်စွက်ရန်"
+
+msgid "Title or Path can't be empty!"
+msgstr "ခေါင်းစည်းအမည် သို့မဟုတ် လမ်းကြောင်းအညွှန်း ကိုဗလာ ထား၍ မရ"
+
+msgid "Content data updated"
+msgstr "ဖေါ်ပြပါရှိသော အချက်အလက်များ ထပ်ထည့်ပြီး"
+
+msgid "Content data FAILED to update!"
+msgstr "ဖေါ်ပြပါရှိသော အချက်အလက်များ ထပ်ထည့်ရာ မအောင်မြင်ပါ"
+
+msgid "Content data saved"
+msgstr "ဖေါ်ပြပါရှိသော အချက်အလက်များသိမ်းဆည်းပြီး"
+
+msgid "Content data FAILED to save!"
+msgstr "ဖေါ်ပြပါရှိသော အချက်အလက်များသိမ်းဆည်းရာ မအောင်မြင်ပါ"
+
+msgid "Content"
+msgstr "ဖေါ်ပြပါရှိသော အချက်အလက်များ"
+
+msgid "Content List"
+msgstr "ဖေါ်ပြပါရှိသော အချက်အလက်များစာရင်း"
+
+msgid "Add New Content"
+msgstr "ဖေါ်ပြပါရှိသော အချက်အလက်များအသစ် ထပ်ဖြည့်ပါ"
+
+msgid "Content Title"
+msgstr "ဖေါ်ပြပါရှိသော အချက်အလက် ခေါင်းစည်းအမည်"
+
+msgid "Path (Must be unique)"
+msgstr "လမ်းကြောင်းအညွှန်း (တစ်ခုတည်းမူပိုင်)"
+
+msgid "Content Description"
+msgstr "ဖေါ်ပြပါရှိသော အချက်အလက် အကြာင်း အရာ"
+
+msgid "You are going to update Content data"
+msgstr "သင် သည် ဖေါ်ပြပါရှိသော အချက်အလက်များကို ထပ် ထည့် မည်"
+
+msgid "Holiday Data Successfully updated"
+msgstr "အားလပ်ရက်အချက်အလက် အောင်မြင်စွာထပ်ဖြည့်ပြီး"
+
+msgid "Holiday FAILED to update. Please Contact System Administrator"
+msgstr "အားလပ်ရက် ထပ်ဖြည့်ခြင်းမအောင်မြင်ပါ။ ကွန်ပျူတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ်လုပ်ဆောင်ပါ။"
+
+msgid "New Holiday Successfully Saved"
+msgstr "အားလပ်ရက် အသစ် အောင်မြင်စွာ သိမ်းဆည်းပြီး"
+
+msgid "Holiday FAILED to Save. Please Contact System Administrator"
+msgstr "အားလပ်ရက် သိမ်းဆည်းခြင်း မအောင်မြင်ပါ၊ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "Holiday Settings"
+msgstr "ပိတ်ရက် Settings များ"
+
+msgid "Holiday Setting"
+msgstr "အားလပ်ရက်ဖေါ်ပြထားပုံ"
+
+msgid "Special holiday"
+msgstr "အထူး အားလပ်ရက်"
+
+msgid "Add Special holiday"
+msgstr "အထူး အားလပ်ရက် ထပ်ထည့်ပါ"
+
+msgid "Holiday Date Start"
+msgstr "အားလပ်ရက် စတင်သည့််နေ့စွဲ"
+
+msgid "Holiday Date End"
+msgstr "အားလပ်ရက် ပြီးဆုံးသည့်နေ့ စွဲ"
+
+msgid "Holiday Description"
+msgstr "အားလပ်ရက် အကြောင်းအရာ"
+
+msgid "You are going to edit holiday data"
+msgstr "သင်သည်စာကြည့်တိုက်ပိတ်ရက်အချက်အလက်များကို တည်းဖြတ်တော့မည်။"
+
+msgid "Day name"
+msgstr "နေ့ အမည်"
+
+msgid "Maximum 6 day can be set as holiday!"
+msgstr "အများဆုံး ၆ ရက် ထိသာ အားလပ်ရက်အဖြစ် သတ်မှတ် နှိင် သည်။"
+
+msgid "Holiday settings saved"
+msgstr "အားလပ်ရက်သတ်မှတ်ခြင်းသိမ်းဆည်းပြီး"
+
+msgid "Monday"
+msgstr "တနင်းလာ"
+
+msgid "Tuesday"
+msgstr "အဂၤါ"
+
+msgid "Wednesday"
+msgstr "ဗုဒၵဟူး"
+
+msgid "Thursday"
+msgstr "ကြာသပတေး"
+
+msgid "Friday"
+msgstr "သောကြာ"
+
+msgid "Saturday"
+msgstr "စနေ"
+
+msgid "Sunday"
+msgstr "တနဂၤေႏြ"
+
+msgid "System Configuration"
+msgstr "ကွန်ပျုတာစနစ်စီစဉ်ထားခြင်း"
+
+msgid "Modify global application preferences"
+msgstr "ကမ္ဘာလုံးဆိုင်ရာ application ၏ဦးစားပေးရွေးချယ်မှုကိုပြုပြင်ပါ "
+
+msgid "Settings saved. Refreshing page"
+msgstr "တည်ဆောက်ထားသော အခြအနေ များကို သိမ်းဆည်ပြီး စာမျက်နှာ ကို အသစ်တဖန် ဆန်းသစ်စေသည်"
+
+msgid "Library Name"
+msgstr "စာကြည့်တိုက် အမည်"
+
+msgid "Library Subname"
+msgstr "စာကြည့်တိုက် အမည်(sub)"
+
+msgid "Default App. Language"
+msgstr "မူလသတ်မှတ်ထားသော လုပ်ငန်းသုံးဘာသာစကား"
+
+msgid "Number Of Collections To Show In OPAC Result List"
+msgstr "OPAC ရလဒ်စာရင်းတွင် ဖေါ်ပြရန်စာစုအရေအတွက်"
+
+msgid "Show Promoted Titles at Homepage"
+msgstr "မူလကနဦး စာမျက်နှာတွင်အများသိရန်စာအုပ်များပြရန်"
+
+msgid "Don't Print"
+msgstr "ပုံနှိပ်ခြင်းမလုပ်ပါနှင့်"
+
+msgid "Print"
+msgstr "ပုံနှိပ်ပါ"
+
+msgid "Print Circulation Receipt"
+msgstr "စာဌားပြေစာပုံနှိပ်ပါ"
+
+msgid "Loan and Due Date Manual Change"
+msgstr "ငှါးရမ်းခြင်းနှင့်ပြန်လည်အပ်နှံရမည့်နေ့စွဲပြောင်းခြင်း"
+
+msgid "Loan Limit Override"
+msgstr "ငှါးရမ်းခြင်းကန့်သတ်ချက်ပြင်ဆင်သတ်မှတ်ခြင်း"
+
+msgid "Ignore Holidays Fine Calculation"
+msgstr "မသိကျိုးကျွန်ပြုထားသောအားလပ်ရက်များတွက်ချက်ရှာဖွေပါ။"
+
+msgid "OPAC XML Detail"
+msgstr "OPAC XML  အသေးစိပ်"
+
+msgid "OPAC XML Result"
+msgstr "OPAC XML  ရလဒ်"
+
+msgid "Enable Search Spellchecker"
+msgstr "စာလုံးပေါင်းစစ်ဆေးခြင်းလုပ်ဆောင်ရန်"
+
+msgid "Forbid"
+msgstr "တားမြစ်"
+
+msgid "Allow"
+msgstr "ခွင့်ပြု"
+
+msgid "Allow OPAC File Download"
+msgstr "OPAC ဆွဲချကူးယူခြင်း ခွင့်ပြုပါ"
+
+msgid "Session Login Timeout"
+msgstr "သတ်မှတ်ထားသည့်ဝင်ရောက်ရန်ခွင့်ပြုချိန်ကုန်ဆုံးပြီ။"
+
+msgid "Barcode Encoding"
+msgstr "ဘားကုဒ်သင်္ကေတများသတ်မှတ်ခြင်း"
+
+msgid "Module name and path can't be empty"
+msgstr "လုပ်ငန်း အစိပ်အပိုင်းအမည် နှင့် လမ်းကြောင်းကို ဗလာထား၍ မရပါ"
+
+msgid "Module Data Successfully Updated"
+msgstr "လုပ်ငန်းအစိပ်အပိုင်း အချက်အလက်အောင်မြင်စွာ ထပ်ဖြည့်ပြီး"
+
+msgid "Module Data FAILED to Updated. Please Contact System Administrator"
+msgstr "လုပ်ငန်း အစိပ်အပိုင်း အချက်အလက် ထပ်ဖြည့်ခြင်း မအောင်မြင်ပါ၊ ကွန်ပျူတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "New Module Data Successfully Saved"
+msgstr "လုပ်ငန်း အစိပ်အပိုင်း အချက်အလက် အသစ် အောင်မြင်စွာ သိမ်းဆည်းပြီး"
+
+msgid "Module Data FAILED to Save. Please Contact System Administrator"
+msgstr "လုပ်ငန်း အစိပ်အပိုင်း အချက်အလက် သိမ်းဆည်းခြင်း မအောင်မြင်ပါ၊ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "Modules"
+msgstr "လုပ်ငန်း တွင်ပါဝင်သော အစိပ်အပိုင်းများ"
+
+msgid "Modules List"
+msgstr "လုပ်ငန်း အစိပ်အပိုင်း စာရင်း"
+
+msgid "Add New Modules"
+msgstr "Module အသစ်များ ထပ်ဖြည့်ပါ"
+
+msgid "Module Name"
+msgstr "လုပ်ငန်း အမည်"
+
+msgid "Module Path"
+msgstr "လုပ်ငန်း အစိပ်အပိုင်းလမ်းကြောင်း"
+
+msgid "Module Description"
+msgstr "လုပ်ငန်း အစိပ်အပိုင်း အကြောင်းအရာ"
+
+msgid "You are going to edit data"
+msgstr "သင်သည်အချက်အလက်များကိုတည်းဖြတ်တော့မည်။"
+
+msgid "Read"
+msgstr "ဖတ် သည်"
+
+msgid "Write"
+msgstr "ရေးသည်"
+
+msgid "System"
+msgstr "ကွန်ပျူတာစနစ်"
+
+msgid "Configure Global System Preferences"
+msgstr "ကွန်ပျူတာစနစ်ကိုကမ္ဘာသုံးပုံစံအတိုင်းစီစဉ်ပါ။"
+
+msgid "Biblio Indexes"
+msgstr "စာကြည့်တိုက် အညွှန်းများ "
+
+msgid "Bibliographic Indexes management"
+msgstr "စာအုပ်ဆိုင်ရာအချက်အလက်အညွှန်းများစီမံခန့်ခွဲမှု"
+
+msgid "Configure Application Modules"
+msgstr "လုပ်ငန်း သုံး အစိပ်အပိုင်းများကို စီစဉ်ပါ"
+
+msgid "Manage Application User or Library Staff"
+msgstr "လုပ်ငန်း အသုံး ပြုသူ သို့မဟုတ် စာကြည့်တိုက်ဝန်ထမ်း အား ကြီးကြပ်ဆောင်ရွက်ပါ"
+
+msgid "User Group"
+msgstr "အသုံးပြုသူ အုပ်စု"
+
+msgid "Manage Group of Application User"
+msgstr "လုပ်ငန်း အသုံး ပြုသူ အုပ်စုလိုက် ကြီးကြပ်ဆောင်ရွက်ပါ"
+
+msgid "Configure Holiday Setting"
+msgstr "အားလပ်ရက်ဖေါ်ပြထားသည်ကို စီစဉ်ပါ"
+
+msgid "System Log"
+msgstr "ကွန်ပျူတာစနစ်မှတ်တမ်း"
+
+msgid "View Application System Log"
+msgstr "လုပ်ငန်း သုံး စံနစ် မှတ်တမ်း ကိုကြည့်ရှု့ စစ်ဆေးပါ"
+
+msgid "Backup Application Database"
+msgstr "လုပ်ငန်း သုံး အချက်အလက် များကို ပန့်ပိုး သိမ်းဆည်းပါ"
+
+msgid "System Log data completely cleared!"
+msgstr "ကွန်ပျူတာစနစ်မှတ်တမ်းအချက်အလက်များကို ဖျက်ထုတ်ပြီး"
+
+msgid "Are you SURE to completely clear system log data? This action cannot be undo!"
+msgstr "သင်သည်ကွန်ပျုတာစနစ် မှတ်တမ်းအချက်အလက် များကို အပြီးအပိုင်ဖျက်ထုတ်ရန် သေချာရဲ့လား၊ ဤ လုပ်ရပ်သည်မူလအခြေအနေသို့ ပြန်လှည့်၍မရပါ။"
+
+msgid "CLEAR LOGS"
+msgstr "ကွန်ပြူတာ စံနစ် မှတ်တမ်း များကို  ဖျက်ထုပ်ပါ"
+
+msgid "Save Logs record to file?"
+msgstr "ကွန်ပျူတာစနစ်မှတ်တမ်းများကိုဖိုင်တွင်သိမ်းဆည်းမည်လား"
+
+msgid "Save Logs To File"
+msgstr "ကွန်ပျူတာစနစ်မှတ်တမ်းများကိုဖိုင်တွင်သိမ်းဆည်းပါ"
+
+msgid "Public Template"
+msgstr "အများသုံးအတွက်ဖန်တီးထာသောပုံစံ"
+
+msgid "Admin Template"
+msgstr "စီမံခန့်ခွဲ မှုအတွက် ဖန်တီးထာသော ကနဉီး ပုံစံ"
+
+msgid "Server address"
+msgstr "Server လိပ်စာ"
+
+msgid "Server ID"
+msgstr "Server ID"
+
+msgid "Server Password"
+msgstr "Server Password ကို"
+
+msgid "Group name can't be empty"
+msgstr "အုပ်စု အမည်ကို ဗလာထား၍မရပါ"
+
+msgid "Group Data Successfully Updated"
+msgstr "အုပ်စုအချက်အလက် အောင်မြင်စွာထပ်ထည့်ပြီး"
+
+msgid "Group Data FAILED to Updated. Please Contact System Administrator"
+msgstr "အုပ်စုအချက်အလက် အောင်မြင်စွာ ထပ်ထည့်ခြင်း မအောင်မြင်ပါ။ ကွန်ပျူတာစံနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "New Group Data Successfully Saved"
+msgstr "အုပ်စု အချက်အလက်အသစ် အောင်မြင်စွာ သိမ်းဆည်းပြီး"
+
+msgid "Group Data FAILED to Save. Please Contact System Administrator"
+msgstr "အုပ်စုအချက်အလက် သိမ်းဆည်းခြင်း မအောင်မြင်ပါ။ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ်လုပ်ဆောင်ပါ။"
+
+msgid "Group List"
+msgstr "အုပ်စု စာရင်း"
+
+msgid "Add New Group"
+msgstr "အသုံးပြုသူ အုပ်စု အသစ် ထပ်ဖြည့်ပါ"
+
+msgid "Group Name"
+msgstr "အုပ်စု အမည်"
+
+msgid "Privileges"
+msgstr "ရရှိသော အခွင့် ထူးများ"
+
+msgid "You are going to edit Group data"
+msgstr "သင်သည် အုပ်စု အချက်အလက်များကို တည်းဖြတ်မည်"
+
+msgid "Web Online Public Access Catalog - Use the search options to find documents quickly"
+msgstr "စာကြည့်တိုက်ကတ်တလောက် - စာအုပ်စာတမ်းများကိုလျင်မြန်လွယ်ကူစွာရှာဖွေရန် "
+
+msgid "You are currently Logged on as member"
+msgstr "သင်သည် အသင်းဝင်အနေဖြင့် ဝင်ရောက်နေသည်"
+
+msgid "LOGOUT"
+msgstr "ကွန်ပျူတာစနစ်မှထွက်ခွာရန်"
+
+msgid "Put marked selection into basket"
+msgstr "အမှတ်အသားလုပ်၍ရွေးချယ်ထားသောစာအုပ်အမည်(များ)ကို Basket တွင် ထည့်ရန်"
+
+msgid " comments available"
+msgstr "ထင်မြင်ချက်ပေးရန်"
+
+msgid " at "
+msgstr "ထိုနေရာ"
+
+msgid " write"
+msgstr "ရေးပါ"
+
+msgid "More result"
+msgstr "နောက်ထပ်ရလဒ်"
+
+msgid "All Locations"
+msgstr "စာအုပ်တည်နေရာများ"
+
+msgid "All Collections"
+msgstr "စာစုများ"
+
+msgid "All GMD/Media"
+msgstr "အားလုံး GMD / မီဒီယာ"
+
+msgid "Found <strong>{biblio_list->num_rows}</strong> from your keywords"
+msgstr "သင်၏ အဓိကစာလုံးများမှ ရလဒ် <strong>{biblio_list->num_rows}</strong> ခုကိုတွေ့ ရှိသည်"
+
+msgid "You currently on page <strong>{page}</strong> of <strong>{total_pages}</strong> page(s)"
+msgstr "သင် သည် လက်ရှိ တွင် <strong>{total_pages}</strong> စာမျက်နှာများ ၏ <strong>{page}</strong> စာမျက်နှာ ပေါ် တွင် ရှိနေသည်။"
+
+msgid "Did you mean:"
+msgstr "သင်ဘာကိုဆိုလိုသနည်း"
+
+msgid "Current Loan item(s)"
+msgstr "လက်ရှိငှါးရမ်းထားသောစာအုပ်များ"
+
+msgid "Your Current Loan"
+msgstr "သင်၏လက်ရှိစာငှါးစာရင်း"
+
+msgid "Return Date"
+msgstr "ပြန်လည်အပ်နှံ ရမည့် နေ့စွဲ"
+
+msgid "item(s) loan history"
+msgstr "စာအုပ်အငှါးနေ.စွဲအလိုက်မှတ်တမ်း"
+
+msgid "Your Loan History"
+msgstr "သင်၏စာငှားမှတ်တမ်း"
+
+msgid "Profile of our Librarian"
+msgstr "စာကြည့်တိုက်မှူး၏ကိုယ်ရေးအကျဉ်း"
+
+msgid "Position"
+msgstr "ရာထူး"
+
+msgid "Social"
+msgstr "လူမွဳေရး"
+
+msgid "Please supply valid username and password"
+msgstr "ကျေးဇူးပြု၍ လက်ရှိ တရားဝင် အသုံးပြုသူ အမည် နှင့် စကားဝှက် ပေးပါ"
+
+msgid "Welcome to Library Automation, "
+msgstr "စာကြည့်တိုက် အလို အလျောက် ဝန် ဆောင်မှု မှ ကြိုဆိုပါတယ်"
+
+msgid "Wrong Username or Password. ACCESS DENIED"
+msgstr "အသုံးပြုသူအမည် သို့မဟုတ် စကားဝှက်မမှန်ပါ၊ ဝင်ရောက်ခွင့်မပြုပါ"
+
+msgid "Current password can not be empty!"
+msgstr "လက်ရှိစကားဝှက်ကိုဗလာမဖွစျနိုငျ!"
+
+msgid "Your browser does not support Javascript or Javascript is disabled. Application won't run without Javascript!"
+msgstr "သင်၏ အင်တာနက် တက်ရောက်သည့် ကိရိယာ တွင်  Javascript ထည့်မထားပါ သို့မဟုတ် Javascript ကို သုံး နိုင် အောင် ဖန်တီးမထားပါ၊ Javascript မရှိပါက ယခု သုံး နေသော အရာသည် အလုပ်မလုပ်ပါ"
+
+msgid "Current Password"
+msgstr "လက်ရှိစကားဝှက်"
+
+msgid "Password"
+msgstr "စကားဝှက်"
+
+msgid "Login"
+msgstr "ဝင်ရောက်ရန်"
+
+msgid "Welcome to Member's Area where you can view your current loan information and view your membership status."
+msgstr "အသင်းဝင်များကဏ္ဍတွင်သင်၏လက်ရှိစာငှါးစာရင်းနှင့်တကွသင်၏အသင်းဝင်အခြေအနေတို့ကို ကြည့်ရှု့ နိုင်ပါသည်"
+
+msgid "Please fill your Username and Password to Login!"
+msgstr "ဝင်ရောက်ရန်သင်၏အသုံးပြုသည့်အမည်နှင့်စကားဝှက်ကို ထည့်ပါ။"
+
+msgid "Login FAILED! Wrong username or password!"
+msgstr "ဝင်ရောက်ရန်မအောင်မြင်ပါ၊၊ စာကြည့်တိုက်အသင်းဝင် နံပါတ်သို့မဟုတ်စကားဝှက်မှားနေသည်။"
+
+msgid "Your password have been changed successfully."
+msgstr "သင်၏စကားဝှက်ကိုအောင်မြင်စွာပြောင်းလဲပြီး။"
+
+msgid "Current password entered WRONG! Please insert the right password!"
+msgstr "ယခုလက်ရှိထည့်သည့်စကားဝှက်မမှန်ပါ။ စကားဝှက်အမှန် ထည့်ပါ။"
+
+msgid "Password confirmation FAILED! Make sure to check undercase or uppercase letters!"
+msgstr "စကားဝှက်မှန်ကန်ကြောင်းဆန်စစ်ခြင်း မအောင်မြင်ပါ။ ကီးဘုတ် တွင် ဖေါ်ပြထားသောစာလုံးအသေးသို့မဟုတ် စာလုံးအကြီးသုံးသည်ကိုသေချာပါစေ။"
+
+msgid "Password update FAILED! ERROR ON DATABASE!"
+msgstr "စကားဝှက်ထပ်ဖြည့်ခြင်းမအောင်မြင်ပါ။"
+
+msgid "Library Member Login"
+msgstr "စာကြည့်တိုက်အသင်းဝင် login"
+
+msgid "Wrong Captcha Code entered, Please write the right code!"
+msgstr "စိစစ်အတည်ပြုသည့် code မမှန်ပါ။ code အမှန် ထည့်ပါ။"
+
+msgid "Please insert your member ID and password given by library system administrator. If you are library's member and don't have a password yet, please contact library staff."
+msgstr ""
+"စာကြည့်တိုက်မှပေးထားသောသင်၏အသင်းဝင် နံပါတ်နှင့် စကားဝှက် ကို ထည့်ပါ။ သင်သည်  \n"
+"စာကြည့်တိုက်အသင်းဝင်ဖြစ်ပြီး၊ စကားဝှက်မရှိသေးပါက၊ စာကြည့်တိုက်ဝန်ထမ်းကိုဆက်သွယ်ပါ။"
+
+msgid "Confirm Password"
+msgstr "စကားဝှက်မှန်ကန်ကြောင်းအတည်ပြုပါ။"
+
+msgid "Change Password"
+msgstr "စကားဝှက်ပြောင်းပါ။"
+
+msgid "Reserve title(s) on Basket"
+msgstr "စာအုပ်အမည်(များ) ကို မိမိ၏စာအုပ်ခြင်းတောင်းတွင်သီးသန့်လျာထားရန်"
+
+msgid "Clear Basket"
+msgstr "Basket တွင်းရှိစာအုပ်အမည်များကိုရှင်းပြစ်ပါ။"
+
+msgid "Remove selected title(s) from Basket"
+msgstr "ရွေးချယ်ထားသောစာအုပ်အမည်(များ) ကို Basket မှဖယ် ထုတ်ပြစ်ပါ။"
+
+msgid "title(s) on basket"
+msgstr "Basket တွင်ရှိသောစာအုပ်အမည်(များ)"
+
+msgid "Your Membership Already EXPIRED! Please extend your membership."
+msgstr "သင်၏ အသင်းဝင် သက်တမ်း ကုန်ဆုံးပြီး၊ အသင်းဝင် သက်တမ်းတိုးပါ"
+
+msgid "Membership currently in pending state, no loan transaction can be made yet."
+msgstr "အသင်းဝင်အဖြစ်လက်ရှိဆိုင်းငံ့ထားသည်၊စာငှါးခြင်းမပြုလုပ်နိုင်ပါ"
+
+msgid "OVERDUED"
+msgstr "ခွင့်ပြုရက်ကျော်နေပြီ"
+
+msgid "item(s) currently on loan"
+msgstr "လက်ရှိငှါးရမ်းထားသောစာအုပ်(များ)"
+
+msgid "Reservation e-mail sent successfully!"
+msgstr "ကြိုတင်ရယူ ထားကြောင်း အီးမေးလ် အောင်မြင်စွာ ပို့ပြီး"
+
+msgid "Member Detail"
+msgstr "အသင်းဝင်အချက်အလက်အသေးစိပ်"
+
+msgid "Your Title Basket"
+msgstr "သင်ရွေးချယ်ထားသည့်စာအုပ်အမည်များ"
+
+msgid "Library News"
+msgstr "စာကြည့်တိုက်ဆုိင်ရာသတင်းများ"
+
+msgid "Library Location"
+msgstr "စာကြည့်တိုက်တည်နေရာ"
+
+msgid "Thank you for your comment."
+msgstr "သင္၏ထင္ျမင္ခ်က္မ်ားအတြက္ေက်းဇူးတင္ပါသည္။"
+
+msgid "FAILED to strore you comment. Please Contact System Administrator"
+msgstr "သင်၏မှတ်ချက်သိမ်းဆည်းခြင်းမအောင်မြင်ပါ။ ကွန်ပျုတာစနစ် စီမံခန့်ခွဲသူနှင့် ဆက်သွယ် လုပ်ဆောင်ပါ။"
+
+msgid "Record Detail"
+msgstr "မှတ်တမ်းအသေးစိပ် "
+
+msgid "Back To Previous"
+msgstr "နောက်ဘက် တဆင့်သို့ပြန်သွားပါ"
+
+msgid "Show detail in XML format"
+msgstr "XML ပုံစံၿဖင္႔အသေးစိပ်"
+
+msgid "XML Detail"
+msgstr "ိုXML အသေးစိတ်"
+
+msgid ", thank you for inserting your data to our visitor log"
+msgstr "သင်၏ အချက်အလက် များ စာကြည့်တိုက်သို့ လာရောက်သည့် မှတ်တမ်း တွင် ရေးသွင်းသည့် အတွက် ကျေးဇူး တင်ပါသည်"
+
+msgid "Your membership already EXPIRED, please renew/extend your membership immediately"
+msgstr "သင်၏ အသင်းဝင် သက်တမ်း ကုန်ဆုံးပြီး၊ အသင်းဝင် သက်တမ်း ချက်ချင်း  အသစ်လုပ်/တိုးပါ"
+
+msgid "Sorry, Please fill institution field if you are not library member"
+msgstr "ကျေးဇူးပြု၍ စာကြည့်တိုက် အသင်းဝင် မဟုတ်ပါက  သင်၏ သက်ဆိုင်ရာ အဖွဲ့ အစည်း အမည် ဖြည့်ပါ"
+
+msgid "Error inserting counter data to database!"
+msgstr "အချက်အလက်စုဘဏ်သို့ထပ်မံထည့်သွင်းသောအကြောင်းအရာများမှားယွင်းနေသည်။"
+
+msgid "Currently On Loan (Due on"
+msgstr "လက်ရှိငှါးရမ်းထားဆဲ ( ပြန်အပ်နေ့စွဲ "
+
+msgid "Available but not for loan"
+msgstr "စာကြည့်တိုက်တွင်ရနိုင်သည်။သို့သော်ငှါးရန်မဟုတ်ပါ။"
+
+msgid "Click to view others documents with this author"
+msgstr "ဤစာရေးသူအမည်ဖြင့်  အခြားစာအုပ်စာတမ်း များကို ကြည့်ရှု ရန် နှိပ်ပါ။"
+
+msgid "Click to view others documents with this subject"
+msgstr "ဤဘာသာရပ်အမည် ဖြင့် အခြား စာရွက်စာတမ်း များကို ကြည့်ရှု ရန် နှိပ်ပါ"
+
+msgid "Share to"
+msgstr "ေမှျရန်"
+
+msgid "Arabic"
+msgstr "အာရပ်ဘာသာ ( العَرَبِية )"
+
+msgid "Bengali"
+msgstr "ဘင်ဂါလီဘာသာ (ংলাংলা )"
+
+msgid "Brazilian Portuguese"
+msgstr "ဘရာဇီးပေါ်တူဂီ ( Português brasileiro )"
+
+msgid "English"
+msgstr "အင်္ဂလိပ် ( English )"
+
+msgid "Espanol"
+msgstr "စပိန်ဘာသာ ( Español )"
+
+msgid "German"
+msgstr "ဂျာမန်ဘာသာ ( Deutsch )"
+
+msgid "Indonesian"
+msgstr "အင်ဒိုနီးရှား ဘာသာ ( Bahasa Indonesia )"
+
+msgid "Japanese"
+msgstr "ဂျပန်"
+
+msgid "Thai"
+msgstr "ထိုင်းဘာသာ (ภาษาเขียน)"
+
+msgid "Malay"
+msgstr "မလေး (Bahasa Malaysia)"
+
+msgid "Persian"
+msgstr "ပါရှန်[အီရန်] (فارسی)"
+
+msgid "Myanmar (Burmese)"
+msgstr "မြန်မာ (ဗမာ)"
+
+msgid "Shan"
+msgstr "ရှမ်း"
+
+msgid "Home"
+msgstr "မူလကနဦး စာမျက်နှာသို့"
+
+msgid "DELETE"
+msgstr "ဖျက်ပြစ်ရန်"
+
+msgid "EDIT"
+msgstr "တည်းဖြတ်ရန်"
+
+msgid "Are You Sure Want to DELETE Selected Data?"
+msgstr "သင်သည်ရွေးချယ်ထားသောအချက်အလက်များကို ဖျက် ပြစ်လိုသည်မှာ သေချာရဲ့လား"
+
+msgid "ascendingly"
+msgstr "အက္ခရာအစမှအဆုံးသို့"
+
+msgid "descendingly"
+msgstr "အက်ခရာ အဆုံး မှ အစ သို့"
+
+msgid "Order list by"
+msgstr "စာရင်း ကို    အရ စဉ်ပါ"
+
+msgid "Date"
+msgstr "နေ့စွဲ"
+
+msgid "Delete Record"
+msgstr "မှတ်တမ်းမှဖျက်ပြစ်ရန်"
+
+msgid "First Page"
+msgstr "ပထမစာမျက်နှာ"
+
+msgid "Previous"
+msgstr "နောက်တမျက်နှာ ပြန် စာမျက်နှာ"
+
+msgid "Next"
+msgstr "ရှေ့ စာတမျက်နှာ"
+
+msgid "Last Page"
+msgstr "နောက်ဆုံးစာမျက်နှာ"
+
+msgid "No Data"
+msgstr "အချက်အလက်မရှိပါ"
+
+msgid "Personal Name"
+msgstr "ကိုယ်ပိုင်အမည်"
+
+msgid "Organizational Body"
+msgstr "အသင်းအဖွဲ့အမည်"
+
+msgid "Conference"
+msgstr "ညီလာခံ"
+
+msgid "Topic"
+msgstr "အကြောင်းအရာအမည်"
+
+msgid "Geographic"
+msgstr "ပထဝီဝင်ဒေသ"
+
+msgid "Temporal"
+msgstr "အချိန်ကါလ"
+
+msgid "Genre"
+msgstr "လိင် = ကျား/မ"
+
+msgid "Occupation"
+msgstr "အလုပ်အကိုင်"
+
+msgid "Primary Author"
+msgstr "အဓိကစာရေးသူ"
+
+msgid "Additional Author"
+msgstr "ပူးတွဲစာရေးသူ"
+
+msgid "Editor"
+msgstr "တည်းဖြတ်သူ"
+
+msgid "Translator"
+msgstr "ဘာသာပြန်ဆိုသူ"
+
+msgid "Director"
+msgstr "ဒါရိုက်တာ"
+
+msgid "Producer"
+msgstr "ထုတ်လုပ်သူ"
+
+msgid "Composer"
+msgstr "ရေးစပ်သူ"
+
+msgid "Illustrator"
+msgstr "သရုပ်​ဖေါ်ရေးဆဲ့သူ"
+
+msgid "Creator"
+msgstr "ဖန်တီးသူ"
+
+msgid "Contributor"
+msgstr "ပါဝင်ပံ့ပိုးသူ"
+
+msgid "Senior Librarian"
+msgstr "အၿကီးတန္းစာျကည္.တိုက္မွဳး"
+
+msgid "Library Staff"
+msgstr "စာကြည်.တိုက်ဝန်ထမ်း"
+
+msgid "View record detail description for this title"
+msgstr "ဤခေါင်းစဉ်အတွက်အသေးစိတ်ဖော်ပြချက်ကိုကြည့်ရန်"
+
+msgid "none copy available"
+msgstr "စာအုပ်ဆင်တူများမရှိပါ"
+
+msgid "Share this title to Facebook"
+msgstr "ဤခေါင္းစဥ္ကို Facebookမွာ ဝေမွွ်ပါ"
+
+msgid "Share this title to Twitter"
+msgstr "ဤခေါင္းစဥ္ကို Twitterမွာ ဝေမွွ်ပါ"
+
+msgid "Share this title to Google Plus"
+msgstr "ဤခေါင္းစဥ္ကို Google Plus မွာဝေမွွ်ပါ"
+
+msgid "Share this title to Digg It"
+msgstr "ဤခေါင္းစဥ္ကို Digg It မွာဝေမွွ်ပါ"
+
+msgid "Share this title to Reddit"
+msgstr "ဤခေါင္းစဥ္ကို Reddit မွာဝေမွွ်ပါ "
+
+msgid "mark this"
+msgstr "ဤစာအုပ်အမည်ကိုအမှတ်အသားလုပ်ရန်"
+
+msgid "APA Style"
+msgstr "APA စတိုင်"
+
+msgid "MLA Style"
+msgstr "MLA စတိုင်"
+
+msgid "Turabian Style"
+msgstr "Turabian စတိုင်"
+
+msgid "Availability"
+msgstr "အသုံးပြုနိုင်မှု"
+
+msgid "Detail Information"
+msgstr "အသေးစိတ်သတင်းအချက်အလက်များ"
+
+msgid "Comments"
+msgstr "မှတ်ချက်များ"
+
+msgid "Librarian LOGIN"
+msgstr "စာကြည့်တိုက်မှူးများသာ"
+
+msgid "Read More"
+msgstr "ဆက်ဖတ်ရန်"
+
+msgid "Advanced Search"
+msgstr "အဆင့်မြင့်ရှာဖွေခြင်း"
+
+msgid "Select Language"
+msgstr "ဘာသာစကားရွေးရန်"
+
+msgid "License"
+msgstr "လိုင်စင်"
+
+msgid "Library Information"
+msgstr "စာကြည့်တိုက်အကြောင်း"
+
+msgid "Member Area"
+msgstr "အသင်းဝင်များအတွက်သာ"
+
+msgid "Help on Search"
+msgstr "စာရှာလမ်းညွှန်"
+
+msgid "More"
+msgstr "နောက်ထပ်"
+
+msgid "New Books"
+msgstr "စာအုပ်အသစ်"
+
+msgid "SEARCH"
+msgstr "ရှာဖွေရန်"
+
+msgid "start it by typing one or more keywords for title, author or subject"
+msgstr "ရှာလိုသော စာအုပ်အမည်၊ စာရေးသူ၊ ပညာရပ် ဆိုင်ရာ အဓိက စကားလုံးတစ်ခု သို့မဟုတ် ပိုမိုသောစကားလုံး ကိုထည့်ပါ"
+
+msgid "Search Cluster"
+msgstr "တူညီေသာအရာများရှာဖွေခြင်း"
+
+msgid "Generating search cluster..."
+msgstr "တူညီသောအရာရွာေဖြသည္.သေကၤတျဖစ္ေပၚေစသည္"
+
+msgid "Visitor Counter"
+msgstr "စာကြည့်တိုက်သို့ လာရောက် သူများကို လက်ခံ တွေ့ဆုံရာ စာပွဲ"
+
+msgid "Please insert your library member ID otherwise your full name instead"
+msgstr "ကျေးဇူး ပြု၍သင်၏စာကြည့်တိုက်အသင်းဝင် နံပါတ်ထည့်ပါ။ သို့မဟုတ်သင်၏အမည်အပြည့် အစုံ ထည့်ပါ။"
+
+msgid "Cite"
+msgstr "ကိုးကားရန်"
+
+msgid "Collections"
+msgstr "စာစုများ "
+
+msgid "No Result"
+msgstr "ရလဒ်မရှိပါ"
+
+msgid "Please try again"
+msgstr "ထပ်ကြိုးစားပါ"
+
+msgid "Search Result"
+msgstr "ရှာရေသာရလဒ်များ"
+
+msgid "Information"
+msgstr "သတင်း"
+
+msgid "Back To Home"
+msgstr "နောက်ကျောမူလစာမျက်နှာရန်"
+
+msgid "About SLiMS"
+msgstr "SLiMS အကြောင်း"
